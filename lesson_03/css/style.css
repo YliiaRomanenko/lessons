@@ -1,0 +1,114 @@
+@import url("reset.css");
+
+body {
+	background-color: #242222;
+}
+
+
+body p {
+	color: #7aeee0;
+}
+
+blockquote {
+	color:#daf87d;
+}
+
+#facts {
+	color:#1E90FF ;
+}
+
+h2 {
+	color: #FFA500;
+
+}
+
+.cultura-conteiner .cultura-txt {
+	color: #fcfcfc;
+}
+.cultura-txt .span-roze {
+	color: #e985e9;
+}
+
+.conteiner-facts h2{
+	color: #eefb54;
+}
+
+[class*="menu"] {
+	color: #800080;
+}
+h3 {
+	color: #1927edf9;
+}
+
+.fact-list>li {
+	color: #faffba;
+}
+.facts-item ~ h3 {
+	color: #800080;
+}
+
+p + a {
+	color: #A52A2A;
+}
+
+.link-logo {}
+
+.menu-list {}
+
+.menu-item {}
+
+.menu-link {}
+
+.baner {}
+
+.big-title {}
+
+.section-economic {}
+
+.section-cuultura {}
+
+.section-tehnologic {}
+
+.tehnologi-conteiner {}
+
+.section-facts {}
+
+.conteiner-facts {}
+
+.facts-list {}
+
+.facts-item {}
+
+.fact-list {}
+
+.fact-item {}
+
+
+
+
+
+
+
+/*
+ #BDB76B	
+#FFD700
+
+		#008080
+				#008B8B
+					#48D1CC
+
+#8B4513
+		#A52A2A
+						#800080
+														#C71585
+#ffff00 
+
+#eefb54 
+#daf87d 
+#c3f4a0
+ 
+#a5f1c0 
+#7aeee0 
+#00ebff
+
+*/
