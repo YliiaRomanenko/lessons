@@ -1,0 +1,248 @@
+/* Скидання стилів */ 
+@import url("reset.css");
+@import url("fonts.css");
+
+/* ---Goole Fons->WEB,@import---- */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+ */
+/* --Плагін -google-fonts----F1--- */
+
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap"); */
+
+
+
+
+body {
+	font-family: "Gilroy", sans-serif;
+
+	color: #480274;
+	/* font-family: "Roboto", "DM Sans", sans-serif; */
+	line-height: 150%; /* 24/16 */
+}
+
+.nav-item {
+	font-style: italic;
+	font-size: small;
+	font-weight: 700;
+	line-height: 150%; /* 15/10 */
+		letter-spacing: 1px;
+		color: #eeeff0;
+		text-align: right;
+		text-decoration-line: underline;
+}
+
+.xl-title {
+	font-size: 30px;
+	text-align: center;
+	color: #f0eded;
+	font-weight: 900;
+	line-height: 1.5;
+	text-shadow: 1px -20px 20px rgb(112, 200, 244), 1px 20px 20px rgb(251, 255, 0);
+
+}
+
+
+.style-text {
+
+}
+.style-tatle {
+	text-align: justify;
+	line-height: 2;
+
+}
+.style-text .first-li {
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+}
+
+.style-text .second-li {
+	line-height: 1.1;
+	font-style: italic;
+	font-weight: 700;
+	text-align: center;
+}
+
+.style-text .third-li {
+	font-style: oblique;
+	font-weight: bold;
+	text-align: right;
+}
+/* ===============text-decoration============= */
+
+.decoration-title {
+	line-height: 2;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+.tatle-decor {
+	font-weight: 500;
+   text-shadow: 1px 1px 5px #100218,1px 1px 10px #100218, 1px 1px 15px #100218, 1px -15px 15px #f8f7f9;
+	color: #fcfcf9;
+}
+.default-item{
+	text-align: left;
+		font-weight: bold;
+}
+.first-item {
+	text-decoration: overline;
+	text-align: center;
+	line-height: 3;
+}
+.second-item {
+	text-decoration: underline;
+	text-align: center;
+	line-height: 1.3;
+}
+.fourth-item {
+	text-decoration: line-through;
+	text-align: left;
+	text-align: center;
+	line-height: 1.5;
+}
+
+/* ==================resurs================== */
+.conteiner-resurs {
+	
+}
+
+.title-resurs {
+	text-decoration: overline;
+		text-transform: capitalize;
+		line-height: 3;
+		text-shadow: 330px 0px 0px #fcfcf9, 330px 1px 10px #090909, 340px 10px 20px #e38cca;
+}
+.title-shadow-bl {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #eeeded;
+	text-align: center;
+	letter-spacing: 3px;
+	text-shadow: 1px 0px 0px #fcfcf9,
+		-5px -5px 5px #f1dd06, 1px 1px 10px #0835e9, 1px 10px 20px #0c32f0,-10px -10px 20px #f1dd06, 1px 3px 500px #0ca0f0;
+}
+
+.resurs-list {
+	text-align: center;
+
+}
+
+.resurs-item {
+	text-transform: capitalize;
+   color: #57570b;
+	line-height: 2;
+}
+/* ================resurs-first-list===================== */
+
+.link-title {
+	font-weight: 900;
+	letter-spacing: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 2;
+}
+
+.resurs-first-list {
+	text-align: center;
+	text-transform: capitalize;
+	line-height: 150%; /* 24/16 */
+	color: #f6f5f3;
+	text-shadow: 1px 1px 5px #100218, 1px 1px 10px #100218, 1px 1px 15px #100218, 1px -15px 15px #f8f7f9;
+	
+}
+
+.resurs-first-item {}
+
+.resurs-link-figure {
+	color: #8e9308c6;
+	/* background-color: #fff; */
+	text-shadow: none;
+}
+
+.resurs-fons-link {
+	color: blue;
+	text-shadow: 1px 0px 5px #f5f5f5, 0px 0px 6px #e3f118;
+}
+
+
+
+/* =============/ROBOTO-sec1============= */
+
+.conteiner-roboto {
+font-family: "Roboto",
+		sans-serif;
+}
+
+.big-title {
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 66px;
+	color: #091133;
+	letter-spacing: 1px;
+}
+
+.conteiner-roboto .description {
+	font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 30px;
+		color: #505F98;
+}
+/* ===========/ROBOTO-sec1============= */
+
+
+
+/* ==========DM Sans-sec2=========== */
+.conteiner-dm-sans {
+	font-family: "DM Sans", sans-serif;
+}
+
+.title-about { 
+	font-size: 88px;
+		font-weight: 700;
+		line-height: 95px;
+		color: #1E1B39;
+}
+
+.conteiner-dm-sans .description {
+		font-size: 24px;
+		line-height: 42px;
+		color:#474464;
+}
+/* ==========/DM Sans-sec2=========== */
+
+
+
+/* ==========Work Sansc-3=========== */
+.conteiner-work-sans {
+	font-family: "Work Sans", sans-serif;
+}
+.title-user {
+	font-size: 38px;
+		line-height: 50px;
+		color: #132238;
+}
+
+.conteiner-work-sans .description {
+	font-size: 18px;
+		line-height: 24px;
+		color: #556070;
+}
+/* ==========/Work Sansc-3=========== */
+.first-li .nav-item-footer {
+	text-align: center;
+}
