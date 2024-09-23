@@ -1,0 +1,335 @@
+/* Скидання стилів */
+@import url("reset.css");
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap");
+
+
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
+
+/* ============nav================ */
+.nav-list {
+  display: inline-block;
+  padding-block: 10px;
+  padding-inline: 10px;
+}
+.nav-item {
+  font-family: "Manpore", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-transform: lowercase;
+  color: #7c7c90;
+  text-shadow: 0px 0px 1px black;
+  
+}
+.title-top {
+  font-family: "Manpore", sans-serif;
+  font-size: 36px;
+  color: #666666;
+  text-align: end;
+  padding-block: 10px;
+  text-shadow: -1px -1px 2px rgb(18, 57, 96);
+}
+/* ============nav================ */
+
+/* =============raport========== */
+
+/* .raport {
+    max-width: 500px;
+    margin: 0 auto;
+} */
+
+.raport-conteiner {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #c1d3f9;
+  overflow: auto;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.raport-title-xl {
+  line-height: 1.5;
+  color: #fbf9f9;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 3px;
+  letter-spacing: 3px;
+}
+
+.items {
+  margin-left: -5px;
+  margin-right: -5px;
+  font-size: 0px;
+
+
+}
+
+.item {
+vertical-align: middle;
+  width: 33.333%;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+.content {
+  font-size: 16px;
+  padding: 25px;
+
+  background-color: #fff;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.raport-title {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #636465;
+  text-align: center;
+  letter-spacing: 3px;
+
+}
+
+.content p {
+  margin-bottom: 5px;
+}
+
+/* =============/raport========== */
+
+/* ===========landing-page============== */
+/* font-family: "Roboto",
+sans-serif; */
+
+.conteiner-landing {
+  font-family: "Roboto", sans-serif;
+  max-width: 539px;
+  color: #091133;
+  margin: 0 auto;
+}
+
+.landing-title {
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 20px;
+  line-height: 1.32;
+  letter-spacing: 0.02em;
+}
+
+.text-conteiner {
+  margin-bottom: 66px;
+}
+
+.landing-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #505f98;
+}
+
+.mg-botton {
+  margin-bottom: 15px;
+}
+
+.landing-list {
+  display: block;
+}
+
+.landing-item {
+  display: inline-block;
+  width: 189px;
+  height: 36px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-inline: 5px;
+  line-height: 1.6;
+  text-align: center;
+  border: 2px solid #091133;
+  border-radius: 2px;
+}
+
+.landing-link {
+  display: inline-block;
+  font-weight: 500;
+  font-family: inherit;
+  color: inherit;
+}
+
+.landing-first-btn {
+  color: #fff;
+  background: #111b47;
+  margin-right: 30.15px;
+}
+
+/* ==================/landing===== */
+
+/* ==================Design===== */
+.design-page {
+  font-family: "Roboto", sans-serif;
+  padding-block-start: 160px;
+  padding-block-end: 120px;
+  color: #091133;
+  background-color: #FBFBFD;
+}
+
+.conteiner-design {
+  max-width: 520px;
+  padding-block-start: 160px;
+  padding-block-end: 120px;
+  margin-inline: auto;
+}
+
+.design-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.33;
+  margin-block-end: 6px;
+}
+
+.design-text-conteiner {
+  line-height: 1.6;
+  color: #6f7cb2;
+  margin-block-end: 71px;
+}
+.mb-text {
+  margin-block-end: 7px;
+}
+.design-text {
+}
+
+.design-list {
+  width: 100%;
+}
+
+.design-item {
+  display: inline-block;
+  max-width: 245px;
+  padding-block-end: 2px;
+  padding-inline-end: 30px;
+  margin-inline-end: -30px;
+  margin-block-end: 30px;
+}
+.icon {
+  margin-block-end: 14px;
+}
+
+.design-item-title {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #091133;
+  margin-block-end: 6px;
+}
+
+.design-item-text {
+  color: #5d6970;
+  font-size: 12px;
+  line-height: 18px;
+}
+/* ==================/Design===== */
+
+
+
+/* ==================Dark Site===== */
+/*  -в макете расстояние между секциями 117, делаю половуну для каждого падинга (верхнего и нижнего) в секции 
+- изучала svg -тренирую на этом примере пдключение спрайта */
+
+.movi {
+  font-family: "Manrope", sans-serif;
+  line-height: 150%;
+  color: #999;
+  background-color: #141414;
+  padding-block: 58.5px;
+}
+
+.coneiner-movi {
+  max-width: 1279px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movi-title {
+  font-size: 28px;
+  color: #fff;
+  margin-block-end: 10px;
+}
+
+.movi-description {
+  margin-block-end: 60px;
+
+}
+
+.movi-item-top {
+  display: inline-block;
+  margin-block-end: 24px;
+}
+.movi-list {
+  margin-left: -10px;
+  margin-right: -20px;
+  font-size: 0;
+  padding-left: 10px;
+
+}
+
+.movi-item {
+  display: inline-block;
+  max-width: 413px;
+ max-height: 230px;
+font-size: 16px;
+  border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #0f0f0f;
+    margin-inline-end: 20px;
+    margin-block-end: 20px;
+  padding-block: 40px;
+  padding-inline: 40px;
+  background: linear-gradient(222deg, rgba(229, 0, 0, 0.50) -208.03%, rgba(229, 0, 0, 0.00) 41.32%), #0F0F0F;
+}
+
+.wrap-icon {
+  display: inline-block;
+  width: 54px;
+  vertical-align: middle;
+  padding-block: 12px;
+  padding-inline: 12px;
+  margin-inline-end: 12px;
+  border: 1px solid #1f1f1f;
+    border-radius: 10px;
+    background: #141414;
+    text-align: center;
+}
+.icon-coneiner {
+	width: 30px;
+	height: 30px;
+  padding-block-start: 1.2px;
+  padding-block-end: 1.8px;
+  text-align: center;
+  /* overflow: auto; */
+}
+
+.movi-item-title {
+  text-transform: capitalize;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.movi-item-text {
+  width: 333px;
+}
+
+.movi-icon {}
+
+.ill {}
+
+
+/* ==================/Dark Site===== */
+
