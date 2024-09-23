@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Margin and padding</title>
+
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a href="#infa" class="nav-link">
+						Корисна інформація
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="#land" class="nav-link">
+				Приклад відступів на сайті Landing
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#desine-site" class="nav-link">
+					Приклад відступів на сайті Desine
+					</a>
+				</li>
+					
+				<li class="nav-item">
+					<a href="#movi-site" class="nav-link">
+					Приклад відступів на сайті Movi
+					</a>
+				</li>
+				
+			</ul>
+		</nav>
+	</header>
+
+
+	<main>
+		<h1 class="title-top">Margin and padding</h1>
+<!-- -------------------Site-my----------- -->
+		<section class="raport">
+			<div class="raport-conteiner">
+				<h2 class="raport-title-xl" id="infa">Корисна інформація</h2>
+				<div class="items">
+		
+					<div class="item">
+						<div class="content">
+							<h3 class="raport-title">
+								ВАЖЛИВО! Видалення фантомних відступів між елементами.
+							</h3>
+							<p>Для батьківського елементу вказуємо font-size: 0;-це прибере фантомний відступ між елементами яким вказано
+								display:
+								inline-block;</p>
+							<p>Для дочірніх елементів потрібно вказати відповідний розмір шрифту, приклад font-size: 16px;</p>
+		
+						</div>
+					</div>
+		
+					<div class="item">
+						<div class="content">
+							<h3 class="raport-title">
+								inlin(block)-size.
+							</h3>
+							<p>inline-size - рядковий розмір;</p>
+							<p>max-inline-size - максимальний рядковий розмір;</p>
+							<p>block-size - мінімальний блочний розмір</p>
+						</div>
+					</div>
+		
+					<div class="item">
+						<div class="content">
+							<h3 class="raport-title">
+								Властивість vertical-align
+							</h3>
+							<p>ivertical-align— керує вирівнюванням блочно-рядкових та рядкових елементів по вертикалі (осі - Y) -! Не
+								успадковується.</p>
+							<ul>
+								<li class="raport-item">top— вирівнює по верхньому краю</li>
+								<li class="raport-item">middle— вирівнює по центру</li>
+								<li class="raport-item">bottom— вирівнює по нижньому краю</li>
+							</ul>
+						</div>
+					</div>
+					<div class="item">
+						<div class="content">
+							<h3 class="raport-title">
+								Cтилі для обгортки (списку) в якій картки
+							</h3>
+							<p>стилі для обгортки (списку) в якій картки /
+								.cards-items {
+								margin: 0 -12px; /відємні відступи margin з боків /
+								font-size: 0; /прибирання фантомних відступів/
+								}</p>
+							<p>стилі для карток /
+								.cards-item {
+								display: inline-block;
+								padding: 12px 12px; /встановлення padding для компенсації від'ємного margin і створення відступу між
+								картками/
+								font-size: 16px; /встановлення розміру шрифту тому що ми для .cards-items встановили розмір шрифту 0*/
+								};</p>
+		
+						</div>
+					</div>
+		
+					<div class="item">
+						<div class="content">
+							<h3 class="raport-title">
+								Центрування блоку
+							</h3>
+							<p>Об'єкт має бути блочним</p>
+							<p>Об'єкт має мати меншу ширину за батьківський елемент;</p>
+							<p>Додаємо властивість margin: 0 auto;р</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="content">
+							<h3 class="raport-title">
+								max-width
+							</h3>
+							<p>встановлюємо розмір для картинки щоб при зміні картинки на більшу вона не виходила за батьківський блок
+		
+								max-width: 100%;</p>
+							>
+						</div>
+					</div>
+		
+		
+				</div>
+			</div>
+		</section>
+
+
+		<!-- ----------landing---------- -->
+		<section class="landing-page">
+			<div class="conteiner-landing">
+				<h1 class="landing-title" id="land">
+					Introduce Your Product Quickly & Effectively
+				</h1>
+				<div class="text-conteiner">
+					
+					<p class="landing-text mg-botton">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+						natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+					</p>
+					<p class="landing-text">
+						mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+					</p>
+				</div>
+
+				<ul class="landing-list">
+					<li class="landing-item  landing-first-btn">
+						
+						<a href="" class="landing-link">Purchase UI Kit</a>
+					</li>
+
+					<li class="landing-item">
+						<a href="" class="landing-link">Learn More</a>
+					</li>
+				</ul>
+
+			</div>
+		</section>
+		<!-----Design------------------>
+		<section class="design-page">
+			<div class="conteiner-design">
+
+				<h2 class="design-title" id="desine-site">
+					Design & Build Your Own Landing Pages
+				</h2>
+
+				<div class="design-text-conteiner">
+					<p class="design-text mb-text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+					</p>
+					<p class="design-text">
+						mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+					</p>
+				</div>
+
+				<ul class="design-list">
+							<li class="design-item">
+								<img class="icon" src="img/icon.svg" alt="намальований дім і олівець поруч" width="36" height="36">
+								<h3 class="design-item-title">
+									Title Goes Here
+								</h3>
+								<p class="design-item-text">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+								</p>					
+							</li>
+					
+						
+						<li class="design-item">
+							<img class="icon" src="img/icon.svg" alt="намальований дім і олівець поруч" width="36" height="36">
+							<h3 class="design-item-title">
+								Title Goes Here
+							</h3>
+							<p class="design-item-text">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+							</p>
+						</li>
+					
+
+					<li class="design-item">
+						<img class="icon" src="img/icon.svg" alt="намальований дім і олівець поруч" width="36" height="36">
+						<h3 class="design-item-title">
+							Title Goes Here
+						</h3>
+						<p class="design-item-text">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+						</p>
+					</li>
+
+					<li class="design-item">
+						<img class="icon" src="img/icon.svg" alt="намальований дім і олівець поруч" width="36" height="36">
+						<h3 class="design-item-title">
+							Title Goes Here
+						</h3>
+						<p class="design-item-text">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- -------------Dark-Site----------------------- -->
+		<section class="movi">
+			<div class="coneiner-movi" id="sinema">
+				<h2 class="movi-title" id="movi-site">We Provide you streaming experience across various devices.</h2>
+				<p class="movi-description">
+					With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be
+					compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.
+				</p>
+
+				<ul class="movi-list">
+		
+
+					<li class="movi-item">
+
+						<div class="movi-item-top">
+
+							<div class="wrap-icon">
+	
+								<div class="icon-coneiner">
+									<svg width="14.73" height="19.2">
+										<use href="img/symbol-defs.svg#icon-smartphones"></use>
+									</svg>
+								</div>
+							</div>
+	
+							<h3 class="movi-item-title">Smartphones</h3>
+						</div>
+
+						<p class="movi-item-text">
+							StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple
+							App Store
+						</p>
+					</li>
+					<li class="movi-item">
+					
+						<div class="movi-item-top">
+					
+							<div class="wrap-icon">
+					
+								<div class="icon-coneiner">
+									<svg class="" width="20.59" height="27">
+										<use href="img/symbol-defs.svg#icon-tablet"></use>
+									</svg>
+								</div>
+							</div>
+					
+							<h3 class="movi-item-title">Tablet</h3>
+						</div>
+					
+						<p class="movi-item-text">
+							StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple
+							App Store
+						</p>
+					</li>
+					<li class="movi-item">
+						
+							<div class="movi-item-top">
+						
+								<div class="wrap-icon">
+						
+									<div class="icon-coneiner">
+										<svg class="" width="25.9" height="19.2">
+											<use href="img/symbol-defs.svg#icon-tv"></use>
+										</svg>
+									</div>
+								</div>
+						
+								<h3 class="movi-item-title">Smart TV</h3>
+							</div>
+						
+							<p class="movi-item-text">
+								StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the
+								Apple
+								App Store
+							</p>
+					</li>
+					<li class="movi-item">
+					
+						<div class="movi-item-top">
+					
+							<div class="wrap-icon">
+					
+								<div class="icon-coneiner">
+									<svg class="" width="27.45" height="20.1">
+										<use href="img/symbol-defs.svg#icon-laptops"></use>
+									</svg>
+								</div>
+							</div>
+					
+							<h3 class="movi-item-title">Laptop</h3>
+						</div>
+					
+						<p class="movi-item-text">
+							StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the
+							Apple
+							App Store
+						</p>
+					</li>
+					<li class="movi-item">
+					
+						<div class="movi-item-top">
+					
+							<div class="wrap-icon">
+					
+								<div class="icon-coneiner">
+									<svg class="" width="27" height="19.8">
+										<use href="img/symbol-defs.svg#icon-geim"></use>
+									</svg>
+								</div>
+							</div>
+					
+							<h3 class="movi-item-title">Gaming Consoles</h3>
+						</div>
+					
+						<p class="movi-item-text">
+							StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the
+							Apple
+							App Store
+						</p>
+					</li>
+					<li class="movi-item">
+
+						<div class="movi-item-top">
+
+							<div class="wrap-icon">
+	
+								<div class="icon-coneiner">
+									<svg class="" width="25.2" height="18.9">
+										<use href="img/symbol-defs.svg#icon-union"></use>
+									</svg>
+								</div>
+							</div>
+	
+							<h3 class="movi-item-title">VR Headsets</h3>
+						</div>
+
+						<p class="movi-item-text">
+							StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple
+							App Store
+						</p>
+					</li>
+
+				</ul>
+			</div>
+
+		</section>
+
+
+	</main>
+
+
+	<footer>
+		<ul class="nav-list">
+		<li class="nav-item">
+			<a href="#infa" class="nav-link">
+				Корисна інформація
+			</a>
+		</li>
+	
+		<li class="nav-item">
+			<a href="#landing" class="nav-link">
+				Приклад відступів на сайті Landing
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="#desine-site" class="nav-link">
+				Приклад відступів на сайті Desine
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="movi" class="nav-link">
+				Приклад відступів на сайті Movi
+			</a>
+		</li>
+	
+	</ul>
+</footer>
+
+</body>
+
+</html> 
