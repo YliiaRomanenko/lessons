@@ -69,6 +69,7 @@
 }
 
 .item {
+vertical-align: middle;
   width: 33.333%;
   display: inline-block;
   margin-bottom: 10px;
@@ -109,6 +110,7 @@ sans-serif; */
   font-family: "Roboto", sans-serif;
   max-width: 539px;
   color: #091133;
+  margin: 0 auto;
 }
 
 .landing-title {
