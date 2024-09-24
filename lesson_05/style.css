@@ -178,8 +178,6 @@ sans-serif; */
 
 .conteiner-design {
   max-width: 520px;
-  padding-block-start: 160px;
-  padding-block-end: 120px;
   margin-inline: auto;
 }
 
@@ -269,22 +267,21 @@ sans-serif; */
   margin-block-end: 24px;
 }
 .movi-list {
-  margin-left: -10px;
+
   margin-right: -20px;
   font-size: 0;
-  padding-left: 10px;
+
 
 }
 
 .movi-item {
   display: inline-block;
   max-width: 413px;
- max-height: 230px;
 font-size: 16px;
   border: 1px solid #262626;
     border-radius: 10px;
     padding: 40px;
-    background-color: #0f0f0f;
+    /* background-color: #0f0f0f; */
     margin-inline-end: 20px;
     margin-block-end: 20px;
   padding-block: 40px;
