@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Стилі фона</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<nav>
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="#movie" class="nav-link">Приклад сайту №1- Фільми</a>
+					</li>
+
+					<li class="nav-item">
+					<a href="#portfolio" class="nav-link">
+						Приклад сайту №2- Portfolio
+					</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#link-advice" class="nav-link">Корисні посилання</a>
+					</li>
+
+
+					<li class="nav-item">
+						<a href="#advice" class="nav-link">Корисна Інформація</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<main>
+
+			<!-- --------------movie-------------------- -->
+			<section class="movie" id="movie">
+				<div class="hero-conteiner">
+
+					<h2 class="movie-title">The Best Streaming Experience</h2>
+				</div>
+				<div class="wrap">
+
+					<div class="movie-coneiner">
+
+						<p class="movie-text">
+							StreamVibe is the best streaming experience for watching your favorite movies and shows on demand,
+							anytime,
+							anywhere.
+							With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic
+							movies,
+							popular TV
+							shows, and more. You can also create your own watchlists, so you can easily find the content you want to
+							watch.
+						</p>
+
+
+						<button class="movie-btn">
+							<span>Start Watching Now </span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- --------------portfolio-------------------- -->
+			<section class="portfolio" id="portfolio">
+				<div class="portfolio-conteiner">
+
+					<div class="conteiner-left">
+
+						<h2 class="portfolio-title-section">Features
+
+						</h2>
+						<div class="title-conteiner">
+							<h3 class="portfolio-title-xl">
+								Give Your Site A New Look
+							</h3>
+
+						</div>
+
+						<p class="portfolio-description">
+							Service range including technical skills, design, business understanding.
+						</p>
+						<ul class="portfolio-list">
+							<li class="portfolio-item">
+								<p class="portfolio-item-text">
+									Range including technical skills
+								</p>
+							</li>
+
+							<li class="portfolio-item">
+								<p class="portfolio-item-text">
+									Business understanding
+								</p>
+							</li>
+
+							<li class="portfolio-item">
+								<p class="portfolio-item-text">
+									Partner on the long run
+								</p>
+							</li>
+
+						</ul>
+
+					</div>
+
+
+					<img src="img/portfolio.png" alt="посмішка хлопця поряд телефон та навушники" class="portfolio-picture"
+						width="529">
+
+				</div>
+			</section>
+			<!-- ------------------my--------------------- -->
+			<section class="fon" id="my-proect">
+				<div class="fon-conteiner">
+
+					<h2 class="infa" id="advice">
+						Корисна Інформація
+					</h2>
+
+					<div class="fon-group">
+
+
+						<div class="fon-group-element">
+							<h3 class="element-title">
+								Масштабувати фонове зображення
+							</h3>
+							<p class="element text">
+								Перше значення — ширина, друге— висота (значення можуть бути у відсотках, px).
+							</p>
+							<ul class="list-size">
+
+								<li class="size-item">
+									background-size: auto auto;— за замовчуванням.
+								</li>
+								<li class="size-item">
+									Можемо написати тільки ширину, і висота підтягнеться автоматично та пропорційно: background-size:
+									300px;
+								</li>
+								<li class="size-item">
+									Можна писати розмір у відсотках: background-size: 50%;
+								</li>
+								<li class="size-item">
+									Якщо хочемо працювати від висоти, то першим обовʼязково ставимо auto: background-size: auto 100px;
+								</li>
+
+							</ul>
+						</div>
+
+						<div class="fon-group-element">
+							<h3 class="element-title">
+								Чи прокручуватиметься фонове зображення разом із вмістом елемента
+							</h3>
+							<p class="element text">
+								background-attachment: scroll;
+							</p>
+							<ul>
+								<li>
+									scroll- скролиться разом з блоком (за замовченням);
+								</li>
+								<li>
+									fixed- фонове зображення НЕ скролиться разом з блоком (позиціонується відносно в'юпорту, а не відносно
+									блоку)
+								</li>
+							</ul>
+						</div>
+
+
+						<div class="fon-group-element">
+							<h3 class="element-title">
+								Властивість visibility
+							</h3>
+							<p class="element text">
+								управляє відображенням елемента.
+							</p>
+							<ul>
+								<li>visible— відображає об'єкт (за замовченням);</li>
+								<li>hidden— ховає об'єкт (з об'єктом не можна взаємодіяти).</li>
+							</ul>
+
+						</div>
+
+
+						<div class="fon-group-element">
+							<h3 class="element-title">
+								Властивість outline
+							</h3>
+							<p class="element text">
+								встановлює товщину, стиль та колір обвідки навколо елемента (не впливає на оточення). Не успадковується.
+							</p>
+						</div>
+
+
+						<div class="fon-group-element">
+							<h3 class="element-title">
+								Спеціальні значення contain та cover
+							</h3>
+							<p class="element text">
+								contain — Підходить для фотографій та карток товарів.
+							</p>
+							<p>
+								cover — . Підходить для фонових зображень які не несуть в собі конкретної інформації, а використовуються
+								для декору та
+								підкреслення основної інформації (контенту)
+							</p>
+						</div>
+
+
+
+						<div class="fon-group-element">
+							<h3 class="element-title">
+								додавання фонового зображення
+							</h3>
+							<p class="element text">
+								background: green url(посилання на картинку) 0 0 ( позиція картинки відносно блоку числові чи словесні
+								значення) /
+								cover no-repeat scroll;
+							</p>
+						</div>
+
+
+
+
+
+
+					</div>
+					<!-- ----------------arrov-------------------- -->
+
+					<div class="wrap-gradient">
+						<h2 class="arrov-title" id="link-advice">
+							Корисні посилання
+						</h2>
+						<div class="arrov-conteiner">
+
+							<div class="arrov-content">
+
+								<a href="https://www.cssportal.com/css-triangle-generator/" class="arrov-link" target="_blank">
+									<span class="arrov-left"></span>
+									<span class="btn-figure">Генератор трикутників</span>
+								</a>
+							</div>
+
+							<div class="arrov-content">
+
+								<a href="https://uigradients.com/" target="_blank">
+									<span class="arrov-left"></span>
+									<span class="btn-figure">Добірка цікавих градіентов</span>
+								</a>
+							</div>
+
+							<div class="arrov-content">
+
+								<a href="https://shadows.brumm.af/" target="_blank">
+									<span class="arrov-left"></span>
+									<span class="btn-figure">Генератор тіней</span>
+								</a>
+							</div>
+
+							<div class="arrov-content">
+
+								<a href="https://9elements.github.io/fancy-border-radius/" class="arrov-link" target="_blank">
+									<span class="arrov-left"></span>
+									<span class="btn-figure">генератор фігур за допомогою border-radius</span>
+								</a>
+							</div>
+							<div class="arrov-content">
+
+								<a href="https://www.whatfontis.com/Webfont-Generator.html/" class="arrov-link" target="_blank">
+									<span class="arrov-left"></span>
+									<span class="btn-figure">Webfont Generator</span>
+								</a>
+							</div>
+
+
+							<div class="arrov-content">
+
+								<a href="https://fontconverter.com//" class="arrov-link" target="_blank">
+									<span class="arrov-left"></span>
+									<span class="btn-figure">Font Converter</span>
+								</a>
+							</div>
+
+							<div class="arrov-content">
+
+								<a href="https://fls.guru/cssbackground.html" class="arrov-link" target="_blank">
+									<span class="arrov-left"></span>
+									<span class="btn-figure">Фон для сайту</span>
+								</a>
+							</div>
+
+
+							<div class="arrov-content">
+
+								<a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+									<span class="arrov-left"></span>
+									<span class="btn-figure">Валідатор css </span>
+								</a>
+							</div>
+
+						</div>
+						<!-- ----------------- -->
+						<!-- 
+						<div class="conteiner-radius-gradient"> -->
+
+						<div class="first-conteiner">
+							<div class="bd-radius">
+
+								<div class="first">
+									<p class="gradient1">90deg-0wite/0 red</p>
+								</div>
+
+								<div class="first">
+									<p class="gradient2">90deg -100w/0b</p>
+								</div>
+
+								<div class="first">
+									<p class="gradient3">90deg -50w/100b</p>
+								</div>
+
+
+								<div class="first">
+									<p class="gradient4"> 90deg -50w/50b</p>
+								</div>
+
+								<div class="first">
+									<p class="gradient5"> 90deg -50w/0b</p>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="second-conteiner">
+
+							<div class="bd-radius">
+								<div class="first">
+									<p class="gradient6"> 90deg -50w/10b</p>
+								</div>
+
+								<div class="first">
+									<p class="gradient7"> 90deg -70w/30b</p>
+								</div>
+
+								<div class="first">
+									<p class="gradient8"> 90deg -70w/30b</p>
+								</div>
+
+
+								<div class="first">
+									<p class="gradient9"> 90deg -50w/70b</p>
+								</div>
+
+								<div class="first">
+									<p class="gradient-b9"> 90deg -30w/70b</p>
+								</div>
+
+								<div class="first">
+									<p class="gradient10"> 90deg -70w/100b</p>
+								</div>
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+
+				</div>
+			</section>
+
+	<!-- </div>
+
+
+	</div> -->
+
+
+	  </main>
+
+
+	  <footer>
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="#movie" class="nav-link">Приклад сайту №1- Фільми</a>
+					</li>
+				
+					<li class="nav-item">
+						<a href="#portfolio" class="nav-link">
+							Приклад сайту №2- Portfolio
+						</a>
+					</li>
+				
+					<li class="nav-item">
+						<a href="#link-advice" class="nav-link">Корисні посилання</a>
+					</li>
+				
+				
+					<li class="nav-item">
+						<a href="#advice" class="nav-link">Корисна Інформація</a>
+					</li>
+				</ul>
+		</footer>
+	</div>
+</body>
+
+</html>

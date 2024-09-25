@@ -1,0 +1,540 @@
+/* Скидання стилів */
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Edu+AU+VIC+WA+NT+Guides:regular,500,700&display=swap");
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background: #141414;
+
+}
+
+
+
+
+/* ---------------------nav--------------- */
+.nav-item {
+    display: inline;
+  font-size: 36px;
+  color: #ffffff;
+ 
+      width: 30%;
+      padding: 20px;
+      border: 1px salmon;
+      border-radius: 8px;
+      background-color: #e4adad3d;
+    
+      text-align: center;
+    
+      margin-block-end: 5px;
+      margin-inline-end: 5px;
+      box-shadow: inset 5px 1px 15px 0px #030202, inset -5px 1px 15px 0px #030202;
+
+}
+
+.nav-link {
+
+
+}
+
+/* ===========MOVIE============================= */
+
+.movie {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+  color: #999;
+  background-color: #141414;
+  max-width: 1597px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-block-end: 100px;
+}
+
+.hero-conteiner {
+  max-width: 1920px;
+  margin-block-end: 14px;
+  text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+.icon-movie {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  fill: yellow;
+  padding-top: 191px;
+  margin-block-end: 131px;
+}
+
+.movie-title {
+  font-size: 58px;
+  text-align: center;
+  vertical-align: bottom;
+  color: #fff;
+  text-transform: capitalize;
+  padding-block-start: 796px;
+  background: url(../img/play.png) center / 470px no-repeat,
+    linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, #141414 100%),
+    linear-gradient(360deg, rgba(20, 20, 20, 0) 0%, #141414 100%),
+    url(../img/baner-cinema.jpg) center / 1920px no-repeat, #141414;
+		margin-inline: auto;
+}
+
+.movie-coneiner {
+  max-width: 1297px;
+  line-height: 150%;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+
+  color: #999;
+}
+
+.movie-text {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  margin-block-end: 50px;
+}
+
+.movie-btn {
+  display: block;
+  max-width: 251px;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #e50000;
+  border-radius: 8px;
+  padding-inline: 24px;
+  padding-block: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movie-btn span {
+  display: inline-block;
+  background: url(../img/icon-btn-play.svg) 0 50% / 17.84px no-repeat;
+  padding-inline-start: 21.84px;
+  min-height: 19.19px;
+  vertical-align: middle;
+}
+/* ===========/MOVIE============================= */
+
+/* ========Portfolio============================= */
+
+.portfolio {
+  font-family: "Epilogue", sans-serif;
+  color: #391400;
+  background-color: #FDF0E9;
+}
+
+.portfolio-conteiner {
+  max-width: 1179px;
+  margin-inline: auto;
+  padding-inline: 5px;
+
+  padding-block-start: 107.5px;
+  padding-block-end: 98px;
+
+}
+
+.portfolio-title-section {
+  font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #EF6D58;
+    margin-block-end: 20px;
+
+}
+
+.conteiner-left {
+  max-width: 470px;
+  display: inline-block;
+margin-inline-end: 165px;
+}
+
+.portfolio-title-xl {
+  font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    width: 397px;
+max-width: 100%;
+}
+
+.portfolio-description {
+  font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 470px;
+    margin-block-end: 26px;
+}
+
+.portfolio-list {}
+
+.portfolio-item {
+  color: rgba(57, 20, 0, 0.64);
+  line-height: 32px;
+  background: url(../img/check.svg) 0 0 / 32px no-repeat;
+  margin-block-end: 16px;
+}
+
+.portfolio-item-text {
+  padding-inline-start: 48px;
+}
+
+.portfolio-picture {
+  display: inline-block;
+
+
+
+}
+
+/* ========/Portfolio============================= */
+
+/* ========fon============================= */
+.fon {
+  font-family: "Edu AU VIC WA NT Guides";
+  color: #130f04;
+  
+    background: rgb(216, 216, 214);
+}
+
+.fon-conteiner {
+    max-width: 1200px;
+      margin-inline: auto;
+      padding-inline: 5px;
+    
+      padding-block-start: 107.5px;
+      padding-block-end: 98px;
+      text-align: center;
+
+}
+
+
+.infa {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+  margin-block-end: 50px;
+  color: #eaeadd;
+  letter-spacing: 10px;
+  
+    margin-block-end: 30px;
+    text-shadow: 1px 3px 2px #222121, 0px 2px 25px #1d1c24;
+}
+.fon-group {
+  
+  max-width: 900px;
+  background: #aecdf8;
+  padding: 10px;
+  border: 3px solid #bbbbbb;
+  box-shadow: inset 0px 0px 0px 10px rgb(47, 26, 26), inset 0px 0px 0px 20px rgb(7, 7, 7), 0px 20px 30px 10px rgb(47, 26, 26), 0px -10px 30px 5px rgb(47, 26, 26);
+  margin-block-end: 50px;
+margin-bottom: 150px;
+
+  
+}
+
+.fon-group-element {
+  display: inline-block;
+  width: 33.333%;
+  /* padding-inline: 10px;
+  padding-block: 7px; */
+  font-size: 0px;
+  border: 2px solid #70594c;
+  border-radius: 10px;
+  background-color: #f4f4ee;
+margin: 0 -1px;
+padding-inline: 10px;
+padding-block: 10px;
+box-shadow: inset 0px 0px 20px 0px rgb(8, 8, 8);
+}
+.fon-group-element {
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.element-title {
+  text-align: center;
+  padding-block: 10px;
+  padding-inline: 10px;
+  border: 1px solid rgb(236, 232, 232);
+  border-radius: 3%;
+  box-shadow: inset 0px 0px 20px 10px rgb(8, 8, 8), 0px 0px 5px 10px rgb(8, 8, 8);  
+  margin-block-end: 30px;
+  color: #fff;
+  text-shadow: 0px 1px #020202, 0px -1px #141414, 1px 0px #141414, -1px 0px #141414;
+  background-color: #1f35dd;
+}
+
+.element-title {}
+
+.element {}
+
+.text {}
+
+
+
+
+
+
+
+.wrap-gradient {
+  max-width: 1500px;
+/* margin-left: -200px;
+margin-right: -200px; */
+padding-block: 150px;
+border-radius: 8%;
+
+ background-color: #edeeee;
+box-shadow: inset 0px 3px 50px 2px #444040;
+overflow: auto;
+}
+
+/* ---------arrov------------ */
+
+.arrov-conteiner {
+  display: inline-block;
+    max-width: 500px;
+    vertical-align: top;
+      background: #aecdf854;
+      padding: 10px;
+      padding-left: 10px;
+      border: 3px solid #bbbbbb;
+      box-shadow: inset 0px 0px 10px 10px rgb(9, 7, 7), inset 0px 0px 20px 20px rgb(84, 51, 51), 0px 20px 30px 10px rgb(47, 26, 26), 0px -10px 30px 5px rgb(47, 26, 26);
+    margin-block-end: 50px;
+    margin-inline-end: 30px;
+}
+
+.arrov-title {
+  font-weight: 700;
+  font-size: 36px;
+ text-transform: capitalize;
+ color: #ecf1eced;
+ padding-block: 10px;
+ letter-spacing: 2px;
+
+ margin-block-end: 30px;
+ text-shadow: 0px 1px 1px #222121, 0px 1px 2px #1d1c24;
+}
+
+.arrov-content {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  border: 1px dotted #888888;
+  border-radius: 8px;
+  background-color: #bda7a74e;
+
+  text-align: center;
+  
+  margin-block-end: 1px;
+  margin-inline-end: 1px;
+  box-shadow: inset 5px 1px 15px 0px #030202, inset -5px 1px 15px 0px #030202;
+}
+
+.arrov-left {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid rgb(75, 75, 5);
+  vertical-align: middle;
+}
+
+
+.btn-figure {
+  display: inline-block;
+  color: #2f2f05;
+  vertical-align: middle;
+  background-color: #86864931;
+  border: 2px solid #6d4c4c;
+  box-shadow: 1px 2px 10px 1px #030202;
+  margin-left: -30px;
+  padding-block: 10px;
+  padding-inline-start: 30px;
+  padding-inline-end: 10px;
+        background: linear-gradient(180deg, #032a6128 0%, #1fdd352a 70%), linear-gradient(90deg, #07f7ff6b 20%, #aecdf829 50%);
+}
+
+
+
+
+
+/* ========fon============================= */
+
+/* ========bd============================= */
+/* .conteiner-radius-gradient {
+display: inline-block;
+margin-inline-start: auto;
+} */
+
+
+
+
+
+.first-conteiner {
+  display: inline-block;
+  vertical-align: top;
+  margin-inline-end: 15px;
+
+}
+
+.second-conteiner {
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.bd-radius {
+  display: block;
+      max-width: 300px;
+      font-weight: 700;
+
+        background: #aecdf854;
+        padding: 5px;
+        padding-left: 10px;
+        border: 3px solid #bbbbbb;
+        box-shadow: inset 0px 0px 10px 10px rgb(9, 7, 7), inset 0px 0px 20px 20px rgb(84, 51, 51), 0px 20px 30px 10px rgb(47, 26, 26), 0px -10px 30px 5px rgb(47, 26, 26);
+          background: linear-gradient(180deg, #032a6128 0%, #1fdd352a 70%), linear-gradient(90deg, #07f7ff6b 20%, #aecdf829 50%);
+
+          margin-block-end: 15px;
+}
+
+
+
+.first {
+  display: block;
+  max-width: 100%;
+  border: 35px solid rgba(246, 241, 241, 0.678);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: inset 0px 0px 10px 10px rgb(9, 7, 7), inset 0px 0px 20px 20px rgb(84, 51, 51), 0px 20px 30px 10px rgb(47, 26, 26), 0px -10px 30px 5px rgb(47, 26, 26);
+    margin-block-end: 25px;
+}
+
+
+
+.first p {
+  padding-block: 10px;
+  text-align: left;
+}
+
+
+.gradient {
+  width: 250px;
+  max-height: 50px;
+  color: #141414;
+  background: linear-gradient(90deg, #f7f5f5 0%, #222222 100%);
+  
+}
+
+
+
+.gradient1 {
+  display: block;
+  width: 250px;
+  max-height: 50px;
+  color: #e6e6eb;
+  background: linear-gradient(90deg, #f7f5f5 0%, #c00707 0%);
+
+}
+
+.gradient2 {
+    display: block;
+  width: 250px;
+    max-height: 50px;
+      color: #0c0c0c;
+      background: linear-gradient(90deg, #f7f5f5 100%, #222222 0%);
+}
+
+.gradient3 {
+    display: block;
+      width: 250px;
+    max-height: 50px;
+      color: #151517;
+      background: linear-gradient(90deg, #f7f5f5 50%, #222222 100%);
+}
+.gradient4 {
+    display: block;
+      width: 250px;
+      max-height: 50px;
+        color: #171718;
+        background: linear-gradient(90deg, #f7f5f5 50%, #222222 50%);
+}
+
+.gradient5 {
+    display: block;
+      width: 250px;
+    max-height: 50px;
+      color: #131314;
+      background: linear-gradient(90deg, #f7f5f5 50%, #222222 0%);
+}
+
+
+.gradient6 {
+  display: block;
+  width: 250px;
+  max-height: 50px;
+  color: #131314;
+  background: linear-gradient(90deg, #f7f5f5 50%, #222222 10%);
+}
+
+
+.gradient7 {
+  display: block;
+  width: 250px;
+  max-height: 50px;
+  color: #131314;
+  background: linear-gradient(90deg, #f7f5f5 30%, #222222 70%);
+}
+
+
+.gradient8 {
+  display: block;
+  width: 250px;
+  max-height: 50px;
+  color: #131314;
+  background: linear-gradient(90deg, #f7f5f5 70%, #222222 30%);
+}
+
+.gradient9 {
+  display: block;
+  width: 250px;
+  max-height: 50px;
+  color: #131314;
+  background: linear-gradient(90deg, #f7f5f5 50%, #222222 70%);
+}
+
+.gradient-b9 {
+  display: block;
+  width: 250px;
+  max-height: 50px;
+  color: #131314;
+  background: linear-gradient(90deg, #f7f5f5 30%, #222222 70%);
+}
+
+
+.gradient10 {
+  display: block;
+  width: 250px;
+  max-height: 50px;
+  color: #131314;
+  background: linear-gradient(90deg, #f7f5f5 70%, #222222 100%);
+}
+
+
+
+/* ========/bd============================ */
