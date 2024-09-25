@@ -18,25 +18,28 @@
 
 /* ---------------------nav--------------- */
 .nav-item {
-    display: inline;
+    display: inline-block;
   font-size: 36px;
-  color: #ffffff;
- 
-      width: 30%;
-      padding: 20px;
+  color: #917f7f;
+  padding-block: 10px;
+  padding-inline: 15px;
       border: 1px salmon;
       border-radius: 8px;
-      background-color: #e4adad3d;
+      background-color: #5d47473d;
     
       text-align: center;
-    
-      margin-block-end: 5px;
+
       margin-inline-end: 5px;
-      box-shadow: inset 5px 1px 15px 0px #030202, inset -5px 1px 15px 0px #030202;
+      box-shadow: inset 5px 1px 15px 0px #937777, inset -5px 1px 15px 0px #6d3030;
+      margin-block-end: 10px;
 
 }
 
 .nav-link {
+  display: inline-block;
+  padding-block: 25px;
+  padding-inline: 20px;
+
 
 
 }
@@ -538,3 +541,10 @@ margin-inline-start: auto;
 
 
 /* ========/bd============================ */
+footer {
+  padding-block: 50px;
+  padding-inline: 7px;
+}
+footer ul li {
+  display: block;
+}
