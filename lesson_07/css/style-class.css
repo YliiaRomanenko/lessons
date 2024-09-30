@@ -1,0 +1,512 @@
+/* Підключення фрифтів */
+
+/* Google Fonts (Plugin) */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap"); */
+
+/* Локальне підключення шрифтів */
+/* @import url("fonts.css"); */
+
+/* Скидання стилів */
+/* @import url("reset.css"); */
+
+/* Основні стилі */
+/* body {
+	font-family: "Gilroy", sans-serif;
+	background-color: #333;
+	color: #fff;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden; /* clip */
+	/* ... */
+/* }
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-inline: 15px;
+	/* 
+	padding-left: 15px;
+	padding-right: 15px;
+	*/
+/* }
+.page {
+	padding: 30px;
+} */ */ */
+
+/* ============================================= */
+/* =============== Псевдокласи ================= */
+/* ============================================= */
+
+/* Анатомія псевдокласів */
+
+/*
+селектор:псевдоклас{
+}
+*/
+/*
+Вкладеність
+селектор#1:псевдоклас селектор#2{
+}
+*/
+
+/* Псевдокласи стану */
+
+/*
+	:hover
+	Звернення до елемента у стані 
+	"при наведенні курсору"
+	Застосовується до будь-якого елемента
+*/
+
+/* Стан "в спокої" */
+.link {
+	color: yellow;
+	letter-spacing: 1px;
+}
+/* Стан "при наведенні курсору" */
+/*
+.link:hover {
+	text-decoration: underline;
+	color: green;
+}
+*/
+
+/* Звернення до вкладеного SPAN у стані спокою */
+/* .link {
+	padding: 15px;
+	background-color: #7a956b;
+}
+.link span {
+	background: url("../img/check.svg") left / 15px no-repeat;
+	display: inline-block;
+	padding-left: 20px;
+}
+/* Звернення до вкладеного SPAN у стані "при наведенні курсору" */
+/* .link:hover span {
+	background: url("../img/card-image.jpg") left / 15px no-repeat;
+} */
+
+/* .block {
+	background-color: #77608d;
+	padding: 15px;
+}
+.block__item {
+	visibility: hidden;
+} */ */
+/* Не працює */
+/*
+.block__item:hover {
+	visibility: visible;
+}
+*/
+/* Працює */
+.block:hover .block__item {
+	visibility: visible;
+}
+
+/*
+	:active Звернення до елемента у стані 
+	"при натиснутій клавіші миші"
+*/
+.link:active {
+	color: blue;
+}
+
+/*
+:visited Звернення до елемента 
+у стані "відвіданого посилання"
+обмежена кількість властивостей
+
+Варто зазначити, що через міркування безпеки 
+та конфіденційності браузери дозволяють 
+змінювати лише деякі властивості для псевдокласу :visited, такі як:
+• color (колір тексту),
+• background-color (колір фону),
+• border-color (колір рамки),
+• outline-color (колір обвідки),
+• column-rule-color (колір розділових ліній у колонках),
+• text-decoration-color (колір текстових прикрас).
+*/
+/*
+.link:visited {
+	color: rgb(117, 117, 85);
+}
+*/
+/*
+	:focus, :focus-visible Звернення до 
+	елементу у стані "фокусу"
+*/
+/*
+.link:focus {
+	outline: 2px dashed red;
+}
+*/
+/* Тільки коли на об'єкт перейшли (TAB) */
+/*
+.link:focus-visible {
+	outline: 2px dashed green;
+}
+*/
+/*
+input:focus {
+	outline: 2px dashed red;
+}
+*/
+/*
+input:focus-visible {
+	outline: 2px dashed red;
+}
+*/
+
+/*
+:target
+Звернення до елемента у стані
+"ефекту від посилання з іншого об'єкту"
+*/
+/*
+.block:target {
+	background-color: #7a956b;
+}
+.show-block:hover {
+	text-decoration: underline;
+}
+
+.some-block {
+	display: none;
+}
+.some-block:target {
+	display: block;
+}
+*/
+
+/* Псевдокласи положення у коді */
+
+.text {
+	background-color: #7a956b;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+/*
+	:first-child
+	Звернення до першого дочірнього елементу в коді
+*/
+/* якщо тег P перший */
+/*
+.text p:first-child {
+	color: darkgreen;
+}
+*/
+/* Будь-який перший тег */
+/*
+.text *:first-child {
+	color: darkgreen;
+}
+*/
+
+/* 
+	:first-of-type
+	Звернення до першого вказаного 
+	об'єкту в коді
+*/
+
+/* перший тег P */
+/*
+.text p:first-of-type {
+	color: darkgreen;
+}
+*/
+/* Кожен перший тег */
+/*
+.text *:first-of-type {
+	color: darkgreen;
+}
+*/
+
+/*
+	:last-child
+	Звернення до останього 
+	елементу в коді
+*/
+/* якщо тег P останній */
+/*
+.text p:last-child {
+	text-transform: uppercase;
+}
+*/
+/*
+	:last-of-type
+	Звернення до останього 
+	вказаного об'єкту в коді
+*/
+/* останній тег P */
+/*
+.text p:last-of-type {
+	text-transform: uppercase;
+}
+*/
+
+/* Один з методів (!) прибирання зайвого відступу */
+/*
+.text p {
+	margin-bottom: 10px;
+}
+.text *:last-child {
+	margin-bottom: 0px;
+}
+*/
+
+/*
+:nth-child(значення/алгоритм)
+Звернення до конкретного елементу (ів) в коді
+*/
+/*
+.text p:nth-child(1) {
+	color: darkgreen;
+}
+*/
+/* 
+:nth-of-type()
+*/
+/*
+.text p:nth-of-type(1) {
+	color: darkgreen;
+}
+*/
+
+/* 
+	Алгоритми NTH
+
+	odd - через один не парні
+	even - через один парні
+
+*/
+/*
+.text p {
+	max-width: 50%;
+}*/
+/*
+.text p:nth-of-type(even) {
+	text-align: right;
+	margin-left: auto;
+	color: darkgreen;
+}
+*/
+/* Алгоритм "кожен-через" */
+/* коженn + починаючи з */
+
+/* Кожен третій */
+/*
+.text p:nth-of-type(3n) {
+	text-align: right;
+	margin-left: auto;
+	color: darkgreen;
+}
+*/
+/* Кожен третій починаючи з першого */
+/*
+.text p:nth-of-type(3n + 1) {
+	text-align: right;
+	margin-left: auto;
+	color: darkgreen;
+}*/
+/* Кожен 4 починаючи з 2 */
+/*
+.text p:nth-of-type(4n + 2) {
+	text-align: right;
+	margin-left: auto;
+	color: darkgreen;
+}
+*/
+/*
+.text p:nth-of-type(6n + 3),
+.text p:nth-of-type(6n + 4) {
+	text-align: right;
+	margin-left: auto;
+	color: darkgreen;
+}
+*/
+
+/*
+	:not(селектор або псевдоклас) 
+	Псевдоклас виключення
+*/
+/*
+.text p:not(.not-green) {
+	color: darkgreen;
+}
+*/
+
+/*
+.text p {
+	margin-bottom: 20px;
+}
+.text p:last-child {
+	margin-bottom: 0px;
+}*/
+/* АБО */
+/*
+.text p:not(:last-child) {
+	margin-bottom: 20px;
+}
+*/
+
+/* 
+	:has(селектор або псевдоклас) 
+	Псевдоклас присутності в коді
+*/
+/*
+.text:has(.hide) {
+	display: none;
+}
+*/
+
+/* Гарна практика */
+/* .some-block {
+	background-color: #794f45;
+	padding: 15px;
+} */
+/* Вказуємо відсуп за замовченням */
+/* .some-block > * {
+	margin-bottom: 20px;
+}
+.some-block__title {
+	font-weight: 700;
+	font-size: 30px;
+} */
+.some-block__text {
+	line-height: 1.2;
+}
+.some-block__image {
+	/* 
+	Задаємо (перезаписуємо) 
+	свій відступ за потреби 
+	*/
+	margin-bottom: 8px;
+}
+.some-block__link {
+	color: yellow;
+}
+.some-block__link:hover {
+	text-decoration: underline;
+}
+/* Прибираємо відсуп для останього об'єкту */
+.some-block > *:last-child {
+	margin-bottom: 0;
+}
+
+/* 
+	Псевдокласи мають більший пріоритет
+	(уточнення)
+*/
+
+/* ============================================= */
+/* =============== Псевдоелементи ============== */
+/* ============================================= */
+
+/* Анатомія псевдоелементів */
+/*
+селектор::псевдоелемент{
+}
+Псевдоелементи не можна додати до 
+одинарних тегів (без зачиняючих елементів) (наприклад img,br), 
+тому що ці теги не можуть містити в собі контенту.
+*/
+
+/*
+::before{}
+::after{}
+
+!!!!! Псевдоелементи - рядкові  (але в reset доданий display: inline-block;) !!!!!
+Властивість content: ""; - Обов'язкова!
+*/
+
+/*
+.text::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: #794f45;
+	border-radius: 50%;
+}
+.text::after {
+	content: "Пока!";
+}
+*/
+
+/*
+.list {
+}
+.list__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.list__item::before {
+	vertical-align: middle;
+	content: "";
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	transition: all 0.3s;
+	background: url("../img/check.svg") 0 0 / 20px no-repeat;
+}
+
+.list__item:hover::before {
+	transform: rotate(-360deg);
+}
+*/
+
+/* Взаємодія псевдокласа та псевдоелемента */
+/* Звернення до ::before коли .list__item у стані :hover */
+/* !!!ніяких пробілів!!!!! */
+/*
+.list__item:hover::before {
+}
+*/
+
+.some-title {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.some-title span {
+	display: inline-block;
+}
+.some-title span::after {
+	content: "";
+	height: 2px;
+	width: 40%;
+	display: block;
+	margin-top: 5px;
+	background-color: #7a956b;
+}
+
+.image {
+	display: inline-block;
+
+	border-radius: 15px;
+	overflow: hidden;
+
+	/* Не вчили */
+	position: relative;
+}
+.image::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-image: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+	border-radius: 15px;
+
+	/* Не вчили */
+	transition: all 0.8s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+img.image__item {
+}
+
+.image:hover::after {
+	opacity: 0;
+}
