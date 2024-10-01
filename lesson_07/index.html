@@ -11,13 +11,49 @@
 <body>
 	<div class="wrapper">
 		<header>
+			<nav>
+				<ul class="menu-list">
+					<li class="menu-item">
+						<a href="#timeline" class="nav-link">
+							Приклад вставки :after
+						</a>
+					</li>
+
+					<li class="menu-item">
+								<a href="#price" class="nav-link">
+									Приклад вставки :before
+								</a>
+					</li>
+
+					<li class="menu-item">
+								<a href="#portfolio" class="nav-link">
+									Приклад задавання стилів через :nth-child/:nth-of-type/:not(:last-child)
+								</a>
+					</li>
+
+					<li class="menu-item">
+								<a href="#my-site" class="nav-link">
+									Приклад :hover/:activ/:focus...
+								</a>
+					</li>
+
+						<li class="menu-item">
+							<a href="#game" class="nav-link">
+								Game- знайди єлемент.
+							</a>
+						</li>
+				</ul>
+
+			</nav>
 
 		</header>
 
 
 
 		<main>
-			<section class="timeline">
+			<section class="timeline" id="timeline">
+				
+							<h1>Завдання №7</h1>
 				<div class="timeline-conteiner">
 					<div class="product">
 						<p>Jan 2023</p>
@@ -43,7 +79,7 @@
 			</section>
 
 
-			<section class="price-plan">
+			<section class="price-plan" id="price">
 				
 				<div class="price-conteier">
 					<h2>Our pricing plans</h2>
@@ -123,7 +159,7 @@
 
 						</div>
 
-						<div>
+						<div class="service">
 							<h3>Service online and help</h3>
 							<p>Put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the
 							merchant's team.</p>
@@ -133,28 +169,88 @@
 								<li>In-house</li>
 							</ol>
 							<p>
-
+								Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can
+								provide your business with a variety of digital solutions to promote your product or service online and help you.
 							</p>
-							<p class="messadge">
-								Provide your business with a variety of digital solutions to promote your product or service online and help you.
+							<div class="messadge">
+								
+									<p>
+										Provide your business with a variety of digital solutions to promote your product or service online and help you.
+	
+									</p>
+							</div>
+							<p>
+								Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of
+								digital solutions to promote your product or service online and help you.
 							</p>
-
-
 						</div>
-
-
 						<div>
-
-
-							
 						</div>
-
-
-
-
 
 					</div>
 				</div>
+
+			 </section>
+			 <!-- -------my-work-------- -->
+
+			 <section class="classwork" id="my-site">
+				<div class="activ">
+					<div class="wrap-figure">
+						<p class="figure-text">
+								:hover-Застосовується до будь-якого елемента
+						</p>
+					</div>
+					<div class="wrap-figure">
+						<p class="figure-text">
+							:active - натиснутій клавіші миші"
+						</p>
+					</div>
+
+					<div class="wrap-figure">
+						<a href="https://yliiaromanenko.github.io/lessons/lesson_06/" target="_blank">
+							<p class="figure-text">
+								:visited- "відвіданого посилання"
+	обмежена кількість властивостей
+							</p>
+						</a>
+					</div>
+
+					<div class="wrap-figure">
+						<p class="figure-text">
+								:focus, :focus-visible Звернення до
+								елементу у стані "фокусу"
+						</p>
+					</div>
+
+					
+					<div class="wrap-figure">
+						<p class="figure-text">
+							<a href="https://9elements.github.io/fancy-border-radius/#48.0.50.100--." target="_blank">
+									:target					
+									"ефекту від посилання з іншого об'єкту"
+							</a>
+						</p>
+					</div>
+
+				</div>
+
+		<div class="game" id="game">
+			<div class="start">start</div>
+			<div class="item1 blok">:first-child</div>
+			<div class="item2 blok">*:first-child</div>
+			<div class="item3 blok">:first-of-type</div>
+			<div class="item4 blok">:first-of-type</div>
+			<div class="item5 blok">*:first-of-type</div>
+			<div class="item6 blok">:nth-child(x) </div>
+			<div class="item7 blok">:nth-of-type(even)</div>
+			<div class="item8 blok">:nth-of-type(x)</div>
+			<div class="item9 blok">:last-child</div>
+			<div class="item10 blok">:last-of-type</div>
+				<div class="end blok">and</div>
+		</div>
+					
+
+
 
 			 </section>
 
@@ -166,7 +262,39 @@
 
 
 
-		<footer></footer>
+		<footer>
+				<ul class="menu-list">
+					<li class="menu-item">
+						<a href="#timeline" class="nav-link">
+							Приклад вставки :after
+						</a>
+					</li>
+				
+					<li class="menu-item">
+						<a href="#price" class="nav-link">
+							Приклад вставки :before
+						</a>
+					</li>
+				
+					<li class="menu-item">
+						<a href="#portfolio" class="nav-link">
+							Приклад задавання стилів через :nth-child/:nth-of-type/:not(:last-child)
+						</a>
+					</li>
+				
+					<li class="menu-item">
+						<a href="#my-site" class="nav-link">
+							Приклад :hover/:activ/:focus...
+						</a>
+					</li>
+				
+					<li class="menu-item">
+						<a href="#game" class="nav-link">
+							Game- знайди єлемент.
+						</a>
+					</li>
+				</ul>
+		</footer>
 	</div>
 </body>
 
