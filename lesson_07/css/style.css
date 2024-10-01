@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800&display=swap");
 
+@import url("https://fonts.googleapis.com/css?family=Fredoka:regular,600,700&display=swap");
+
+
 
 
 .wrapper {
@@ -11,6 +14,77 @@
 
 }
 
+
+
+
+/* ---------------нав----------------- */
+
+
+.menu-list {
+  padding: 20px;
+  
+    background-color: #503e3e;
+  
+}
+
+.menu-item {
+  vertical-align: top;
+  display: inline-block;
+
+  max-width: 200px;
+
+  padding: 20px;
+  border: #4A3AFF;
+  
+
+  background-color: #f45b08;
+  border-radius: 30% 70% 70% 30% / 30% 66% 34% 70%;
+  margin: 5px;
+
+  text-align: center;
+background-image: linear-gradient(180deg, #403A3E 0%, #BE5869 100%);
+border: 3px solid #706e6e;
+box-shadow: 5px 25px 25px 10px #391400,inset 15px 5px 5px #391400;
+opacity: .8;
+
+}
+.menu-list .menu-item:not(:last-of-type) {
+ margin-bottom: 20px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px;
+  
+
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+
+  color: #f7f5f5;
+  background-color: #ddacac1d;
+  border: 5px solid #dccece;
+  border-radius: 8px;
+
+  /* text-shadow: 0px 0px 0px #ede3e3; */
+}
+
+.menu-item:hover {
+box-shadow: 3px 5px 5px 5px #391400, inset 30px 0px 5px #391400;
+}
+
+
+/* ---------------нав----------------- */
+
+
+h1 {
+  font-size: 36px;
+  color: #391400;
+  font-weight: 700;
+  background-color: #874f4f68;
+  line-height: 2;
+  letter-spacing: 5px;
+  text-align: center;
+}
 
 /* -------Timeline------------- */
 .timeline {
@@ -119,7 +193,9 @@ background: url(../img/laptop.png) 0 0 / 44px no-repeat;
 }
 .price-conteier {
   padding-inline: 106px;
-  padding-block: 106;
+
+  padding-bottom: 100px;
+  padding-top: 50px;
 font-family: "DM Sans", sans-serif;
 font-size: 28px;
 line-height: 38px;
@@ -141,6 +217,7 @@ font-size: 88px;
   max-height: 617px;
 border-radius: 56px;
 background-color: #F0F0F6;
+overflow: auto;
 }
 
 
@@ -150,7 +227,7 @@ background-color: #F0F0F6;
     background-color: #4A3AFF;
     border-radius: 34px;
     padding-block: 44.59px;
-    padding-inline: 138.99;
+    padding-inline: 13px;
     text-align: center;
     color: #ffffff;
     margin-block-end: 33.83px;
@@ -178,7 +255,7 @@ font-size: 30px;
 .card-conteiner ul li {
   display: inline-block;
   vertical-align: middle;
-  width: 389px;
+  max-width: 389px;
 }
 .card-conteiner * li:not(:last-child) {
   margin-block-end: 26px;
@@ -209,6 +286,7 @@ vertical-align: middle;
 .portfolio-conteiner {
   max-width: 970px;
   margin: 0 auto;
+  overflow: auto;
 }
 .portfolio-conteiner h2 {
   padding-inline-start: 200px;
@@ -221,19 +299,24 @@ vertical-align: middle;
     margin-block-end: 28px;
 }
 
-.portfolio-conteiner ul,
-.portfolio-conteiner li {
-display: inline-block;
 
-}
 
-..about {
+
+
+.about {
   width: 100%;
 }
+.about ul {
+display: inline-block;
+}
+.about ul li {
+  display: inline-block;
+}
 .portfolio-conteiner .about ul:not(:last-child) {
+
   margin-block-end: 68px;
     padding-left: 200px;
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 
 .portfolio-conteiner .about ul:last-child {
@@ -244,20 +327,16 @@ display: inline-block;
     padding-right: 200px;
 
 }
- 
-/* 
-.portfolio-conteiner .about ul:nth-child(2) {
-  display: inline-block;
-  margin-left: auto;
-}  */
+
 
 .portfolio-conteiner ul li  {
   color:rgba(57, 20, 0, 0.64);
   margin-inline-end: 4px;
- 
+
 
 }
 .portfolio-conteiner .data {
+  display: inline-block;
     margin-left: auto;
 }
 
@@ -294,14 +373,29 @@ a {
 .portfolio-conteiner-smoll {
 padding-inline: 200px;
 color: rgba(57, 20, 0, 0.64);
-line-height: 32px
+line-height: 32px;
+overflow: auto;
 }
+
+
+
+
+
 .portfolio-conteiner-smoll div:nth-child(1) {
   margin-block-end: 51px;
 }
 .portfolio-conteiner-smoll div:nth-child(2) {
   margin-block-end: 65px;
 }
+
+.portfolio-conteiner-smoll div:nth-child(2) p:nth-of-type(1) {
+  margin-bottom: 34px;
+}
+
+.portfolio-conteiner-smoll div:nth-child(2) p:nth-of-type(2) {
+  margin-bottom: 34px;
+}
+
 .portfolio-conteiner-smoll div:nth-child(3) {
   margin-block-end: 58px;
 }
@@ -321,19 +415,16 @@ line-height: 32px
 margin-block-end: 32px;
 color: #391400;
 }
-.portfolio-conteiner-smoll div:not(:nth-child(1))>p:has(+ul) {
-margin-block-end: 34px;
-}
-.portfolio-conteiner-smoll div:not(:nth-child(1))>p:has(+ol) {
-  margin-block-end: 28px;
+.portfolio-conteiner-smoll div ul {
+    margin-block-end: 32px;
 }
 
 
-/* .portfolio-conteiner-smoll ~ ol, */
-.portfolio-conteiner-smoll div ul, 
 .portfolio-conteiner-smoll div ol {
-  display: block;
-  
+
+  margin-block-end: 32px;
+  padding-left: 15px;
+
   
 }
 
@@ -341,28 +432,14 @@ margin-block-end: 34px;
 .portfolio-conteiner-smoll div ul li,
 .portfolio-conteiner-smoll div ol li {
   color: #391400;
-  display: block;
 }
-.portfolio-conteiner .portfolio-conteiner-smoll div ol {
-list-style-type: decimal;
-}
+
+
 .portfolio-conteiner .portfolio-conteiner-smoll div ol li {
+    display: list-item;
   list-style-type: decimal;
-}
-.portfolio-conteiner .portfolio-conteiner-smoll  *ol {
-  list-style-type: decimal;
-}
-.portfolio-conteiner-smoll div ul {
-  padding-left: 15px;
-}
+ }
 
-.portfolio-conteiner-smoll div ol {
-  padding-left: 15px;
-}
-
-.portfolio-conteiner-smoll div ol li {
-  padding-left: 15px;
-}
 .portfolio-conteiner-smoll div ul li::before {
   vertical-align: middle;
   display: inline-block;
@@ -379,9 +456,275 @@ list-style-type: decimal;
   max-width: 570px;
   padding-block-start: 42px;
   padding-block-end: 32px;
+  padding-inline-start: 32px;
   padding-inline-end: 32px;
   border-radius: 6px;
     background: #F9E5DA;
     font-size: 20px;
       font-weight: 400;
+    margin-block-end: 67px;;
+ 
+
+}
+/* .messadge div {
+  display: inline-block;
+}
+.messadge div p {
+  display: inline-block;
+  padding-left: 40px;
+  
+}
+.messadge p::before {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 36px;
+  background-color: #382828;
+  background: url(../img/commas.png) 0 0 / 48px no-repeat;
+  margin-right: 32px;
+
+} */
+
+.messadge p {
+  background: url(../img/commas.png) 0 0 / 48px no-repeat;
+  padding-left: 78px;
+}
+
+.service p:not(.service>div>p):first-of-type {
+  margin-block-end: 28px;
+}
+.service p:nth-of-type(2) {
+  margin-bottom: 69px;
+}
+
+
+/* ================Classwork========================== */
+
+
+
+/* ---------------------activ----------------- */
+.classwork {
+  font-family: "Fredoka", sans-serif;
+background-color: #d7b5b0;
+padding-block: 100px;
+padding-inline: 10px;
+}
+
+.activ {
+  width: 900px;
+    margin: 0 auto;
+      padding: 50px 5px;
+}
+
+.wrap-figure {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  color: #f3f0ee;
+  padding: 20px;
+  background-image: linear-gradient(180deg, #BA8B02 0%, #181818 100%);
+  border: 5px solid #e1e0e7;
+
+border-radius: 0% 100% 0% 100% / 48% 50% 50% 52%;
+box-shadow: inset -15px -15px 15px 2px #391400, inset -25px -25px 5px 0px #191817, -15px -15px 15px 0px #391400,
+  -25px -25px 35px 0px #4b3f39;
+  vertical-align: middle;
+margin-right: 50px;
+
+}
+
+.figure-text { 
+margin-left: auto;
+margin-right: -100px;
+font-weight: 600;
+line-height: 1.2;
+
+text-align: center;
+  padding-inline: 10px;
+  padding-block: 10px;
+
+  color: inherit;
+
+    border: 5px solid #8c8b8e;
+
+margin-right: 50px;
+border-radius: 10%;
+}    
+
+
+.activ div:first-child:hover {
+color: #37372f;
+background: #f65a0b;
+}
+.activ div:nth-of-type(2):active {
+  color: #37372f;
+    background: #f65a0b;
+}
+.activ div:nth-of-type(3):visited {
+  color: #3e3e04;
+
+}
+.activ div:nth-of-type(4):focus-visible {
+  color: #37372f;
+  background: #f65a0b;
+}
+
+.activ div:nth-of-type(5):target {
+  color: #37372f;
+  background: #f65a0b;
+}
+/* -----------------Activ----------------------------- */
+
+
+/* -----------------Child------------------------- */
+
+.game {
+  display: block;
+  max-width: 400px;
+  min-height: 400px;
+/* background-color: #3d3332; */
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+  background-image: linear-gradient(90deg, #CC95C0 0%, #DBD4B4 50%, #7AA1D2 100%);
+  border: 5px solid #b8b6b6;
+  box-shadow: 0px 15px 0px #999999, 0px 25px 10px #999999;
+}
+.game:hover,
+.game:focus {
+  border: 5px solid #c1b0b0;
+    box-shadow: 0px 5px 0px #999999, 0px 5px 5px #999999;
+}
+
+
+
+
+.item1 {
+    max-width: 100px;
+      max-height: 20px;
+      background-color: #320c7f;
+}
+
+
+.game div:nth-of-type(even) {
+   max-width: 100px;
+    height: 20px;
+   background-image: linear-gradient(90deg,#009FFF 0%, #ec2F4B 100%);
+   margin-left: 20%;
+   opacity: 0;
+   box-shadow: 0px -3px 5px #181818;
+   color: #eeeff0;
+   font-size: 12px;
+   text-align: end;
+  }
+    .game div:not(:nth-of-type(even)) {
+      max-width: 100px;
+      height: 20px;
+      background-image: linear-gradient(90deg, #ec2F4B 0%, #009FFF 100%);
+      opacity: 0;
+      text-align: right;
+      box-shadow: -5px 15px 15px #141414;
+    }
+
+
+
+.game div:nth-of-type(even):hover,
+.game div:not(:nth-of-type(even)):hover {
+  opacity: 1;
+}
+
+
+
+
+.game div:nth-of-type(3) {
+  margin-left: 40%;
+}
+.game div:nth-of-type(4) {
+  margin-left: 60%;
+}
+.game div:nth-of-type(5) {
+  width: 20px;
+  height: 100px;
+  margin-left: 80%;
+  background-image: linear-gradient(180deg, #ec2F4B 0%, #ec2F4B 100%);
+}
+.game div:nth-of-type(6) {
+  margin-left: 60%;
+}
+
+.game div:nth-of-type(7) {
+  margin-left: 40%;
+}
+.game div:nth-of-type(8) {
+  margin-left: 20%;
+}
+
+.game div:nth-of-type(9) {
+    width: 20px;
+      height: 50px;
+     
+      background-image: linear-gradient(180deg, #009FFF 0%, #009FFF 100%);
+  margin-left: 20%;
+}
+.game div:nth-of-type(10) {
+  width: 60px;
+  height: 20px;
+  margin-left: 20%;
+}
+.game div:nth-of-type(11) {
+  width: 150px;
+  height: 20px;
+  margin-left: 30%;
+}
+
+
+/* ----befor-------- */
+
+
+.game  .item10::after {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 50px;
+  background: url(../img/rocket.png) 0 0 / 50px no-repeat;
+  margin-left: 80%;
+  margin-top: -10%;
+  opacity: 1;
+
+}
+
+.game div:first-child {
+  text-transform: uppercase;
+  color: #edf1f5;
+  background-color: #553d3d;
+  opacity: .2;
+margin-top: 20px;
+width: 100px;
+}
+
+.game div:last-child {
+  text-align: center;
+  opacity: 0.7;
+  margin-left:60%;
+  margin-top: -5%;
+  color: #391400;
+
+}
+
+
+.game .item1::before {
+  content: "";
+  display: inline-block;
+  max-width: 70px;
+  max-height: 50px;
+  background: url(../img/rocket.png) 0 0 / 50px no-repeat;
+margin-left: -50%;
+opacity: 1;
+
+}
+
+
+
+/* -----------------Child------------------------- */
+footer {
+  background-color: #503e3e;
 }
