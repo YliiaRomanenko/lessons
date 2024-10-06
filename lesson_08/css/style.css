@@ -1,0 +1,288 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Afacad+Flux:700&display=swap");
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Solway:regular,500,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Edu+AU+VIC+WA+NT+Guides:regular,600,700&display=swap");
+
+
+
+/* nav */
+header {
+	background-color:#2c153e;
+	padding: 20px;
+	box-shadow: 0px 10px 15px 0px #2c153e;
+}
+nav ul li {
+	font-family: "Afacad Flux",
+		sans-serif;
+		padding: 20px;
+		font-size: 24px;
+	display: inline-block;
+	color: #cfb0cd;
+	background-color: #5033332d;
+	border-radius: 10%;
+	box-shadow: inset 2px 2px 15px #6704a9, -10px 0px 1px #6704a9;
+	margin-inline-end: 20px;
+	margin-block-end: 10px;
+}
+nav ul li:hover {
+box-shadow: inset 3px 1px 12px #6704a9, -5px 0px 2px #6704a9;
+}
+h1 {
+		font-family: "Edu AU VIC WA NT Guides",
+				sans-serif;
+				padding: 10px;
+				font-size: 36px;
+				text-align: center;
+				font-weight: 700;
+				color: #d8c2c2;
+				background: url(../img/png/cloud@1x.webp) 0 0 / 30px repeat;
+			
+				text-transform: uppercase;
+
+}
+h2 {
+			font-family: "Edu AU VIC WA NT Guides",
+					sans-serif;
+					padding: 20px;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.5;
+	color: #a8a7b3;
+		background: url(../img/png/cloud@1x.webp) 0 0 / 30px repeat;
+}
+/* ---------------------корисні посил  ------ */
+.useful-links {
+	font-family: "Edu AU VIC WA NT Guides", sans-serif;
+
+		/* font-family: "Solway", sans-serif; */
+	padding-block: 50px;
+	background-color: #ddb2f988;
+}
+
+
+
+.cinteiner-useful-links {
+	width: 388px;
+	padding-inline: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.useful-links-list {
+max-width: 388px;
+padding: 7px;
+}
+
+
+.useful-links-item {
+	vertical-align: top;
+	display: inline-block;
+	max-width: 30%;
+	min-height: 70px;
+	padding: 20px;
+	border: #4A3AFF;
+	background-color: #f45b08;
+	border-radius: 0% 100% 0% 100% / 71% 40% 60% 29%;
+	margin: 5px;
+	text-align: center;
+	background-image: linear-gradient(180deg, #5f72bd 0%, #9b23ea 100%);
+	border: 1px solid #2d2828;
+	box-shadow: 5px 15px 15px 0px #391400, inset 15px 5px 5px #391400;
+	opacity: .5;
+}
+
+.useful-link {
+			display: inline-block;
+				padding: 10px;
+
+				font-weight: 600;
+				color: #f7f5f5;
+				background-color: #ddacac1d;
+				border: 2px solid #dccece95;
+				border-radius: 8px;
+				line-height: 1.3;
+}
+
+.useful-links-item:hover {
+	box-shadow: 5px 5px 10px 5px #391400, inset 15px 5px 5px #391400;
+
+}
+
+
+.useful-links-item:nth-child(11) {
+line-height: 2;
+}
+
+.useful-links-item:last-child {
+	line-height: 2;
+
+}
+.useful-links-item  a {
+	width: 100%;
+	display: inline-block;
+}
+/* --------homework--------------- */
+.home-work {
+	padding-block: 50px;
+	background-color: #0e0e0e;
+}
+
+.home-work-conteiner {
+		font-family: "Edu AU VIC WA NT Guides", sans-serif;
+	max-width: 520px;
+	padding: 30px 10px;
+	border: 1px solid #fdfbfb;
+	margin-block-end: 30px;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+	color: #d4d1ec;
+	text-align: center;
+}
+.content-pic-item p {
+display: inline-block;
+margin-block-end: 10px;
+}
+.content-pic-item picture {
+	display: inline-block;
+}
+.conteiner-logo-list {
+	border: 1px solid #f0eded;
+}
+.content-pic-item:not(:last-child) {
+margin-block-end: 100px;
+}
+.svg-in-code path {
+	fill: #9b23ea;
+	width: 50px;
+	height: auto;
+}
+
+
+
+/* -------------------jpeg------------------- */
+h2 {
+	margin-block-end: 20px;
+	text-align: center;
+}
+
+
+.jpeg {
+		padding-block: 50px;
+	background-color: #e9cbfffc;
+}
+
+.conteiner-jpeg {
+	font-family: "Solway", sans-serif;
+	max-width: 500px;
+	padding-inline: 10px;
+margin-inline: auto;
+}
+
+p {
+	max-width: 50%;
+}
+.description p:not(:last-of-type) {
+	margin-block-end: 20px;
+}
+
+.description p:nth-of-type(even) {
+	text-align: right;
+	color: #070705;
+margin-left: auto;
+background-color: #fcf0fa;
+padding: 10px;
+box-shadow: -3px 0px 10px #070705;
+}
+.description p:last-child {
+	margin-block-end: 30px;
+}
+
+/* -------jpeg-1170px desiner------------ */
+.jpeg-list {}
+
+.jpeg-item {
+	padding: 10px;
+}
+.jpeg-item:nth-last-of-type() {
+	margin-block-end: 20px;
+}
+
+.jpeg-pic {
+	/* max-width: 1170px;
+	max-height: 656px; */
+	max-width: 400px;
+}
+
+.description-pic {
+	padding: 10px;
+	box-shadow: -2px 2px 2px #211f1f;
+	background-color: #f6f5f7;
+
+}
+/* ----------------------------------- */
+.container-picture {
+	width: 300px;
+}
+.container-picture picture {
+	width: 288px;
+}
+/* -----------png-con-------------- */
+.png-wrapper {
+	background-color: #d4d1ec;
+	padding-block: 50px;
+}
+.conteiner-png-pic {
+			font-family: "Edu AU VIC WA NT Guides", sans-serif;
+	max-width: 1158px;
+	padding-inline: 10px;
+	margin-inline: auto;
+	border: 1px solid #070705;
+}
+.png-item {
+	display: inline-block;
+
+}
+/* -----------logo--------- */
+.conteiner-logo-list {
+	border: #070705;
+	box-shadow: 1px 2px 1px #070705;
+}
+.conteiner-svg-picture {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #3914007f;
+}
+.conteiner-svg-picture img {
+	display: inline-block;
+	text-align: center;
+	fill: #de0a0a;
+}
+/* ------footer */
+footer {
+	background-color: #070705;
+	padding-block: 50px;
+}
+footer ul li {
+	font-family: "Afacad Flux",
+		sans-serif;
+	padding: 20px;
+	font-size: 24px;
+	display: inline-block;
+	color: #f3eeee;
+	background-color: #5033332d;
+	border-radius: 10%;
+	box-shadow: inset 2px 2px 15px #6704a9, -10px 0px 1px #6704a9;
+	margin-inline-end: 20px;
+	margin-block-end: 10px;
+}
+
+nav ul li:hover {
+	box-shadow: inset 3px 1px 12px #6704a9, -5px 0px 2px #6704a9;
+}
