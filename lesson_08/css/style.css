@@ -67,7 +67,7 @@ h2 {
 
 
 .cinteiner-useful-links {
-	width: 388px;
+	max-width: 388px;
 	padding-inline: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -94,6 +94,10 @@ padding: 7px;
 	border: 1px solid #2d2828;
 	box-shadow: 5px 15px 15px 0px #391400, inset 15px 5px 5px #391400;
 	opacity: .5;
+}
+.useful-links-item a {
+	max-width: 100%;
+	vertical-align: middle;
 }
 
 .useful-link {
@@ -146,6 +150,7 @@ line-height: 2;
 .content-pic-item p {
 display: inline-block;
 margin-block-end: 10px;
+line-height: 2;
 }
 .content-pic-item picture {
 	display: inline-block;
@@ -258,10 +263,12 @@ box-shadow: -3px 0px 10px #070705;
 	height: 50px;
 	border-radius: 50%;
 	background-color: #3914007f;
+	line-height: 44px;
+	text-align: center;
 }
 .conteiner-svg-picture img {
 	display: inline-block;
-	text-align: center;
+	vertical-align: middle;
 	fill: #de0a0a;
 }
 /* ------footer */
