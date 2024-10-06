@@ -67,14 +67,14 @@ h2 {
 
 
 .cinteiner-useful-links {
-	max-width: 388px;
+	max-width: 750px;
 	padding-inline: 10px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .useful-links-list {
-max-width: 388px;
+max-width: 750px;
 padding: 7px;
 }
 
@@ -82,7 +82,7 @@ padding: 7px;
 .useful-links-item {
 	vertical-align: top;
 	display: inline-block;
-	max-width: 30%;
+	min-width: 220px;
 	min-height: 70px;
 	padding: 20px;
 	border: #4A3AFF;
