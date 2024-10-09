@@ -1,0 +1,655 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,500,600,700,800&display=swap");
+
+
+
+/* nav */
+
+header {
+	font-family: "Epilogue", sans-serif;
+padding-top: 30px;
+padding-bottom: 40px;
+	background-color: #363636;
+}
+.menu-list {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu-list__item {
+		font-family: "Le Murmure", sans-serif;
+	display: inline-block;
+	padding: 20px 10px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	background-color: #d8ccf034;
+	color: rgb(74, 213, 213);
+	border-radius: 10px;
+	border: 5px solid #413838;
+	box-shadow: -20px 5px 20px #0c0c0c, inset -20px 7px 10px 7px #231d1d;
+	outline: 1px solid #b4a9d6;
+	text-shadow: -1px 0px 0px #31293e, -1px 1px 1px #f4f1f1;
+
+}
+
+h1 {
+	font-family: "Epilogue", sans-serif;
+	padding: 10px;
+	text-align: center;
+	font-size: 28px;
+	font-weight: 700;
+	color: #b9b8bcbe;
+	background-color: #06fdfd;
+	letter-spacing: 3px;
+	box-shadow: inset 0px 10px 20px 0 #2a2727;
+}
+
+/* -----theory--- */
+/* установка шрифтов лекция 4- 1.13.00 */
+
+.theory {
+	font-family: "Le Murmure", serif;
+	background-color: rgb(213, 207, 213);
+	padding-block: 70px;
+}
+
+.theory-conteiner {
+	max-width: 500px;
+	padding-inline: 15px;
+	margin: 0 auto;
+	border-left: 1px solid #e3dbef;
+	color: #9b97a4;
+}
+
+
+.theory__title {
+	display: inline-block;
+	text-align: center;
+	font-size: 36px;
+	letter-spacing: 5px;
+	color: rgb(61, 10, 85);
+	margin-bottom: 15px;
+	margin-left: auto;
+	text-shadow: 1px 2px 0px #b4a9d6, 2px 3px 3px #322252;
+}
+.theory__title::after {
+	content: "";
+	display: block;
+	width: 80%;
+	height: 3px;
+	background-color: rgb(166, 21, 233);
+	border-radius: 8%;
+	margin-top: 5px;
+}
+
+/* -list- */
+.theory__list {
+	margin-block-end: 20px;
+	max-width: 250px;
+	margin: 0 auto;
+	border: 10px solid rgb(237, 238, 238);
+	padding-block-start: 20px;
+	padding-inline-start: 25px;
+	box-shadow: inset 15px 5px 15px 2px rgb(2, 28, 28), 15px 5px 25px 2px rgb(3, 62, 62);
+	outline: 1px solid rgb(32, 66, 66);
+	border-radius: 30px;
+}
+
+.list-theory__item {
+	margin-block-end: 8px;
+}
+
+
+.list-theory__item p span {
+	color: rgb(116, 39, 152);
+	display: inline-block;
+margin-right: 20px;
+}
+.list-theory__item p span::after {
+ content: "";
+ width: 80%;
+ height: 2px;
+ background: #fdf035;
+ display: block;
+ margin-top: 3px;
+}
+
+.list-theory__item:nth-child(n + 13) {
+	color: rgb(21, 163, 163);
+}
+
+
+/* .list-theory__item:nth-child(odd) {
+	background-color: #d8d1de;
+} */
+
+/* validator-... */
+.conteiner-link {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px 0;
+	
+}
+
+.triangle {
+	 display: inline-block;
+			width: 80px;
+			height: 80px;
+			border-style: solid;
+			border-width: 49px 0 49px 98px;
+			border-color: transparent transparent transparent rgba(168, 142, 180, 0.294);
+			transform: rotate(0deg);
+			margin-bottom: 25px;
+		
+				box-shadow: -15px 5px 25px 2px rgb(3, 62, 62);
+				border-radius: 30%;
+				margin-right: 25px;	
+				vertical-align: top;
+		}
+
+.triangle-link {
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-top: -25px;
+	margin-left: -70px;
+	font-weight: 700;
+	vertical-align: top;
+	color: rgb(146, 240, 240);
+	text-shadow: -1px 1px 1px #0c0c0c, -1px 1px 2px #fcfbfb;
+}
+
+
+
+
+
+
+/* ----/-theory--- */
+
+
+
+
+
+
+/* --home=work---- */
+
+/* main-conteiner */
+.homework {
+	padding-top: 35px;
+	padding-bottom: 35px;
+	background-color: #FDF0E9;
+}
+
+.conteiner {
+	max-width: 1450px;
+	padding: 0 5px;
+	margin: 0 auto;
+}
+/* --logo-conteiner---- */
+/*---logo-in-row- */
+
+.conteiner__logo-group {
+	padding: 35px 0;
+}
+
+.logo-group {}
+
+.logo-group--margin {}
+
+.logo-group__list {}
+
+.list-logo-group {}
+
+.list-logo-group__item {
+	display: inline-block;
+
+
+}
+
+.list-logo-group__item:not(:last-child) {
+	margin-right: 146px;
+}
+
+.logo {}
+
+.logo__webp {}
+
+.logo__png {}
+
+
+
+/* ----about */
+.about {
+padding: 101px 0px 161px;
+font-family: "Epilogue", sans-serif;
+color: #391400;
+}
+
+.about__left-section {
+	display: inline-block;
+	max-width: 566px;
+	margin-right: 126px;
+	vertical-align: middle;
+}
+
+.section-picture {
+	max-width: 566px;
+	display: inline-block;
+}
+
+.section-picture__content {
+display: inline-block;
+}
+.section-picture__content img {
+	display: inline-block;
+}
+
+.about__right-section {
+	display: inline-block;
+	padding: 70px 0px 79px;
+		max-width: 470px;
+		vertical-align: middle;
+}
+
+.about-body {
+	max-width: 470px;
+	display: inline-block;
+
+}
+
+.about-body__label {
+	color: #EF6D58;
+		line-height: 2;
+		/* 200% */
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+}
+
+.about-body__title {
+	font-size: 56px;
+		font-weight: 800;
+		line-height: 1.1;
+		/* 114.286% */
+		letter-spacing: -1px;
+		color: #391400;
+		margin-bottom: 26px;
+}
+
+.about-body__description {
+	font-size: 20px;
+		line-height: 32px;
+		margin-bottom: 18px;
+}
+
+.description {}
+
+.about-body__text {
+	line-height: 2;
+	color: rgba(57, 20, 0, 0.64);
+	margin-bottom: 34px;
+}
+
+.about-body__btn {}
+
+.btn-about {
+	display: inline-block;
+	text-align: center;
+	max-width: 138px;
+	padding: 18px 33.54px 16px 33.46px;
+	font-size: 14px;
+	font-weight: 900;
+	color: #391400;
+	background-color: #ffffff;
+	text-transform: uppercase;
+	box-shadow: 0px 3px 9px 0px rgba(57, 20, 0, 0.08);
+border-radius: 6px;
+
+}
+/* ----/about */
+
+
+/* --results */
+
+.results {}
+
+.results__list {}
+
+.list-result {}
+
+.list-result__item {
+	margin-left: -1px;
+	display: inline-block;
+
+}
+
+.item-result {
+	max-width: 391px;
+	/* min-height: 176px; */
+	padding: 45px 48px 38px 48px;
+	color: #391400;
+	border: 1px solid #F3D1BF;
+	border-radius: 0px 6px 6px 0px;
+	vertical-align: middle;
+}
+
+.item-result__check {
+	font-size: 40px;
+		font-weight: 800;
+		line-height: 1.2;
+		/* 120% */
+}
+
+.item-result-text {
+	font-size: 20px;
+		line-height: 1.6;
+		/* 160% */
+}
+/* ----how we work */
+.work {
+	padding-top: 140px;
+	padding-bottom: 135px;
+	font-family: "Epilogue", sans-serif;
+	color: #391400;
+}
+/* left */
+.work__left-section {
+	max-width: 470px;
+	display: inline-block;
+	margin-right: 100px;
+	vertical-align: middle;
+}
+
+.title-work--medium {
+	font-size: 40px;
+	line-height: 1.2;
+margin-bottom: 31px;
+}
+
+.text-work--margin {
+	margin-bottom: 28px;
+}
+
+.description-work--size {
+
+}
+.label-work--margin {
+font-size: 16px;
+}
+/* right */
+.work__right-section {
+	padding: 72px 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.work__list {
+	counter-reset: list-counter;
+}
+.list-work__item {
+	counter-increment: list-counter;
+	display: block;
+	font-size: 24px;
+		font-weight: 700;
+		line-height: 1.3;
+		/* 133.333% */
+		margin-bottom: 32px;
+}
+.list-work__item p::before {
+	content: counter(list-counter) "";
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 72px;
+		font-weight: 800;
+		line-height: 1.1;
+		/* 111.111% */
+		letter-spacing: -2px;
+		margin-right: 54px;
+}
+
+/* ----video */
+.title-video--medium {
+font-size: 40px;
+	line-height: 1.2;
+	margin-bottom: 28px;
+}
+
+/* feature */
+
+
+.label-features--margin {
+	margin-bottom: 20px;
+}
+
+.title-features--margin {
+	max-width: 397px;
+	margin-bottom: 26px;
+}
+
+.description-features--margin {
+	margin-bottom: 26px;
+}
+
+.features__list {}
+
+.list-features {}
+
+.list-features-item {
+	line-height: 2;
+		/* 200% */
+		content: rgba(57, 20, 0, 0.64);
+		display: block;
+		vertical-align: middle;
+		margin-bottom: 16px;
+}
+.list-features-item::before {
+	content: "";
+	display: inline-block;
+/* background-color: #391400;
+width: 30px;
+height: 30px; */
+width: 38px;
+height: 38px;
+vertical-align: middle;
+background: url(../img/feature/check@1x.png) center / contain no-repeat;
+
+}
+/*  features-card    */
+
+.features-card {
+	font-family: "Epilogue", sans-serif;
+}
+
+.features-card__blok-left {
+	display: inline-block;
+	margin-right: 130px;
+}
+
+.features-card__blok-right {
+	display: inline-block;
+}
+.blok-left__about-body {
+	max-width: 370px;
+}
+.text-about--bolt {
+	color: #391400;
+}
+
+.label-feature--margin {
+
+	margin-block-end: 30px;
+}
+.description-feature--margin {
+	margin-block-end: 28px;
+}
+/* -------right */
+
+
+.features-card__list {
+	display: inline-block;
+}
+
+.lict-card {}
+
+
+
+.card {
+	display: inline-block;
+	max-width: 336px;
+
+	padding: 105px 48px 46px;
+	border-radius: 0px 6px 6px 0px;
+		border: 1px solid #F3D1BF;
+		color: rgba(57, 20, 0, 0.64);
+}
+.lict-card__item--wite {
+	padding: 48px 48px 46px;
+	background-color: #ffffff;
+}
+.lict-card__item--wite img {
+margin-block-end: 41px;
+}
+
+.card__title {
+	font-size: 24px;
+		font-weight: 700;
+		line-height: 1.1;
+		/* 133.333% */
+		color: #391400;
+		margin-block-end: 19px;
+}
+
+.card-text {}
+
+.lict-card__item {}
+
+
+/* service */
+
+
+.about__left-section {
+	max-width: 580px;
+	object-fit: cover;
+
+}
+
+.section-picture {
+	display: inline-block;
+}
+
+.section-picture__content {
+	display: inline-block;
+}
+
+
+.about-body__coment {
+	margin-bottom: 36px;
+}
+
+
+.coment-user__conteiner-text {
+	display: inline-block;
+	max-width: 386px;
+	color: rgba(57, 20, 0, 0.64);
+	font-size: 14px;
+		line-height: 1.7;
+		vertical-align: middle;
+		padding: 8px 20px;
+
+}
+.coment-user__conteiner-text p:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+
+
+.coment-user__name {
+	color: #391400;
+	font-size: 16px;
+	line-height: 2;
+}
+
+
+/* - service-card - */
+
+.service {
+	font-family: "Epilogue", sans-serif;
+	padding: 35px 0;
+}
+.service {
+	padding: 128px 0;
+}
+
+.service__right-section {}
+
+.about-body {}
+
+.about-body__label {}
+
+.about-body__title {}
+
+.service__cards {}
+
+.service__cards__list {
+}
+
+.lict-card {}
+
+.lict-card__item {
+		display: inline-block;
+		max-width: 391px;
+		padding: 48px 48px;
+}
+
+.lict-card__item img {
+	margin-bottom: 41px;
+}
+
+.card {}
+
+.card__title {
+	margin-bottom: 19px;
+}
+
+.card-text {
+	margin-bottom: 26px;
+}
+
+.card__description {
+	color: #391400;
+}
+
+
+
+
+
+
+/* ---------home-work--чорнетка-------- */
+/* ---Делаю из всех єлементов БЄМ-блоки на случай второго использования */
+
+
+
+
+/* ---блок- картинка+контент---- */
+.blok {
+	padding: 101px 0 161px;
+	border-top: 1px solid #F3D1BF;
+}
+
+.blok__conteiner-pic {
+	margin-right: 126px;
+	max-width: 566px;
+}
+
+.blok__content {
+	max-width: 470px;
+}
+/* ---content-- */
+
+	footer {
+		background-color: #282828;
+		padding-top: 70px;
+		padding-bottom: 40px;
+	}

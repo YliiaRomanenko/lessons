@@ -1,0 +1,111 @@
+/* Підключення фрифтів */
+
+/* Google Fonts (Plugin) */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap"); */
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Gilroy", sans-serif;
+	background-color: #333;
+	color: #fff;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden; /* clip */
+	/* ... */
+}
+[class*="__container"] {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-inline: 15px;
+	/* 
+	padding-left: 15px;
+	padding-right: 15px;
+	*/
+}
+[class*="__inner-container"] {
+	max-width: 800px;
+	margin: 0 auto;
+	/* 
+	padding-left: 15px;
+	padding-right: 15px;
+	*/
+}
+.page {
+	padding: 30px;
+}
+/* ------------------------------------------------------------------- */
+/* 
+	До БЕМ-блоків ЗАБОРОНЕНО застосовувати зовнішні відступи (margin)
+	та інші властивості які впливають на оточення
+*/
+
+/* Невірно */
+.section-header {
+	margin-bottom: 50px;
+}
+/* Вірно */
+.section-header--margin {
+	margin-bottom: 50px;
+}
+/* ------------------------------------------------------------------- */
+/* 
+	До БЕМ-елементу дозволено застосовувати зовнішні відступи (margin)
+	та інші властивості які впливають на оточення
+*/
+
+/* Вірно */
+.section-header__title {
+	margin-bottom: 50px;
+}
+/* ------------------------------------------------------------------- */
+/* 
+	До БЕМ-модифікатору дозволено застосовувати зовнішні відступи (margin)
+	та інші властивості які впливають на оточення
+*/
+.section-header {
+	/*  */
+}
+.section-header--center {
+	text-align: center;
+}
+.section-header__label {
+	/*  */
+}
+.section-header__title {
+	/*  */
+}
+.section-header__title--white {
+	color: #fff;
+}
+.section-header__text {
+}
+
+/* ---------------------------- */
+.section-header {
+	/* .... */
+	/* .... */
+	/* .... */
+}
+/* ---------------------------- */
+.about {
+}
+.about__section-header {
+	margin-bottom: 50px;
+	background-color: #77608d;
+	font-size: 20px;
+	text-align: center;
+}
+/* ---------------------------- */
+.service {
+}
+.service__section-header {
+	margin-bottom: 30px;
+}
+/* ---------------------------- */
