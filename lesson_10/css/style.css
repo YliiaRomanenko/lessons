@@ -107,8 +107,18 @@ padding: 10px;
 			background-image: linear-gradient(45deg, #03001e, #7303c0, #ec38bc, #fdeff9);
 			opacity: .9;
 }
-
-
+.title-big {
+	position: fixed;
+	width: 60%;
+	top: 40%;
+	left: 60%;
+padding: 10px 0;
+color: #8082A5;
+background-color: #7403c079;
+}
+.page__title {
+	text-align: center;
+}
 
 /* -------portfolio--------------- */
 
@@ -224,6 +234,10 @@ line-height: 32px;
 }
 
 .modern__title {
+	position: sticky;
+	top:20%;
+	left: 30%;
+	z-index: 50;
 	width: 200px;
 	font-size: 36px;
 	font-weight: 800;
