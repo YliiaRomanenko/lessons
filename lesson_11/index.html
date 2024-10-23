@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transform</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<ul class="header__list">
+				<li class="header__item">
+					<a href="#transform" class="header__link">Приклади rotate</a>
+				</li>
+					<li class="header__item header__item--bg1">
+						<a href="#perspectiv" class="header__link ">PERSPECTIV</a>
+					</li>
+
+				<li class="header__item">
+					<a href="#library" class="header__link">Корисні посилання</a>
+				</li>
+
+				<li class="header__item">
+					<a href="#stycky" class="header__link">Приклади sticky</a>
+				</li>
+				<li class="header__item">
+					<a href="#homework" class="header__link">homework</a>
+				</li>
+			</ul>
+
+		
+
+
+
+
+
+
+		</div>
+
+	</header>
+
+	<main class="page">
+		<h1 class="page__title">
+			Трансформації Властивість transform
+		</h1>
+		<section class="transform" id="transform">
+			<div class="transform__container">
+				<h2 class="transform__title">trans<span>form</span></h2>
+				<h3 class="transform__rotate-title">transform: rotate</h3>
+				<ul class="transform__list">
+					<li class="transform__item">
+						<div class="transform__body body body--rotate01">
+							<p>
+								rotate 5deg
+							</p>
+						</div>
+					</li>
+
+					<li class="transform__item">
+						<div class="transform__body body body--rotate02">
+							<p>
+								rotate 50deg
+							</p>
+						</div>
+					</li>
+
+					<li class="transform__item">
+						<div class="transform__body body body--rotate03">
+							<p>
+								rotate 100deg
+							</p>
+						</div>
+					</li>
+
+					<li class="transform__item">
+						<div class="transform__body body body--rotate04">
+							<p>
+								rotate 150deg
+							</p>
+						</div>
+					</li>
+
+					<li class="transform__item">
+						<div class="transform__body body body--rotate05">
+							<p>
+								rotate 200deg
+							</p>
+						</div>
+					</li>
+
+
+					<li>
+						<h4 class="transform__rotate-title rotate-title rotate-title--width-big">transform-origin: left right top
+							bottom
+						</h4>
+
+
+						<ul class="transform__rotate-list rotate-list">
+							<li class="rotate-list__item item-rotate">
+								<div class="metka metka--01"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin01">
+									<p>rotate(5deg) transform-origin: left;</p>
+								</div>
+
+							</li>
+
+							<li class="rotate-list__item item-rotate">
+								<div class="metka metka--02"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin02">
+								</div>
+								<p> rotate(50deg);
+									left top;</p>
+
+							</li>
+
+							<li class="rotate-list__item item-rotate">
+								<div class="metka metka--03"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin03">
+									<p>rotate(100deg) top right</p>
+								</div>
+
+							</li>
+
+							<li class="rotate-list__item item-rotate">
+								<div class="metka metka--04"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin04">
+									<p> 200deg top center</p>
+								</div>
+
+							</li>
+							<!-- origin 05 -->
+
+							<li class="rotate-list__item item-rotate">
+								<div class="metka metka--05"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin05">
+									<p>50deg 100% 100% </p>
+								</div>
+								<p>(hover-5deg)</p>
+
+							</li>
+
+
+							<li class="rotate-list__item item-rotate">
+								<div class="metka metka--06"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin06">
+									<p>50deg 50% 100%</p>
+								</div>
+
+							</li>
+
+
+							<li class="rotate-list__item item-rotate">
+								<div class="metka metka--07"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin07">
+									<p>50deg 0 100%</p>
+								</div>
+
+							</li>
+
+
+							<li class="rotate-list__item item-rotate">
+								<div class="metka metka--08"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin08">
+									<p>50deg 100% 0</p>
+								</div>
+
+							</li>
+
+
+							<li class="rotate-list__item item-rotate">
+								<div class="metka metka--09"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin09">
+									<p>50deg 50% 50%= center</p>
+								</div>
+
+							</li>
+
+							<li class="rotate-list__item item-rotate">
+								<div class="metka metka--10"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin10">
+									<p>50deg 100% 0</p>
+								</div>
+
+							</li>
+
+							<li>
+
+								<h5 class="transform__rotate-title rotate-title rotate-title--p">
+									Left=>x;
+									Top=>y
+									transform-origin: (x% y%);
+								</h5>
+								<p class="rotate-text--p">
+									transform: rotate(Xdeg); <br>
+									transform-origin: (X% Y%);
+								</p>
+							</li>
+
+
+							<li class="rotate-list__item item-rotate">
+								<div class="metka metka--05 metka--100"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin05 rotate-body--smoll">
+								</div>
+								<p>50deg 100% 100% </p>
+								<p>(hover-5deg)</p>
+
+							</li>
+
+							<li class="rotate-list__item item-rotate item-rotate--50px">
+
+								<div class="metka
+								  metka--06-02"></div>
+
+								<div class="item-rotate__body rotate-body rotate-body--origin06
+								rotate-body--smoll-20
+							">
+								</div>
+
+								<p>50deg 50% 100%</p>
+
+							</li>
+
+
+							<li class="rotate-list__item item-rotate
+							item-rotate--50px">
+								<div class="metka metka--07"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin07 rotate-body--smoll-20">
+								</div>
+
+								<p>50deg 0 100%</p>
+								<p>hover 0deg</p>
+							</li>
+
+
+							<li class="rotate-list__item item-rotate
+							item-rotate--border-red
+							item-rotate--50px">
+								<div class="metka metka--08 "></div>
+								<div class="metka metka--08 metka--08-02"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin08 rotate-body--smoll-20">
+								</div>
+								<p>50deg 100% 0</p>
+
+							</li>
+
+
+							<li class="rotate-list__item item-rotate
+							item-rotate--50px">
+								<div class="metka metka--09-02"></div>
+								<div class="item-rotate__body rotate-body rotate-body--origin09 rotate-body--smoll-20l">
+								</div>
+								<p>50deg 50% 50%= center</p>
+
+							</li>
+
+							<li>
+								<div class="rotate-text--p">
+									<p>Відступити від лівого краю -Х % своеї ширини</p>
+									<p>Відступити від верху У % висоти</p>
+									<p>transform-origin: (горизонталь(px) вертикаль(px))</p>
+									<p>transform-origin: top-,буде від середини верха</p>
+									<p>Transform-origin
+										Дозволяє змістити центр трансформації,
+										щодо якого відбувається зміна
+										положення/розміру/форми елемента.
+										За замовченням:
+										transform-origin: 50% 50%;
+										transform-origin: 50%;
+										transform-origin: center;</p>
+									<p>
+										По год. стрілці
+										transform: rotate(20deg);
+									</p>
+									<p>Прооти год. стрілці
+										transform: rotate(-20deg)</p>
+								</div>
+							</li>
+
+
+						</ul>
+					</li>
+
+
+
+					<li class="perspectiv" id="perspectiv">
+						<h3 class="perspectiv__title">perspectiv</h3>
+						<p>perspective-origin
+							Встановлення глибини та зміна
+							точки початку координат.
+							!! Задаються батьківському елементу!
+							perspective-origin: center (за замовченням)
+							perspective - не можна вказати у відсотках</p>
+
+						<p>Значення властивості perspective вказує
+							відстань від точки вказаної у perspective-origin (за замовченням сентр об'єкту)
+							до екрану.
+							І ефект перспективи (нахил, масштаб тощо) має вміститись у цю відстань.</p>
+
+						<div class="perspectiv-conteiner">
+
+							<div class="perspectiv__parents parents
+							parents-01">
+								<div class="perspectiv__children children">
+									<p>
+										parents: perspective: 500px;
+										children: transform: rotateX(65deg)
+									</p>
+
+								</div>
+								<p>
+									parents: perspective: 500px;
+									children: transform: rotateX(65deg)
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																		parents-02">
+								<div class="perspectiv__children children">
+									<p>
+										parents: perspective: 100px;
+
+									</p>
+
+								</div>
+								<p>
+									parents: perspective: 100px;
+
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																			parents-03">
+								<div class="perspectiv__children children">
+									<p>
+										parents: perspective: 80px;
+									</p>
+
+								</div>
+								<p>
+									parents: perspective: 80px;
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																				parents-04">
+								<div class="perspectiv__children children">
+									<p>
+										parents: perspective: 800px;
+										perspective-origin: center;
+									</p>
+
+								</div>
+								<p>
+									parents:perspective: 800px;
+									children:transform: rotateX(65deg)
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																											parents-05">
+								<div class="perspectiv__children children children-05">
+									<p>
+										parents: perspective: 800px;
+										children: transform: rotateX(45deg);
+									</p>
+
+								</div>
+								<p>
+									children: rotateX(45deg);
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																										parents-06">
+								<div class="perspectiv__children children children-6">
+									<p>
+										transform: rotateX(91deg);
+									</p>
+
+								</div>
+								<p>
+									children: transform: rotateX(91deg);
+								</p>
+							</div>
+
+							<div class="perspectiv__parents parents
+																					parents-07">
+								<div class="perspectiv__children children">
+									<p>
+										rotateX(65deg)
+									</p>
+
+								</div>
+								<p>
+									parents:perspective: 500px;
+									perspective-origin: 0 100%;
+								</p>
+								<p>
+									children: transform: rotateX(65deg);
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																													parents-08">
+								<div class="perspectiv__children children children-07">
+									<p>
+										parents:perspective: 500px;
+										perspective-origin: 100% 0;
+										children: rotateX(65deg)
+									</p>
+
+								</div>
+								<p>
+									parents:perspective: 500px;
+									perspective-origin: 100% 0;
+								</p>
+								<p>
+									children: rotateX(65deg)
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																																						parents-09">
+								<div class="perspectiv__children children children-09">
+									<p>
+										parents:perspective: 500px;
+										perspective-origin: -100% 100%;;
+										children: rotateX(65deg)
+									</p>
+
+								</div>
+								<p>
+									parents:perspective: 500px;
+									perspective-origin: 100% 100%;
+								</p>
+								<p>
+									children: rotateX(65deg)
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																																																parents-10">
+								<div class="perspectiv__children children children-10">
+									<p>
+										parents:perspective: 500px;
+										perspective-origin: -100% -100%;
+										children: rotateX(65deg)
+									</p>
+
+								</div>
+								<p>
+									parents:perspective: 500px;
+									perspective-origin: -100% -100%;
+								</p>
+								<p>
+									children: rotateX(65deg)
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																																															parents-11">
+								<div class="perspectiv__children children children-11">
+									<p>
+										parents:perspective: 500px;
+										perspective-origin: 0 -100%;
+										children: rotateX(65deg)
+									</p>
+
+								</div>
+								<p>
+									parents:perspective: 500px;
+									perspective-origin: 0 -100%;
+								</p>
+								<p>
+									children: rotateY(65deg)
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																																														parents-12">
+								<div class="perspectiv__children children children-12">
+									<p>
+										parents:perspective: 500px;
+										perspective-origin: perspective-origin: -100% 0;
+										children: rotateX(65deg)
+									</p>
+
+								</div>
+								<p>
+									parents:perspective: 500px;
+									perspective-origin: -100% 0;
+								</p>
+								<p>
+									children: rotateX(65deg)
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+							parents-13">
+								<h4 class="rotate__title">perents:perspective: 500px; </h4>
+								<h5 class="rotate__title">children: rotateY</h5>
+								<div class="perspectiv__children children children-13">
+									<p>
+										parents:perspective: 500px;
+										perspective-origin: 50% 50%;
+										children: rotateX(65deg)
+									</p>
+
+								</div>
+								<p>
+									parents:perspective: 500px;
+									perspective-origin: 50% 50%;
+									children: rotateX(65deg)
+								</p>
+								<p>
+									hover: 0deg
+								</p>
+							</div>
+
+
+
+							<div class="perspectiv__parents parents
+																																																				parents-14">
+								<div class="perspectiv__children children children-14">
+									<p>
+										parents:perspective: 500px;
+										transform-origin: 100% 50%;
+										children: rotateX(65deg)
+									</p>
+
+								</div>
+								<p>
+									transform-origin: 100% 50%;
+								</p>
+								<p>
+									children: rotateX(65deg)
+								</p>
+							</div>
+
+
+
+
+							<div class="perspectiv__parents parents
+																																																			parents-15">
+								<div class="perspectiv__children children children-15">
+									<p>
+										parents:perspective: 500px;
+										transform-origin: 100% 50%;
+										children: rotateY(65deg)
+									</p>
+
+								</div>
+								<p>
+
+									transform-origin: 100% 50%;
+								</p>
+								<p>
+									children: rotateY(65deg)
+								</p>
+							</div>
+
+
+
+							<div class="perspectiv__parents parents parents-16">
+								<div class="perspectiv__children children children-16">
+									<p>
+										parents:perspective: 500px;
+										transform-origin: 0 100%;
+										children children-16: rotateY(65deg)
+									</p>
+
+								</div>
+								<p>
+
+									transform-origin: 0 100%;
+								</p>
+								<p>
+									children: rotateY(65deg)
+								</p>
+							</div>
+
+
+
+							<div class="perspectiv__parents parents
+																																																parents-17">
+								<div class="perspectiv__children children children-17">
+									<p>
+										transform-origin: 100% 0;
+										children: rotateY(65deg)
+									</p>
+
+								</div>
+								<p>
+									transform-origin: 100% 0;
+									children: rotateY(65deg)
+
+							</div>
+
+							<div class="perspectiv__parents parents
+																																																								parents-18">
+								<div class="perspectiv__children children children-18">
+									<p>
+
+										rotateZ(95deg);
+									</p>
+
+								</div>
+								<p>
+
+									transform-origin: 0 0;
+								</p>
+								<p>
+									children: transform: rotateZ(95deg);
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																																																										parents-19">
+								<div class="perspectiv__children children children-19">
+									<p>
+										transform: rotate3d(30, 20, 80, 40deg);
+									</p>
+
+								</div>
+								<p>
+
+									rotate3D (x,y,z,n+deg)
+								</p>
+								<p>
+									значення визначає переміщення елемента,
+									але в 3D-просторі. Крім осі X та Y
+									додається вісь Z
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																																																											parents-20">
+								<div class="perspectiv__children children children-20">
+									<p>
+										transform: rotate3d(50, 100, 100, 45deg);
+									</p>
+
+								</div>
+								<p>hover:
+
+									transform: rotate3d(50,
+									-100,
+									-100,
+									95deg);
+								</p>
+								<p>
+									Значення властивості perspective вказує
+									відстань від точки вказаної у perspective-origin (за замовченням сентр об'єкту)
+									до екрану.
+									І ефект перспективи (нахил, масштаб тощо) має вміститись у цю відстань.
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																																																												parents-21">
+								<div class="perspectiv__children children children-21">
+									<p>
+										rotate3d(45, 0, 0, 45deg);
+									</p>
+
+								</div>
+								<p>hover:
+									transform: rotate3d(0, 0, 0, 45deg);======
+								</p>
+								<p>
+									rotate3d(45, 0, 0, 0deg);
+								</p>
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																																																													parents-22">
+								<div class="perspectiv__children children children-22">
+									<p>
+										transform: rotate3d(0, 45, 0, 45deg);
+									</p>
+
+								</div>
+								<p>
+
+									transform: rotate3d(0, 45, 0, 45deg);
+								</p>
+
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																																																														parents-23">
+								<div class="perspectiv__children children children-23">
+									<p>
+										rotate3d(0, 0, 45, 45deg)
+									</p>
+
+								</div>
+								<p>
+
+									rotate3d(0, 0, 45, 45deg)
+								</p>
+
+							</div>
+
+
+							<div class="perspectiv__parents parents
+																																																																					parents-24">
+								<div class="perspectiv__children children children-24">
+									<p>
+										rotate3d(45, -45, 45, 45deg)
+									</p>
+									<p>perspective: 80px</p>
+
+								</div>
+								<p>
+
+									rotate3d
+								</p>
+								<p>(45, -45, 45, 45deg)</p>
+
+							</div>
+
+							<p class="description">
+								rotate3d(x, y, z-на себе (від себе) , 45deg)
+							</p>
+							<p class="description">
+								Backface-visibility
+								Відображення зворотного боку об'єкта.
+							</p>
+
+
+							<div class="perspectiv__parents parents
+																																																																												parents-25">
+								<div class="perspectiv__children children children-25">
+									<p>
+										transform: rotateX;
+									</p>
+									<p>(170deg)</p>
+
+								</div>
+								<p>
+
+									transform: rotateX(170deg)
+								</p>
+							</div>
+
+							<div class="perspectiv__parents parents parents-26">
+								<div class="perspectiv__children children children-26">
+									<p>
+										transform: rotateX;
+									</p>
+									<p>(170deg)</p>
+
+								</div>
+								<p>
+									backface-visibility: hidden;
+								</p>
+								<p>
+									transform: rotateX(170deg)
+								</p>
+							</div>
+
+							<div class="perspectiv__parents parents parents-27">
+								<div class="perspectiv__children children children-27">
+									<p>
+										rotateX
+									</p>
+									<p>(170deg)</p>
+
+								</div>
+								<p>perspective: 200px;</p>
+								<p>
+									rotateX(170deg)
+								</p>
+								
+							</div>
+
+							<div>
+							<p class="description"> Якщо об'єкт мильний треба додати пікселі- Є БАГ У МИЛЬНОСТІ </p>
+							<div class="box">
+								<div class="card__wrap">
+									<div class="card">
+										<div class="card__item">
+											<div class="card__green-first "><p>rotateX(0deg)</p>
+											<p>hover: rotateX(-180deg)</p></div>
+
+											<div class="card__blue-second"><p>rotateX(180deg)</p>
+											<p>hover: rotateX(0deg)</p>
+										</div>
+										</div>
+									</div>
+								</div>
+								
+							
+							</div>
+								<div class="card_2">
+									<div class="card_2__item item-card_2 item-card_2-rose">
+										<p>A</p>
+									</div>
+									<div class="card_2__item item-card_2 item-card_2-green">
+										<p>B</p>
+									</div>
+								
+								</div>
+
+							</div>
+						</div>
+
+
+
+
+						<!-- card03 -->
+						<div class="wrapper-card">
+							<h3 class="wrapper-card__title description">perspective: 800;
+								position: relative;</h3>
+
+							<div class="wrapper-card__text">
+								<p>rotateX: front- 0 backface-visibility: hidden;/ hover- -180deg;</p>
+								<p>rotateX: 180deg / 0</p>
+								<p>transition: all 0.3s;
+									overflow: hidden;</p>
+							</div>
+
+							<div class="card-03">
+								<div class="card-03__item item-card-03 item-card-03--front">
+									<p>transform: rotateX(0deg);
+										backface-visibility: hidden;</p>
+									<p>hover: transform: rotateX(-180deg);</p>
+								</div>
+								<div class="card-03__item item-card-03 item-card-03--back">
+									<p>transform: rotateX(180deg);
+										position: absolute;
+										top: 0;
+										left: 0;</p>
+									<p>backface-visibility: hidden;</p>
+							
+									<p>hover: transform: rotateX(0deg);</p>
+								</div>
+							</div>
+						</div>
+
+
+
+							<!-- card04 -->
+
+
+						<div class="wrapper-card">
+							<div class="wrapper-card__text">
+								<p>perspective: 300px;</p>
+							</div>
+							<div class="card-04">
+								<div class="card-04__item item-card-04 item-card-04--front">
+									<p>hover:transform: rotateX(180deg);</p>
+								</div>
+
+
+								<div class="card-04__item item-card-04 item-card-04--back">
+									<p>hover: transform: rotateX(0deg);</p>
+								</div>
+							</div>
+						</div>
+
+
+					
+
+						<!-- card05 -->
+					
+	
+
+			<div class="wrapper-card">
+				<div class="wrapper-card__text">
+					<p>perspective: 300px;</p>
+				</div>
+
+				<div class="card-05">
+					<div class="card-05__item item-card-04 item-card-05--front">
+						<p>rotateY(0);</p>
+						<p>backface-visibility: hidden;</p>
+						<p>.card:hover .item-card-05--front {
+						transform: rotateY(-180deg);
+						}</p>
+					</div>
+
+
+					<div class="card-05__item item-card-04 item-card-05--back">
+						<p>transform: rotateY(180deg);</p>
+						<p>backface-visibility: hidden;</p>
+						<p>position: absolute;</p>
+					</div>
+				</div>
+			</div>
+<!-- 06 -->
+
+
+	</li>
+
+			</ul>
+			</div>
+		</section>
+		<section class="library" id="library">
+			<div class="library__conteiner">
+				<h2 class="library__title">
+transform
+				</h2>
+				<ul class="library__list">
+						<li class="library__item">
+							<a href="https://codepen.io/nilline/pen/eYqEaXQ" class="library__link" target="_blank">
+								Приклад як робить BORDER з ГРАДІЕНТОМ
+							</a>
+						</li>
+
+							<li class="library__item">
+								<a href="https://www.youtube.com/live/TafPjbGC9Qw" class="library__link" target="_blank">
+									Super вчитель
+								</a>
+							</li>
+								<li class="library__item">
+									<a href="https://meadow-manicure-24b.notion.site/fc69adb10a3842499e245954d78e7bee?v=30dd2173a8444c6e8e056a57cecd3e26" class="library__link" target="_blank">
+										Super конспект
+									</a>
+								</li>
+							
+						<li class="library__item">
+							<a href="https://cubic-bezier.com/#.17,.67,.83,.67" class="library__link" target="_blank">
+								cubic-bezier
+							</a>
+						</li>
+					<li class="library__item">
+						<a href="https://michalsnik.github.io/aos/" class="library__link" target="_blank">
+							Бібліотека анімації при скролі
+						</a>
+					</li>
+
+						<li class="library__item">
+							<a href="https://www.w3schools.com/howto/howto_css_flip_card.asp" class="library__link" target="_blank">
+								Приклад фліп картки
+							</a>
+						</li>
+
+							<li class="library__item">
+								<a href="https://animate.style/" class="library__link" target="_blank">
+							Бібліотека Animate.css
+								</a>
+							</li>
+
+								<li class="library__item">
+								<a href="https://codepen.io/mpadalko/pen/GRWEWMZ?editors=1100" class="library__link" target="_blank">
+							Приклад анімації shake іконок
+								</a>
+							</li>
+
+
+						<li class="library__item">
+							<a href="https://codepen.io/mpadalko/pen/JjbErPB?editors=1100" class="library__link" target="_blank">
+								Приклад анімації heartbeat
+							</a>
+						</li>
+
+
+					<li class="library__item">
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/perspective-origin" class="library__link" target="_blank">
+					perspective-origin   - Syntax 
+						</a>
+					</li>
+
+
+					<li class="library__item">
+						<a href="https://codepen.io/Pavlo-K/pen/VwJzXmO" class="library__link" target="_blank">
+				Натхнення 01- Scroll
+						</a>
+					</li>
+
+					<li class="library__item">
+						<a href="https://codepen.io/Pavlo-K/pen/dyaMbvy" class="library__link" target="_blank">
+					Натхнення 02- Menu
+						</a>
+					</li>
+
+						<li class="library__item">
+							<a href="https://yoksel.github.io/html-tree/" target="_blank">
+							Генератор HTML-дерева
+							</a>
+						</li>
+
+							<li class="library__item">
+								<a href="https://nglazov.github.io/bem-validator-page/" target="_blank">
+								BEMValidator
+								</a>
+							</li>
+				</ul>
+			</div>
+
+		</section>
+		<section class="stycky" id="stycky">
+			<div class="stycky_conteiner">
+				<h2 class="stycky__title">
+					Stiky
+				</h2>
+				<p class="stycky__text">	overflow: clip;</p>
+
+				<ul class="stycky__list">
+					<li class="stycky__item">
+						<p class="stycky__text">
+item
+						</p>
+						<p class="stycky__text">
+							text-align: center;
+							min-height: 10em;
+					
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							
+							border-radius: 20px;
+							max-width: 40%;
+							padding: 30px;
+						</p>
+					</li>
+
+						<li class="stycky__item">
+							<p class="stycky__text">
+					.stycky__item:nth-child(even)
+							</p>
+								<p class="stycky__text">
+margin-left: auto;
+margin-right: 70px;
+transform: rotate(-5deg);
+								</p>
+						</li>
+
+
+						<li class="stycky__item">
+							<p class="stycky__text">
+						item:nth-child(odd)
+							</p>
+								<p class="stycky__text">
+								margin-right: auto;
+								margin-left: 70px;
+								transform: rotate(5deg);
+								</p>
+						</li>
+
+
+						<li class="stycky__item">
+							<p class="stycky__text text text--mark">
+					list
+							</p>
+
+								<p class="stycky__text text text--mark">
+											position: relative;
+								   z-index: 2;
+    padding-top: 100px;
+    padding-bottom: 300px;
+								</p>
+						</li>
+
+
+						<li class="stycky__item">
+							<p class="stycky__text">
+						title
+							</p>
+								<p class="stycky__text">
+									position: sticky;
+									top: 40svh;
+									left: 0;
+									z-index: 1;
+									width: 100%;
+									font-size: 50px;
+									max-width: 70%;
+									text-align: center;
+									margin: 0 auto;
+								
+								</p>
+						</li>
+<li class="stycky__item">
+	<p class="stycky__text">
+.wrapper
+	</p>
+	<p class="stycky__text">
+	 overflow: clip;
+  min-height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	</p>
+</li>
+
+
+				</ul>
+			</div>
+				<div class="box-styky stycky01">
+					<div class="stycky01__conteiner">
+						<h2 class="stycky01__title">
+							sticky
+						</h2>
+						<ul class="stycky01__list">
+							<li class="stycky01__item">
+								<p>
+									A
+								</p>
+							</li>
+
+							<li class="stycky01__item">
+							<p>
+								B
+							</p>
+							</li>
+
+							<li  class="stycky01__item">
+								<p>
+									C
+								</p>
+							</li>
+							<li class="stycky01__item">
+							<p>
+								D
+							</p>
+							</li>
+
+								<li class="stycky01__item">
+									<p>
+										A
+									</p>
+								</li>
+								
+								<li class="stycky01__item">
+									<p>
+										B
+									</p>
+								</li>
+									<li class="stycky01__item">
+										<p>
+											C
+										</p>
+									</li>
+								<li class="stycky01__item">
+									<p>
+										D
+									</p>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			
+
+		</section>
+		<section class="rav" id="homework">
+			<h2 class="page__title page__title--left">homework</h2>
+			<div class="rav__road-conteiner">
+
+				<div class="rav__road road">
+					<div class="road__strip strip strip--position01"></div>
+
+					<div class="road__strip strip strip--position02"></div>
+					<div class="road__strip strip strip--position03"></div>
+
+				</div>
+			</div>
+		
+			<div class="rav__conteiner">
+				<div class="rav__body">
+					<div class="rav__body-first">
+					</div>
+					
+					<div class="rav__body__second">
+						<div class="mirror"></div>
+						<div class="window01"></div>
+							<div class="window02"></div>
+					</div>
+					<!-- kolo -->
+					<div class="wing01">
+						<div class="wheel">
+							<div class="wheel_01">
+								<div class="tire01">
+									<div class="disc01">
+
+										<div class="disc01__item item item--rotate45"></div>
+
+											<div class="disc01__item item item--rotate95"></div>
+
+
+												<div class="disc01__item item rotate180"></div>
+
+
+											<div class="disc01__item item item--rotate360"></div>
+
+								</div>
+							</div>
+	
+						</div>
+
+					</div>
+
+					<div class="rav__body03"><div class="decor__kolo kolo01">
+						<div class="kolo01__center">
+							
+						</div>
+
+					</div></div>
+				</div>
+
+					<div class="wing01 wing01--right">
+						<div class="wheel">
+							<div class="wheel_01">
+								<div class="tire01">
+									<div class="disc01">
+					
+										<div class="disc01__item item item--rotate45"></div>
+					
+										<div class="disc01__item item item--rotate95"></div>
+					
+					
+										<div class="disc01__item item rotate180"></div>
+					
+					
+										<div class="disc01__item item item--rotate360"></div>
+					
+									</div>
+								</div>
+					
+							</div>
+					
+						</div>
+					
+						<div class="rav__body03">
+							<div class="decor__kolo kolo01">
+								<div class="kolo01__center">
+					
+								</div>
+					
+							</div>
+						</div>
+					</div>
+					<div class="rav__headlight-front">			
+					</div>
+						<div class="rav__headlight-back">
+						</div>
+					<!-- dor -->
+					 <div class="door01">
+						<div class="door01__handle"></div>
+					 </div>
+
+					 <!--  -->
+			</div>
+	    </div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+
+						<!-- block -->
+						<div class="footer__block-sub-menu block">
+							<div class="block__item block__item--1mod">
+								<div class="block__inner">
+									<a href="#perspectiv">menu tranform</a>
+								</div>
+							</div>
+							<div class="block__item block__item--2mod">
+								<a href="#library"> Корисні посилання</a>
+							</div>
+
+						</div>
+						<!-- bl2 -->
+						<div class="block block-v2">
+							<div class="block__item block__item--1mod">
+								<div class="block__inner">
+									<a href="#homework">homework</a>
+								</div>
+							</div>
+							<div class="block__item block__item--2mod">
+								<a href="#stycky">stiky</a>
+							</div>
+						
+						</div>
+		</div>
+
+
+
+	</footer>
+
+</body>
+
+</html>
