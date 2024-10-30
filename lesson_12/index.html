@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animation</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__position-wrap position-wrap">
+
+				<div class="header__menu">
+					<p>Menu</p>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__list">
+
+						<li class="header__item">
+							<a class="header__link" href="#animation" target="_blank">
+								animation
+							</a>
+						</li>
+
+						<li class="header__item">
+							<a class="header__link" href="#kaiframe" target="_blank">
+								Універсальний запис animation
+							</a>
+						</li>
+
+						<li class="header__item">
+							<a class="header__link" href="#rotate" target="_blank">
+								Приклади: animation-rotate
+							</a>
+						</li>
+
+						<li class="header__item">
+							<a class="header__link" href="#library" target="_blank">
+								Корисні посилання
+							</a>
+						</li>
+
+							<li class="header__item">
+								<a class="header__link" href="#cube" target="_blank">
+									Cube
+								</a>
+							</li>
+
+
+						<li class="header__item">
+							<a class="header__link" href="#btn-practic" target="_blank">
+								button
+							</a>
+						</li>
+
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+	</header>
+
+
+
+	<main class="page">
+		<h1 class="main__title">Animation</h1>
+		<section class="page__kayframes kayframes" id="animation">
+			<h2 class="kayframes__title">Анімувати ми можемо лише ті значення,
+				які можна представити у вигляді числа</h2>
+			<div class="kayframes__conteiner">
+				<div class="kayframes__box">
+					<h3 class="kayframes__title kayframes__title--smoll">transition (animation)-duration</h3>
+					<div class="kayframes__container-text">
+						<p>transition -duration
+							Визначає проміжок часу,
+							протягом якого має здійснюватись перехід.</p>
+						<p>1000ms = 1s <br>
+							300ms = 0.3s
+						</p>
+						<p>
+							Зазвичай, плавний перехід налаштовую у межах:
+							Від 0.2 до 0.8s (200 - 800ms)
+						</p>
+						<p>Беспечні межі (не зробити біду):
+							Від 0.3 до 0.5s (300 - 500ms)</p>
+						<p class="kayframes__description">
+							Від того куди саме ми вказуємо час переходу,
+							змінюється поведінка
+						</p>
+					</div>
+					<!-- color -->
+					<div class="kayframes__card-conteiner card-conteiner">
+
+						<h2 class="card-conteiner__title">
+							@keyframes color-change
+						</h2>
+
+						<div class="kayframes__color-card01 card-01">
+							<div class="card-01__container-text">
+								<p>background-color</p>
+								<p>rotate</p>
+							</div>
+
+						</div>
+						<h3 class="card-01__title"> animation-name</h3>
+						<div class="card-01__container-text">
+							<p>
+								Визначає список анімацій (ключових кадрів),
+								що застосовуються до елемента. Можна вказати через кому.
+							</p>
+							<p>
+								пріоритет останній запис.
+							</p>
+							<p>
+								<mark>
+									.circle {
+									animation-name: move, color-change, rotate;
+									}
+								</mark>
+							</p>
+						</div>
+						<h3 class="card-01__title"> animation-timing-function</h3>
+						<div class="card-01__container-text">
+
+							<p>Встановлює сценарій розвитку анімації між ключовими кадрами.</p>
+
+							<p>
+								ease — за замовченням. Плавно починається та плавно закінчується;
+							</p>
+							<p>
+								linear — швидкість анімації не змінюється;
+							</p>
+							<p><a class="link-btn" href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank">cubic-bezier</a>
+							</p>
+							<p>
+								<a href="https://tools.webdevpuneet.com/css-easing-generator/">Генератор</a>
+							</p>
+							<p>
+								transition-timing-function: steps(60, start);
+							</p>
+						</div>
+
+						<h3 class="card-01__title"> animation-iteration-count</h3>
+						<div class="card-01__container-text">
+
+							<p>Відповідає за повтор відтворення ключових кадрів.</p>
+
+							<p>
+								<a class="link-btn" href="https://developer.mozilla.org/ru/docs/Web/CSS/animation-iteration-countk"
+									target="_blank">Обзор</a>
+							</p>
+
+							<p>infinite-
+								Анимация повторяется бесконечно.</p>
+							<p><mark>animation-iteration-count: infinite;</mark></p>
+
+							<p>number-
+								Сколько раз анимация будет повторяться. например, 0.5 воспроизведёт половину анимационного цикла</p>
+
+							<p><mark>animation-iteration-count: 3;</mark></p>
+							<p><a class="link-btn"
+									href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_animations/Using_CSS_animations7"
+									target="_blank">Использование CSS-анимации</a></p>
+							<p><mark>animation-iteration-count: 2, 0, infinite;</mark></p>
+
+						</div>
+
+						<h3 class="card-01__title">animation-fill-mode</h3>
+						<div class="card-01__container-text">
+							<p>
+								animation-fill-mode — які значення анімованих css властивостей застосовуються до об'єкта після
+								завершення анімації.
+							</p>
+							<p>
+								none — нічого не використовується;
+
+							</p>
+							<p>
+								forwards — коли анімація закінчилась, то засовуються кінцеві властивості (в 100%);
+							</p>
+							<p>
+								backwards — початкові значення (0%);
+							</p>
+							<p>
+								both — початкові значення об'єкта + кінцеві значення анімації.
+							</p>
+
+						</div>
+
+						<h3 class="card-01__title"> animation-direction</h3>
+						<div class="card-01__container-text">
+							<p>Визначає напрямок та тип відтворення ключових кадрів</p>
+							<p>
+								normal - за замовченням. програвання від 0% до 100%;
+							</p>
+
+
+							<p> reverse - в зворотньому напрямку
+								зі 100% до 0%;
+							</p>
+
+							<p>
+								alternate - кожна парна ітерація буде відбуватись у зворотньому напрямку.
+								починає з 0%, доходить до кінця, повертається до 0% і так по колу.
+							</p>
+							<p>починає з 0%, доходить до кінця, повертається до 0% і так по колу.</p>
+							<p>
+								Тобто анімація іде у двох напрямках
+								(вперед та
+								назад), а не починається знову. Гарний варіант, щоб замкнути анімацію
+							</p>
+
+							<p><a class="link-btn" href="https://developer.mozilla.org/ru/docs/Web/CSS/animation-iteration-count"
+									target="_blank">Обзор</a></p>
+							<p>
+								alternate-reverse - кожна непарна ітерація буде
+								відбуватись у зворотньому напрямку.
+
+							</p>
+							<p>alternate-reverse-Те саме що й alternate, тільки анімація почнеться зі 100%.</p>
+
+
+
+
+							<!---play-state -->
+
+							<h3 class="card-01__title"> animation-play-state</h3>
+							<div class="card-01__container-text">
+								<p>
+									Дозволяє запускати або зупиняти анімацію за подією
+								</p>
+								<p>
+									running
+									<mark> animation-play-state: running;</mark>
+								</p>
+
+								<!-- card -->
+								<div class="kayframes__color-card01 card-01 card-01--rinning">
+									<p>
+										animation-play-state
+									</p>
+									<p>running</p>
+								</div>
+								<!-- c/ard -->
+								<p>
+									paused- поставлена на паузу. <mark>animation-play-state: paused;</mark>
+								</p>
+
+								<!-- card -->
+								<div class="kayframes__color-card01 card-01 card-01--paused">
+									<p>
+										animation-play-state
+									</p>
+									<p>paused</p>
+								</div>
+								<!-- c/ard -->
+
+
+								<p>animation-play-state: paused, running, running;</p>
+								<p><a class="link-btn" href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state"
+										target="_blank">Syntax</a></p>
+
+							</div>
+
+							<!--/ --play-state -->
+
+
+							<!-- -will-change------ -->
+
+							<h3 class="card-01__title"> will-change</h3>
+							<div class="card-01__container-text">
+								<p>will-change - допомагає браузеру краще відпрацювати анімацію</p>
+								<p>
+									Всередині властивості вказуєте ті властивості які анімуєте, приклад <mark>will-change:
+										transform;</mark>
+								</p>
+							</div>
+
+							<!-- -/will-change------ -->
+
+
+							<!-- 	Універсальний запис	animation -->
+							<h3 class="keyframe__title" id="kaiframe"> Універсальний запис
+								animation</h3>
+							<p class="keyfram__description">
+								Порядок запису властивостей:
+								animation-name <br>
+								animation-duration <br>
+								animation-timing-function <br>
+								animation-iteration-count <br>
+								animation-direction <br>
+								animation-play-state <br>
+								animation-delay <br>
+								animation-fill-mode <br>
+							</p>
+							<p>.circle {
+								<mark>
+									animation: <br>
+									move 1s linear 5 normal running 0s forwards, <br>
+									color-change 5s ease forwards, <br>
+									rotate 1s infinite;
+								</mark>
+								}
+							</p>
+							<p>animation: rotate-element 1s linear 0.2s forwards;</p>
+							<p>кілька різних сценаріїв - animation: car-ride 5s linear,
+								car-ride-2 5s linear 5s forwards;</p>
+							<p>
+								приклад мульти трансформації -
+								transform: translate(20%, 20%) scale(0.5) rotate(30deg) skew(20deg, 20deg);
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="kayframes__conteiner container02">
+				<div class="kayframes__box box02">
+					<!-- ---POLIGON -->
+					<div class="kayframe__poligon poligon">
+						<h2 class="poligon__title">Poligon</h2>
+						<div class="poligon__direction">
+							<p>
+								0% {
+								transform: scale(0);
+								} <br>
+								50% {
+								transform: scale(1);
+								} <br>
+								100% {
+								transform: scale(1.5);
+
+								}
+							</p>
+							<div class="kayframes__wrap-card-direction">
+
+								<!-- card04 -->
+								<h3>card-04</h3>
+								<div class="kayframes__card04 card04">
+
+									<div class="card03__text04 text04">
+										<span>normal</span>
+									</div>
+								</div>
+								<!-- /card04 -->
+
+
+
+								<!-- card04 -->
+								<h3>card-04</h3>
+								<div class="kayframes__card04 card04">
+
+									<div class="card03__text04 text04 text04--direction-revers">
+										<span>reverse</span>
+									</div>
+								</div>
+								<!-- /card04 -->
+
+								<!-- card04 -->
+								<h3>card-04</h3>
+								<div class="kayframes__card04 card04">
+
+									<div class="card03__text04 text04 text04--direction-alternate">
+										<span>alternate</span>
+									</div>
+								</div>
+						
+	<!-- card04 -->
+								<h3>card-04</h3>
+								<div class="kayframes__card04 card04">
+
+									<div class="card03__text04 text04 text04--alternate-reverse">
+										<span>alternate-reverse</span>
+									</div>
+								</div>
+						
+		<!-- --alternate-reverse -->
+
+							</div>
+						</div>
+
+
+
+						<div class="poligon__direction-fill-mode">
+							<div class="kayframes__wrap-card-direction">
+								<h3 class="direction__title">direction + animation-fill-mode</h3>
+								<!-- card04 -->
+								<h3>card-04</h3>
+								<div class="kayframes__card04 card04">
+
+									<div class="card03__text04 text04  text04--fill-mode-none">
+										<span>normal</span>
+										<span>none</span>
+									</div>
+								</div>
+								<!-- /card04 -->
+
+
+								<h3>card-04</h3>
+								<div class="kayframes__card04 card04">
+
+									<div class="card03__text04 text04 text04--fill-mode-forward">
+										<span>normal</span>
+										<span>forvard</span>
+									</div>
+								</div>
+
+
+
+
+								<h3>card-04</h3>
+								<div class="kayframes__card04 card04">
+
+									<div class="card03__text04 text04 text04--fill-mode-backward">
+										<span>normal</span>
+										<span>backwards</span>
+									</div>
+								</div>
+
+
+								<h3>card-04</h3>
+								<div class="kayframes__card04 card04">
+
+									<div class="card03__text04 text04 text04--fill-mode-both">
+										<span>normal</span>
+										<span>both</span>
+									</div>
+								</div>
+
+
+
+								<!-- card04 -->
+								<h3>card-04</h3>
+								<div class="kayframes__card04 card04">
+
+									<div class="card03__text04 text04 text04--direction-revers">
+										<span>reverse</span>
+									</div>
+								</div>
+								<!-- /card04 -->
+
+								<!-- card04 -->
+								<h3>card-04</h3>
+								<div class="kayframes__card04 card04">
+
+									<div class="card03__text04 text04 text04--direction-alternate">
+										<span>alternate</span>
+									</div>
+								</div>
+				
+								<h3>card-04</h3>
+								<div class="kayframes__card04 card04">
+
+									<div class="card03__text04 text04 text04--alternate-reverse">
+										<span>alternate-reverse</span>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="poligon__fill-mode">
+
+							<!-- card 01 -->
+							<div class="kayframes__color-card01 card-01 card-01--fill-mode-none">
+								<div class="card-01__container-text">
+									<p>animation-fill-mode</p>
+									<p>none</p>
+								</div>
+							</div>
+							<!-- /card01 -->
+
+							<div class="kayframes__color-card01 card-01 card-01--fill-mode-forward">
+								<div class="card-01__container-text">
+									<p>animation-fill-mode</p>
+									<p>forwards</p>
+								</div>
+							</div>
+							<!-- /card01 -->
+
+							<div class="kayframes__color-card01 card-01 card-01--fill-mode-backward">
+								<div class="card-01__container-text">
+									<p>animation-fill-mode</p>
+									<p>backwards</p>
+								</div>
+							</div>
+							<!-- /card01 -->
+
+							<!-- card 01 -->
+							<div class="kayframes__color-card01 card-01 card-01--fill-mode-both">
+								<div class="card-01__container-text">
+									<p>animation-fill-mode</p>
+									<p>both</p>
+								</div>
+							</div>
+							<!-- /card01 -->
+
+						</div>
+
+						<div class="poligon__rotate" id="rotate">
+							<!-- card -->
+							<div class="kayframes__color-card01 card-01">
+
+								<p>normal</p>
+							</div>
+
+
+							<!-- card -->
+							<div class="kayframes__color-card01 card-01 card-01--direction-revers">
+
+								<p>reverse</p>
+							</div>
+
+							<!-- /card -->
+							<!-- /card -->
+
+							<!-- card -->
+							<div class="kayframes__color-card01 card-01 card-01--direction-alternate">
+
+								<p>alternate</p>
+							</div>
+							<!-- c/ard -->
+
+
+							<!-- --alternate-reverse -->
+							<div class="kayframes__color-card01 card-01 card-01--alternate-reverse">
+								<p>
+									animation-direction
+								</p>
+								<p>alternate-reverse</p>
+							</div>
+							<!-- ---/card -->
+
+						</div>
+
+						<div class="poligon__translate">
+
+							<!-- card03 -->
+							<div class="kayframes__card03 card03">
+								<div class="card03__text03 text03">
+
+									<p>animation-direction</p>
+									<p>normal</p>
+								</div>
+							</div>
+							<!-- /card03 -->
+
+
+
+							<!-- card03 -->
+							<div class="kayframes__card03 card03">
+								<h3>card-03</h3>
+								<div class="card03__text03 text03 ">
+									<p>animation-direction</p>
+									<p class="p--direction-revers">revers</p>
+								</div>
+							</div>
+							<!-- /card03 -->
+
+							<!-- card03 -->
+							<div class="kayframes__card03 card03">
+								<h3>card-03</h3>
+								<div class="card03__text03 text03">
+
+									<p>animation-direction</p>
+									<p class="p--direction-alternate">alternate</p>
+								</div>
+							</div>
+							<!-- /card03 -->
+
+							<!-- card03 -->
+							<div class="kayframes__card03 card03">
+								<h3>card-03</h3>
+								<div class="card03__text03 text03">
+
+									<p>animation-direction</p>
+									<p class="p--alternate-reverse">alternate-reverse</p>
+								</div>
+							</div>
+							<!-- /card03 -->
+						</div>
+
+						<!-- --------------------------Nevton---------------------- -->
+						<div class="poligon__box-newton newton-box">
+							<h3 class="newton-box__title">Newton</h3>
+							<p>
+								inset-block-start= left
+							</p>
+							<div class="newton-box__newton newton">
+								<div class="newton__body">
+									<div class="newton__item"></div>
+									<div class="newton__item"></div>
+									<div class="newton__item"></div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<!-- --/-POLIGON ----------------->
+				</div>
+			</div>
+
+			<div class="kayframes__conteiner container02">
+				<div class="kayframes__box box-btn">
+
+					<!-- btn-translate -->
+					<div class="box-btn__conteiner">
+						<div class="block__title"> overflow: clip- працює подібно до overflow: hidden (забороняє будь-який скрол,
+							включно з програмним скролом)</div>
+						<div class="block__description">
+							<p>transform-НЕ ПРАЦЮЄ з рядковими об'єктами!</p>
+							<p>will-change - допомагає браузеру краще відпрацювати анімацію/will-change: transform; </p>
+						</div>
+					</div>
+
+					<div class="box-btn__container-text">
+						<p>
+							- inset - вказує позицію для усіх сторін, до прикладу inset: 0; <br>
+							- inset-block-start - top <br>
+							- inset-block-end - bottom <br>
+							- inset-inline-start - left <br>
+							- inset-inline-end - right
+						</p>
+
+						<p>
+						<ul class="box-btn__list" id="library">
+	<li class="box-btn__item">
+		<p>
+			<a class="link-btn" href="https://w3schoolsua.github.io/css/css_colors_hsl.html#gsc.tab=0" target="_blank">
+				hsl
+			</a>
+		</p>
+	</li>
+		<li class="box-btn__item">
+			<p>
+				<a class="link-btn" href="https://marketplace.visualstudio.com/items?itemName=DmytroPidlisnyi.quick-bem-element" target="_blank">
+					Quick BEM Element
+				</a>
+			</p>
+		</li>
+
+				<li class="box-btn__item">
+					<p>
+						<a class="link-btn" href="https://arkanit7.github.io/bem-validator-extended/"
+							target="_blank">
+						Розширений БЕМ валідатор v1.1.0
+						</a>
+					</p>
+				</li>
+
+					<li class="box-btn__item">
+						<p>
+							<a class="link-btn" href="https://yoksel.github.io/html-tree/" target="_blank">
+						Генератор HTML-дерева
+							</a>
+						</p>
+					</li>
+
+								<li class="box-btn__item">
+									<p>
+										<a class="link-btn" href="https://nglazov.github.io/bem-validator-page/">
+										BEMValidator
+										</a>
+									</p>
+								</li>
+
+		<li class="box-btn__item">
+			<p>
+				<a class="link-btn" href="https://codepen.io/desandro/pen/KRWjzm" target="_blank">
+					 туторіал як зробити куб
+				</a>
+			</p>
+		</li>
+
+							<li class="box-btn__item">
+								<p>
+									<a class="link-btn" href="https://fls.guru/animation.html" target="_blank">
+										Шпаргалка по animation та @keyframes
+									</a>
+								</p>
+							</li>
+
+							<li class="box-btn__item">
+								<p>
+									<a class="link-btn" href="https://codepen.io/Gogh/pen/GRPoqQW" target="_blank">
+																								варіанти hover для кнопок
+																							</a>
+																						</p>
+																					</li>
+
+	
+									<li class="box-btn__item">
+										<p>
+											<a class="link-btn" href="https://codepen.io/Pavlo-K/pen/dyaMbvy" target="_blank">
+												ПРИКЛАД шапки з меню та підменю
+											</a>
+										</p>
+										<p>
+											.menu-item:hover .sub-menu{
+											opacity: 1;
+											visibility: visible;
+											}
+										</p>
+							</li>
+
+							<li class="box-btn__item">
+								<p>
+									<a class="link-btn" href="https://wweb.dev/resources/animated-css-background-generator"
+										target="_blank">
+												Генератор для створення анімованого фону
+											</a>
+										</p>
+									</li>
+										<li class="box-btn__item">
+										<p>
+											<a class="link-btn" href="file:///g%3A/frilanser/lessons/lesson_12/lesson_12/index.html"
+												target="_blank">
+											Натхнення: Приклад годинника</a></p></li>
+
+
+									<li class="box-btn__item">
+		
+							<p>
+								<a class="link-btn" href="https://animista.net/" target="_blank">
+									Сервіс з прикладами анімацій Animista
+								</a>
+							</p>
+							</li>
+
+							<li class="box-btn__item">
+							<p>
+								<a class="link-btn" href="https://codepen.io/Pavlo-K/pen/wvbpwJo" target="_blank">
+									є паралакс від курсора а є від скролу, в архіві приклад від скролу, ще один приклад від скролу
+								</a>
+							</p>
+							</li>
+
+							<li class="box-btn__item">
+							<p>
+								<a class="link-btn" href="https://maximus.great-site.net/funiro/index.html?i=1" target="_blank">
+									паралакс від курсора (сaмий нижній блок)
+								</a>
+							</p>
+							</li>
+
+							<li class="box-btn__item">
+							<p>
+								<a class="link-btn" href="https://bruno-simon.com/" target="_blank">
+									bruno-simon.com
+								</a>
+							</p>
+							</li>
+
+
+
+							<li class="box-btn__item">
+							<p>
+								<a class="link-btn" href="https://www.aragon.ai/" target="_blank">
+									сайт який ШІ який робить ділові фото на основі ваших звичайних фото
+								</a>
+							</p>
+							</li>
+
+
+						</ul>
+					
+
+						<div class="btv-poligon poligon" id="btn-practic">
+							<div class="poligon__conteiner">
+								<div class="btn-decor">
+									<div class="btn-decor__box box11">
+									</div>
+
+									<div class="box11_02">
+										<a href="https://codepen.io/Gogh/pen/GRPoqQW" target="_blank">before+after</a>
+									</div>
+
+								</div>
+
+
+
+								<!-- btn triangle -->
+
+								<div class="btn-decor__box box1">
+
+									<div class="box1__inner01-01 inner01-01"></div>
+
+									<div class="box1__wrap-inner01-02 wrap-inner01-02">
+
+										<div class="box1__inner1-02 inner1-02">
+
+											<a href="https://www.cssportal.com/css-triangle-generator/#google_vignette"
+												target="_blank">z-index: 3; </a>
+										</div>
+									</div>
+								</div>
+								<!-- btn-after -->
+
+								<div class="conteiner__text">
+									<div class="wrap__after">
+										<span>::after ---z-index: 2;</span>
+									</div>
+									<div class="conteiner__text">
+										<p>
+											z-index: 2;
+										</p>
+										<p class="after__sample-after">
+											border-top:2.8125rem solid rgba(255, 98, 1, 0.5);
+										</p>
+										<p> <mark>border-right:</mark> .65625rem solid transparent;</p>
+										<p>
+											@keyframes btn-def { <br>
+											0% {
+											border-right: 0 solid transparent;<br>
+											}
+											50% {
+											border-right: 1.25rem solid transparent;<br>
+											}
+
+											100% {
+											border-right:0 solid transparent;<br>
+											}
+
+											}
+										</p>
+										<p>
+											transition: all .4s;
+										</p>
+										<p>
+
+											animation: btn-def 2s infinite ease-in-out; </p>
+									</div>
+								</div>
+								<!-- / -->
+
+								<!-- btn-before -->
+								<div class="conteiner__text">
+
+									<div class="wrap__before">
+										<span>0</span>
+										<span>::before</span>
+									</div>
+
+									<div class="conteiner__text">
+										<p>z-index: 1;</p>
+										<p>
+											<mark> border-top</mark>: 2.8125rem solid #ff4601;
+										</p>
+										<p>
+											<mark>border-right</mark>: 1.25rem solid transparent;
+										</p>
+										<p>transition: border 0.3s;</p>
+									</div>
+								</div>
+								<!--/ btn-before -->
+
+
+							</div>
+
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		</section>
+		<section class="scene-cube" id="cube">
+			<div class="scene-cube__container">
+
+				<h2 class="cube__title">Cube</h2>
+
+
+				<div class="scene-cube__scene01 scene01">
+					<div class="scene01__cube cube">
+						<div class="cube__face cube__face--front"><span>front</span> <span>transform: rotateY(0deg) translateZ(100px);</span></div>
+						<div class="cube__face cube__face--back"><span>back</span><span>transform: rotateY(180deg) translateZ(100px);</span></div>
+						<div class="cube__face cube__face--right"><span>right</span> <span>transform: rotateY(90deg) translateZ(100px);</span></div>
+						<div class="cube__face cube__face--left"><span>left</span><span>transform: rotateY(-90deg) translateZ(100px);</span></div>
+						<div class="cube__face cube__face--top">
+							<span>top</span>
+							<span>transform: rotateX(-90deg) translateZ(100px);</span>
+						</div>
+						<div class="cube__face cube__face--bottom"><span>bottom</span> <span>transform: rotateX(-90deg) translateZ(100px);</span></div>
+					</div>
+				</div>
+				<p class="radio-grup">
+					<label>
+						<input
+						 type="radio"
+						 name="rotate-cube-side"
+						 value="front"
+						 checked
+						 >
+						front
+					</label>
+
+					<label>
+						<input
+						 type="radio"
+						 name="rotate-cube-side"
+						 value="right"
+						 >
+						 right
+						</label>
+
+					<label>
+							<input
+							 type="radio"
+							 name="rotate-cube-side"
+							 value="back"							 
+							 >
+							 back
+						</label>
+
+					<label>
+						<input
+						 type="radio"
+						 name="rotate-cube-side"
+						 value="left"
+						 >
+						 left
+					</label>
+
+					<label>
+						<input
+						  type="radio"
+							name="rotate-cube-side"
+							value="top"
+						 >
+						 top
+						</label>
+
+					<label>
+						<input
+						 type="radio"
+						name="rotate-cube-side"
+						value="bottom"
+						 >
+						bottom
+					</label>
+
+				</p>
+
+				<div class="showcase">
+					<div class="showcase__row">
+						<h2 class="cube__title">cube 
+    height: 179px;
+    transform-style: preserve-3d; </h2>
+						
+						<div class="showcase__col">
+							<div class="display display--m">
+								<div class="display__cube02 cube02">
+										<div class="cube02__side cube02__side--bottom">
+											<span>bottom</span>
+											<span>transform: translateY(89.5px) rotateX(90deg);</span>
+										</div>
+								
+										<div class="cube02__side cube02__side--top">
+											<span>top</span>
+											<span>transform: translateY(-89.5px) rotateX(-90deg);</span>
+										</div>
+								
+										<div class="cube02__side cube02__side--left">
+											<span>left</span><span>transform: translateX(-89.5px) rotateY(90deg);</span>
+										</div>
+								
+										<div class="cube02__side cube02__side--right">
+											<span>right</span>
+											<span>transform: translateX(89.5px) rotateY(-90deg);</span>
+										</div>
+								
+										<div class="cube02__side cube02__side--back">
+											<span>back</span>
+											<span>transform: translateZ(-89.5px) rotateY(180deg);</span>
+										</div>
+								
+										<div class="cube02__side cube02__side--front">
+											<span>front</span>
+											<span>transform: translateZ(89.5px);</span>
+										</div>
+									</div>
+										<div class="container__text">
+											<p>.display:has( .display__cube) {
+											perspective: 1000px;
+											}</p>
+										</div>
+							</div>
+								<div class="container__text">
+									<p>.display--p:hover .display__cube {
+									transform: rotateY(315deg);
+									}</p>
+
+								</div>
+								<div>
+									<p>.cube02 {
+										position: absolute;
+										inset: 0;
+										transform-style: preserve-3d;
+									
+										}</p>
+								</div>
+
+								<div class="display display--n">
+									<div class="display__cube02 cube02">
+										<div class="cube02__side cube02__side--bottom">
+											<span>bottom</span>
+											<span>transform: translateY(89.5px) rotateX(90deg);</span>
+										</div>
+								
+										<div class="cube02__side cube02__side--top">
+											<span>top</span>
+											<span>transform: translateY(-89.5px) rotateX(-90deg);</span>
+										</div>
+								
+										<div class="cube02__side cube02__side--left">
+											<span>left</span><span>transform: translateX(-89.5px) rotateY(90deg);</span>
+										</div>
+								
+										<div class="cube02__side cube02__side--right">
+											<span>right</span>
+											<span>transform: translateX(89.5px) rotateY(-90deg);</span>
+										</div>
+								
+										<div class="cube02__side cube02__side--back">
+											<span>back</span>
+											<span>transform: translateZ(-89.5px) rotateY(180deg);</span>
+										</div>
+								
+										<div class="cube02__side cube02__side--front">
+											<span>front</span>
+											<span>transform: translateZ(89.5px);</span>
+										</div>
+									</div>
+								</div>
+								<div class="container__text">
+									<p>.display--n:hover .display__cube02{
+									transform: rotate3d(5, 4, 3, 180deg);
+									}</p>
+								</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="box-cube03">
+<h2 class="box-cube03__title">wrap {perspective: 1000px;}</h2>
+					<h3 class="box-cube03__title">cube03{transform-style: preserve-3d;}</h3>
+
+					<div class="box-cube03__wrap">
+						<div class="box-cube03__cube03 cube03">
+							<div class="cube03__side side-front">
+								<span>front</span>
+								<span>translateZ(100px);</span>
+							</div>
+									<div class="cube03__side side-bottom"><span>bottom</span>
+									<span>transform: translateY(100px) rotateX(-90deg);</span></div>
+									<div class="cube03__side side-left"><span>left</span> <span>transform: translateX(-100px) rotateY(-90deg);</span></div>
+										<div class="side-right"><span>right</span> <span>transform: translateX(100px) rotateY(90deg);</span></div>
+
+								<div class="cube03__side side-back">
+									<span>back</span>
+									<span>transform: translateZ(-100px) rotateX(180deg);</span>
+								</div>
+							<div class="cube03__side side-top">
+								<span>top</span>
+								<span>transform: translateY(-100px) rotateX(90deg);</span>										
+							</div>
+							
+							<div class="cube03__side side-right"></div>
+						</div>
+					</div>
+
+					<p>.cube03__side {
+					position: absolute;
+					inset: 0;}</p>
+
+					<p>С початку витягнути, потім робити оберти</p>
+
+					<p>
+						Має зачення після якого елемента
+					</p>
+				</div>
+
+
+
+			</div>
+
+		</section>
+
+	</main>
+
+
+
+	<footer class="footer">
+
+		<div class="footer__menu">
+			<div class="footer__cube-wrap">
+				<div class="footer__cube cube04">
+					<div class="cube04__body body-cube04">
+	
+						<div class="body-cube04__side side-cube04 side-cube04--front">
+							<span>Front</span>
+						</div>
+	
+						<div class="body-cube04__side side-cube04 side-cube04--back"></div>
+	
+						<div class="body-cube04__side side-cube04 side-cube04--top">
+							<span>top</span>
+						</div>
+	
+						<div class="body-cube04__side side-cube04 side-cube04--right">
+							<span>right</span>
+						</div>
+	
+							<div class="body-cube04__side side-cube04 side-cube04--title">
+								<span>menu</span>
+							</div>
+	
+	
+						<div class="body-cube04__side side-cube04 side-cube04--bottom">
+							<span>bottom</span>
+						</div>
+	
+						<div class="body-cube04__side side-cube04 side-cube04--left">
+							<span>left</span>
+						</div>
+	
+					</div>
+				</div>
+			</div>
+
+
+			<ul class="footer__list">
+				<li class="footer__item">
+					<div class="item__display display">
+
+						<a class="footer__link" href="#animation" target="_blank">
+							animation
+						</a>
+					</div>
+				</li>
+
+				<li class="footer__item">
+					<div class="item__display display">
+						<a class="footer__link" href="#kaiframe" target="_blank">
+							Універсальний запис animation
+						</a>
+					</div>
+				</li>
+
+				<li class="footer__item">
+					<div class="item__display display">
+
+						<a class="footer__link" href="#rotate" target="_blank">
+							Приклади: animation-rotate
+						</a>
+					</div>
+
+				</li>
+
+				<li class="footer__item">
+					<div class="item__display display">
+
+						<a class="footer__link" href="#library" target="_blank">
+							Корисні посилання
+						</a>
+					</div>
+				</li>
+
+
+				<li class="footer__item">
+					<div class="item__display display">
+
+						<a class="footer__link" href="#btn-practic" target="_blank">
+							button
+						</a>
+					</div>
+				</li>
+
+				<li class="footer__item">
+					<div class="item__display display">
+
+						<a class="footer__link" href="https://arkanit7.github.io/lessons/lesson_11/" target="_blank">
+							Натхнення-hsl()
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</footer>
+
+</body>
+
+</html>
