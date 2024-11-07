@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flex</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__conteiner">
+
+			<nav class="header__nav nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#portfolio" class="nav__link" target="_blank">
+							Portfolio
+						</a>
+					</li>
+
+					<li class="nav__item"><a href="https://mastery.games/flexboxzombies/" class="nav__link" target="_blank">
+							Гра на вивчення Flexbox
+						</a>
+					</li>
+
+					<li class="nav__item"><a href="https://icodethis.com/" class="nav__link" target="_blank">
+							добірка челленджів
+						</a>
+					</li>
+
+					<li class="nav__item"><a href="https://www.frontendmentor.io/" class="nav__link" target="_blank">
+							виконувати завдання, відправляти на перевірку і отримати фідбек в діскорд
+						</a>
+					</li>
+
+					<li class="nav__item"><a href="https://codingfantasy.com/games/flexboxadventure/play" class="nav__link"
+							target="_blank">
+							гра
+						</a>
+					</li>
+
+					<li class="nav__item"><a href="https://webcode.tools/k" target="_blank">
+							Зручний генератор та візуалізатор CSS та HTML коду
+						</a>
+					</li>
+
+					<li class="nav__item"><a href="https://codingfantasy.com/games/flexboxadventure/play" class="nav__link"
+							target="_blank">
+							гра
+						</a>
+					</li>
+
+					<li class="nav__item"><a href="https://learngitbranching.js.org/?locale=uk" class="nav__link" target="_blank">
+							вивченя Git "Learn Git Branching"
+						</a>
+					</li>
+
+					<li class="nav__item"><a href="https://www.youtube.com/live/oIg7uLoJpDM" class="nav__link" target="_blank">
+							Flex
+						</a>
+					</li>
+
+					<li class="nav__item"><a
+							href="https://meadow-manicure-24b.notion.site/fc69adb10a3842499e245954d78e7bee?v=30dd2173a8444c6e8e056a57cecd3e26&p=1307e75cc02a80f8b164e5a35297d209&pm=s"
+							class="nav__link" target="_blank">
+							Модуль Flex
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="page">
+		<h1 class="page__title">flex</h1>
+		<section class="page__portfolio portfolio" id="portfolio">
+			<div class="portfolio__container">
+
+				<div class="portfolio__box box box--center">
+					<p class="box__label lable">Portfolio</p>
+					<h2 class="box__title title">Latest Work</h2>
+				</div>
+
+				<div class="portfolio__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="" class="menu__link">how All <sup>14</sup> </a>
+						</li>
+
+						<li class="menu__item">
+							<a href="" class="menu__link">Design<sup>6</sup></a>
+						</li>
+
+						<li class="menu__item">
+							<a href="" class="menu__link">Branding<sup>4</sup></a>
+						</li>
+
+						<li class="menu__item">
+							<a href="" class="menu__link">Illustration<sup>3</sup></a>
+						</li>
+
+						<li class="menu__item">
+							<a href="" class="menu__link">Motion<sup>1</sup></a>
+						</li>
+					</ul>
+				</div>
+				<!-- ----board -->
+				<div class="portfolio__board board">
+					<ul class="board__list">
+						<li class="board__item">
+							<picture class="picture-img margin--left">
+								<source srcset="img/jpeg/sofa@1x.webp 1x, img/jpeg/sofa@2x.webp 2x">
+								<img src="img/jpeg/jpeg/sofa@1x.jpg" alt="sofa">
+							</picture>
+							<div class="board__content">
+
+								<a href="#" class="board__btn" target="_blank">Design</a>
+								<h3 class="board__title">SOFA</h3>
+							</div>
+						</li>
+
+						<li class="board__item">
+
+							<picture class="picture-img">
+								<source srcset="img/jpeg/keyboard@1x.webp 1x">
+								<img src="img/jpeg/jpeg/keyboard@1x.jpg" alt="keyboard">
+							</picture>
+
+							<div class="board__content">
+								<a href="#" class="board__btn" target="_blank">Branding</a>
+								<h3 class="board__title">KeyBoard</h3>
+							</div>
+						</li>
+
+						<li class="board__item">
+							<picture class="picture-img">
+								<source srcset="img/jpeg/workmedia@1x.webp 1x, img/jpeg/workmedia@2x.webp 2x">
+								<img src="img/jpeg/jpeg/workmedia@1x.jpg" alt="workmedia">
+							</picture>
+
+							<div class="board__content">
+								<a href="#" class="board__btn" target="_blank">Illustration</a>
+								<h3 class="board__title">Work Media</h3>
+							</div>
+						</li>
+
+						<li class="board__item">
+							<picture class="picture-img">
+								<source srcset="img/jpeg/dddone@1x.webp 1x, img/jpeg/dddone@2x.webp 2x">
+								<img src="img/jpeg/jpeg/dddone@1x.jpg" alt="dddone">
+							</picture>
+
+							<div class="board__content">
+								<a href="#" class="board__btn" target="_blank">Motion</a>
+								<h3 class="board__title">DDDone</h3>
+							</div>
+						</li>
+					</ul>
+
+					<button class="portfolio__btn btn">Explore More</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="we">
+			<div class="we__conteiner">
+				<div class="we__card-sterted card-sterted">
+
+					<div class="we__star-container star-container">
+						<picture>
+							<source srcset="img/png/star@1x.webp 1x, img/png/star@2x.webp 2x">
+							<img src="img/png/png/star@1x.png" alt="star">
+						</picture>
+						<svg class="present" width="32" height="32">
+							<use href="img/svg/symbol-defs.svg#icon-present"></use>
+						</svg>
+					</div>
+
+
+					<div class="we__box box">
+						<div class="we__colum-title">
+							<p class="box__label lable">Get Started</p>
+							<h2 class="box__title title title--medium">We Help Companies
+								Move Faster</h2>
+							<button class="we__btn  btn">Contact Us</button>
+						</div>
+					</div>
+
+					<div class="we__block-container">
+						<picture class="block01">
+							<source srcset="img/png/block@1x.webp 1x, img/png/block@2x.webp 2x">
+							<img src="img/png/block@1x.png" alt="block">
+						</picture>
+					</div>
+
+					<div class="we__avatar-conteiner">
+						<picture class="cloud">
+							<source srcset="img/png/cloud@2x.webp 2x">
+							<img src="img/png/cloud@1x.webp" alt="cloud">
+						</picture>
+
+					</div>
+
+					<picture class="avatar">
+						<source srcset="img/png/help@2x.webp 2x">
+						<img src="img/png/help@1x.webp" alt="avatar">
+					</picture>
+
+				</div>
+			</div>	
+		</section>
+
+
+	</main>
+
+
+	<footer class="footer">
+		<nav class="footer__nav nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#portfolio" class="nav__link" target="_blank">
+							Portfolio
+						</a>
+					</li>
+			
+					<li class="nav__item"><a href="https://mastery.games/flexboxzombies/" class="nav__link" target="_blank">
+							Гра на вивчення Flexbox
+						</a>
+					</li>
+			
+					<li class="nav__item"><a href="https://icodethis.com/" class="nav__link" target="_blank">
+							добірка челленджів
+						</a>
+					</li>
+			
+					<li class="nav__item"><a href="https://www.frontendmentor.io/" class="nav__link" target="_blank">
+							виконувати завдання, відправляти на перевірку і отримати фідбек в діскорд
+						</a>
+					</li>
+			
+					<li class="nav__item"><a href="https://codingfantasy.com/games/flexboxadventure/play" class="nav__link"
+							target="_blank">
+							гра
+						</a>
+					</li>
+			
+					<li class="nav__item"><a href="https://webcode.tools/k" target="_blank">
+							Зручний генератор та візуалізатор CSS та HTML коду
+						</a>
+					</li>
+			
+					<li class="nav__item"><a href="https://codingfantasy.com/games/flexboxadventure/play" class="nav__link"
+							target="_blank">
+							гра
+						</a>
+					</li>
+			
+					<li class="nav__item"><a href="https://learngitbranching.js.org/?locale=uk" class="nav__link" target="_blank">
+							вивченя Git "Learn Git Branching"
+						</a>
+					</li>
+			
+					<li class="nav__item"><a href="https://www.youtube.com/live/oIg7uLoJpDM" class="nav__link" target="_blank">
+							Flex
+						</a>
+					</li>
+			
+					<li class="nav__item"><a
+							href="https://meadow-manicure-24b.notion.site/fc69adb10a3842499e245954d78e7bee?v=30dd2173a8444c6e8e056a57cecd3e26&p=1307e75cc02a80f8b164e5a35297d209&pm=s"
+							class="nav__link" target="_blank">
+							Модуль Flex
+						</a>
+					</li>
+				</ul>
+		</nav>
+		<div class="footer__cube cube">
+			<div class="cube__wrap">
+				<div class="cube__figure figure">
+					<div class="figure__said front"></div>
+					<div class="figure__said back"></div>
+					<div class="figure__said left"></div>
+					<div class="figure__said-text">Menu</div>
+					<div class="figure__said top"></div>
+					<div class="figure__said right"></div>
+					<div class="figure__said button"></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
