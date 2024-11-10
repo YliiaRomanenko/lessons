@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header></header>
+
+	<main class="page">
+		<h1 class="page__title">Form</h1>
+		<section class="page__personal-portfolio personal-portfolio">
+			<div class="personal-portfolio__conteiner">
+				<div class="personal-portfolio__box">
+					<form class="personal-portfolio__form01 form01" action="#">
+						<p class="form01__description">There are many variations of passages of Lorem Ipsu available,
+						but the majority have suffered alte.</p>
+
+						<div class="form01__wrap-inputs">
+							<input class="form01__input-name" name="name" type="text" id="name01" placeholder="Name*" required>
+							<!-- <label class="form01__label-name" for="name01">name*</label> -->
+							
+							<input class="form01__input-email" name="email" type="email" placeholder="Email*" required>
+							
+							
+							<input type="text" name="location" class="form01__location" placeholder="Location">
+
+							<div class="wrap__budget-subject">
+
+								<input type="text" name="budget" class="form01__badget" placeholder="Budget*" required>
+								
+								<input type="text" name="subject" class="form01__subject" placeholder="Subject*" required>
+							</div>
+							
+							
+							<textarea name="message" id="message" class="form01__aarea" autocomplete="off" placeholder="Message*"></textarea>
+
+						</div>
+
+						
+
+							<button class="form01__btn" type="button">
+								Submit
+								<svg class="vector-btn" width="24" height="24">
+									<use href="img/symbol-defs.svg#icon-vector"></use>
+								</svg>
+							</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="page__dark dark">
+			<div class="dark__container">
+				<div class="dark__form-wrap form-wrap">
+					<form class="form-wrap__form02 form02">
+
+
+						<!-- input name-->
+						 <div class="form02__box-name names-conteiner">
+							<div class="names-conteiner__first">
+								<p>
+									<label for="firstname">First Name</label>
+								</p>
+								<p>
+									<input
+									 type="text"
+									 name="first-name"
+									 id="firstname"
+									 placeholder="Enter First Name"
+									 required>								 
+								</p>
+							</div>
+
+							<div class="names-conteiner__last-name">
+									<p>
+										<label for="lastname">First Name</label>
+									</p>
+									<p>
+										<input 
+										type="text"
+										 name="last-name"
+										 id="lastname" 
+										 placeholder="Enter Last Name" 
+										 required>
+									</p>
+						 </div>
+						</div>
+						<!-- input email -->
+						<div class="form02__box-contacts contacts-container">
+							<div class="contacts-container__email-block email-block">
+								<label for="emailll">Email</label>
+								<input
+								 type="email"
+								 name="email"
+								 id="emailll"
+								 placeholder="Enter your Email"
+								 required>
+							</div>
+
+							<div class="contacts-container__number-block number-block">
+								<label for="phone">Phone Number</label>
+								<input 
+								type="number"
+								class="number"
+								id="phone"
+								placeholder="Enter Phone Number"
+								required>
+							</div>
+						</div>
+						<!-- taxtarea -->
+						<div class="form02__textarea textarea">
+	
+								<label for="txt">Message</label>
+								<textarea 
+								name="text" 
+								id="txt"
+								class="textarea__text"
+								placeholder="Enter your Message"></textarea>
+
+						</div>
+
+						<!-- input-radio+button -->
+						 <div class="form02__secure secure">
+							<div class="secure__wrap-checkbox">
+
+								<div class="secure__checkbox-conteiner checkbox">
+									<input 
+									type="checkbox"
+									name="agree"
+									value="yes"
+									id="checkboxon"
+									class="checkbox__input"
+									checked
+									required>
+	
+									<label class="checkbox__lable" for="checkboxon">
+										<span class="checkmark"></span>
+										<span class="text-secure">I agree with Terms of Use and Privacy Policy</span>
+									</label>
+	
+								</div>
+							</div>
+
+							<div class="secure__btn-conteiner">
+								<button class="secure__btn" type="button"><span>Send Message</span></button>
+							
+								<span class="name-btn">Send Message</span>
+							</div>
+						 </div>
+
+					</form>
+			</div>
+			</div>
+
+		</section>
+
+		<!-- palette -->
+		<section class="page__palette pelette">
+			<div class="pelette__container container-pelette">
+				<div class="container-pelette__components components">
+
+					<div class="components__checkbox checkbox">
+						<div class="checkbox__1">						
+							<input 
+							type="checkbox"
+							id="checkbox-1"
+							class="checkbox-1__input input-none"
+							name="checkbox"
+							value="yes"
+							checked
+							>
+							<label for="checkbox-1"
+							class="checkbox-1__lable lable-checkbox-1">
+								<span class="check-span"></span> 
+							</label>
+						</div>
+
+									<div class="checkbox__2">						
+							<input 
+							type="checkbox"
+							id="checkbox-2"
+							class="checkbox-2__input input-none"
+							name="checkbox"
+							value="yes"
+							>
+							<label for="checkbox-2"
+							class="checkbox-2__lable lable-checkbox-2">
+								<span class="check-span"></span>
+							</label>
+						</div>
+
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+
+	<footer class="footer"></footer>
+
+	
+</body>
+</html>
