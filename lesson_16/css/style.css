@@ -1,0 +1,286 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular&display=swap");
+
+/* body */
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(45deg, #441702 20%, #c7c2b1 100%);
+
+	min-height: 200vh;
+	overflow: clip;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+.body {
+	font-family: "Epilogue", sans-serif;
+	
+	color: #2f2424;
+	background-color: #272222;
+}
+
+.header {
+	background: #28293E;
+}
+[class*="__conteiner"] {
+	max-width: 1200px;
+
+	padding: 16px 15px;
+	margin: 0 auto;
+}
+/* /body */
+.header__conteiner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	min-height: 80px;
+
+	flex-shrink: 1;
+	gap: 15px;
+}
+
+/* ---logo--- */
+.header__logo {
+	max-width: 152px;
+	min-height: 48px;
+
+flex-basis: 152px;
+}
+
+
+
+.header__img-logo {
+	object-fit: cover;
+
+	min-width: 70px;
+	width: 100%;
+flex-basis: 152px;
+}
+/* --logo-- */
+
+
+
+
+/*-- menu --*/
+
+.header__menu {
+	max-width: 515px;
+	flex-basis: 515px;
+
+}
+
+.menu {}
+
+.menu__body {}
+
+.menu__list {
+display: flex;
+flex-wrap: wrap;
+max-width: 515px;
+flex-basis: 515px;
+
+justify-content: space-between;
+align-items: center;
+column-gap: 10px;
+}
+
+.menu__item {}
+
+.menu__link {
+	font-family: "Epilogue", sans-serif;
+line-height: 2;
+
+	color: #ffffff;
+}
+/*-- /menu --*/
+/* btn */
+.btn-contact {
+	font-family: "Epilogue", sans-serif;
+max-width: 138px;
+flex-shrink: 1;
+flex-basis: 138px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-size: 14px;
+	font-weight: 900;
+	text-transform: uppercase;
+
+	color: #fff;
+	background-color: transparent;
+
+	padding: 16px 35px;
+
+	border-radius: 6px;
+	border: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+/* btn */
+.icon-menu {
+display: none;
+}
+
+/* =====media==== */
+@media (max-width: 500px) {
+	.header__conteiner {
+			min-height: 60px;
+			padding: 10px 5px;
+
+		gap: 5px;
+	}
+	.menu {
+		display: none;
+	}
+	
+	/* burger */
+	.icon-menu {
+		z-index: 5;
+		display: flex;
+		flex-direction: column;
+
+	width: 30px;
+    max-height: 22px
+	}
+	  .icon-menu::after,
+		.icon-menu::before {
+
+			transition: all 0.3s;
+			content: "";
+			display: inline-block;
+			width: 100%;
+			height: 2px;
+
+			background-color: #ffffff;
+		}
+
+		.icon-menu span {
+			display: inline-block;
+			margin-block: 8px;
+
+			width: 100%;
+			height: 2px;
+			background-color: #fff;
+
+				transition: all 0.3s;
+		}
+
+.open-menu .icon-menu span {
+					margin: 0;
+
+					width: 0;
+					height: 0;
+
+				}
+.open-menu .icon-menu::before {
+	transform: rotate(45deg) translateY(1px);
+}
+.open-menu .icon-menu::after {
+		transform: rotate(-45deg) translateY(-1px);
+}
+
+
+
+		.btn-contact {
+			padding: 10px 15px;
+			z-index: 5;
+		}
+
+		.menu {
+			display: flex;
+
+			position: fixed;
+			inset-block-start: 0;
+			inset-inline-end: -100%;
+
+			padding: 100px 15px 20px;
+		transition: all .3s;
+		}
+
+		.menu__list {
+			z-index: 10;
+			flex-direction: column;
+			row-gap: 20px;
+			font-size: 24px;
+			padding: 15px;
+
+			color: #1f1f1f;
+			background-color: #424244;
+
+			border-radius: 8px;
+			box-shadow: 3px 3px 7px #272222, -3px -3px 4px #ffffff, inset 3px 3px 5px #ffffff, inset -3px -3px 5px #424244, inset 0px 0px 70px 50px hsl(300deg, 80%, 97%);
+
+		}
+				.menu__link {
+					color: #1f1f1f;
+				}
+
+.open-menu .menu {
+	transition: all .3s;
+		inset-inline-end: 0;
+	
+}
+	/* .menu::before {
+
+					content: "";
+							position: fixed;
+							inset-block-start: 0;
+					display: block;
+
+					width: 100%;
+					height: 80px;
+					background-color: #bb9898;
+				} */
+
+	
+}
+
+
+
+/* =====/media==== */
+/* scroll */
+
+.page__scroll {
+	position: sticky;
+	top: 90%;
+	transform: translateY(-50%);
+	text-align: center;
+	font-size: 10vw;
+
+	filter: url(#knockout);
+
+perspective: 500px;
+transform-style: preserve-3d;
+
+	transition: transform 0.3s ease ;
+	animation: shrink 1s ease;
+
+	z-index: 2;
+}
+
+
+.scroll {}
+
+.scroll__title {
+/* font-size: 10vw;
+	transition: transform 0.3s ease; */
+/* animation: shrink 3s infinite; */
+animation: shrink 2s linear;
+
+}
+@keyframes shrink {
+	0% {
+		transform: scale(3) rotateX(65deg);
+	}
+	100% {
+		transform: scale(1) rotateX(0deg);
+	}
+}
+
+
+/* ==/scroll */
