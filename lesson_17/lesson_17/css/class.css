@@ -1,0 +1,298 @@
+/* Підключення фрифтів */
+
+/* Google Fonts (Plugin) */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Manrope", sans-serif;
+	color: #fff;
+	font-size: 18px;
+	background-color: #333;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip; /* clip */
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* --------------------- */
+
+[class*="__container"] {
+	max-width: 1200px;
+	padding-inline: 15px;
+	margin: 0 auto;
+}
+[class*="--margin"] {
+	margin-bottom: 20px;
+}
+
+.page {
+	/* padding-block: 15px; */
+}
+/* --------------------- */
+/* FLEX */
+.flex {
+	background-color: #794f45;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+/* FLEX-елементи */
+.flex__item {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 250px;
+	background-color: #7a956b;
+	padding: 10px;
+	text-align: center;
+}
+
+/* GIRD */
+
+/* GRID-контейнер */
+.grid {
+	background-color: #794f45;
+
+	/* Об'являємо grid-контейнер */
+	/* Блочний grid */
+	display: grid;
+	/* Блочно-рядковий grid */
+	/* display: inline-grid; */
+
+	gap: 20px;
+	/*  
+	column-gap: ;
+	row-gap: ;
+	*/
+
+	/* Побудова явної сітки */
+	/* grid-template-columns - налаштовує колонки */
+	/* grid-template-columns: 100px 250px 150px; */
+
+	/* Одиниця виміру FR(фракція, фрагмент) */
+	/* grid-template-columns: 20% auto 1fr; */
+	/* grid-template-columns: 20% 30% 50%; */
+	/* grid-template-columns: 0.2fr 0.3fr 0.5fr; */
+	/* grid-template-columns: 0.2fr 0.3fr 0.2fr; */
+
+	/*
+	for ex.: 0.2fr
+
+	flex-basis: по макету;
+	flex-shrink: 1;
+	flex-grow: 1;
+	*/
+
+	/* Повторення repeat */
+	/* grid-template-columns: 100px 100px 100px; */
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	/* grid-template-columns: repeat(3, 1fr); */
+
+	/* GAP + FR */
+	/* gap: 20px; */
+	/* column-gap: ; */
+	/* row-gap: ; */
+
+	/* grid-template-columns: repeat(3, 1fr); */
+
+	/* grid-template-rows - налаштовує рядки */
+	/* grid-template-rows: repeat(2, 1fr); */
+	/* grid-template-rows: 100px 200px 300px; */
+	/* grid-template-rows: repeat(2, 1fr); */
+
+	/* Універсальна властивість побудови явних колонок та рядків */
+	/* grid-template: rows / columns  ; */
+	/* grid-template: repeat(3, 100px) / repeat(3, 1fr); */
+
+	/* Налаштування неявної сітки */
+
+	/* явна сітка */
+	/* grid-template: repeat(1, 1fr) / repeat(2, 1fr); */
+
+	/* grid-template-columns: repeat(3, 1fr); */
+
+	/* grid-auto-flow - алгоритм виводу об'єктів 
+	у явну і неявну сітку  */
+	/* grid-auto-flow: row; */
+	/* grid-auto-flow: column; */
+
+	/* Налаштування розміру (ширини) неявної колонки */
+	/* grid-auto-columns: auto; */
+	/* Налаштування розміру (висоти) неявного рядка  */
+	/* grid-auto-rows: auto; */
+
+	/* Робимо усі неявні рядки однаковими по висоті */
+	/* grid-auto-rows: 1fr; */
+
+	/* Вирівнювання об'єктів */
+	/* height: 300px; */
+	/* grid-template: repeat(3, 0.2fr) / repeat(3, 0.3fr); */
+
+	/* 
+		Вирівнювання об'єктів в середені 
+		комірок вздовж горизонтальної лінії 
+	*/
+	/* justify-items: stretch; */ /* За замовченням */
+	/* justify-items: start; */
+	/* justify-items: end; */
+	/* justify-items: center; */
+
+	/* 
+		Вирівнювання об'єктів (комірок) в середені grid-контейнера 
+		вздовж горизонтальної лінії 
+	*/
+	/* justify-content: stretch; */ /* За замовченням */
+	/* justify-content: start; */
+	/* justify-content: end; */
+	/* justify-content: center; */
+	/* justify-content: space-around; */
+	/* justify-content: space-between; */
+	/* justify-content: space-evenly; */
+
+	/* 
+		Вирівнювання об'єктів в середені 
+		комірок вздовж вертикальної лінії 
+	*/
+	/* align-items: stretch; */ /* За замовченням  */
+	/* align-items: start; */
+	/* align-items: end; */
+	/* align-items: center; */
+
+	/* 
+		Вирівнювання об'єктів (комірок) в середені 
+		grid-контейнера вздовж вертикальної лінії 
+	*/
+	/* align-content: stretch; */ /* За замовченням  */
+	/* align-content: start; */
+	/* align-content: center; */
+	/* align-content: end; */
+	/* align-content: space-around; */
+	/* align-content: space-between; */
+	/* align-content: space-evenly; */
+
+
+
+
+
+
+	
+	/* minmax */
+	/* grid-template-columns: repeat(3, minmax(100px, 200px)); */
+
+	/* 
+		Алгоритми автоматичного заповнення контейнера 
+		(перебудови сітки) 
+	*/
+	/* grid-template-columns: repeat("алгоритм заповнення", "межі розмірів"); */
+	/* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
+	/* grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); */
+
+	grid-template-columns: repeat(3, 1fr);
+}
+/* GRID-елемент */
+.grid__item {
+	padding: 10px;
+	text-align: center;
+	background-color: #7a956b;
+}
+.grid__item:nth-child(2) {
+	/* Властивості GRID-елементів */
+
+	/* Перезапис вертикального положення */
+
+	/* align-self: stretch; */
+	/* align-self: start; */
+	/* align-self: end; */
+	/* align-self: center; */
+
+	/* Перезапис горизонтального положення */
+
+	/* justify-self: stretch; */
+	/* justify-self: start; */
+	/* justify-self: end; */
+	/* justify-self: center; */
+
+	/* Управління положенням елемента */
+	/* 
+		Початкова і кінечна позиція елементу 
+		по горизонталі
+	*/
+	/* 
+	grid-column-start: ;
+	grid-column-end: ;
+	grid-column
+	*/
+	/* 
+		Початкова і кінечна позиція елементу 
+		по вертикалі
+	*/
+	/* 
+	grid-row-start: ;
+	grid-row-end: ;
+	grid-row
+	*/
+
+	/* Універсальний запис */
+	/* 
+		grid-column-start: 2;
+		grid-column-end: 4; 
+	*/
+	/* або */
+	/* grid-column: 2 / 4; */
+
+	/* 
+		grid-row-start: 2;
+		grid-row-end: 4; 
+	*/
+	/* або */
+	/* grid-row: 2 / 4; */
+
+	/* 
+	grid-column: span 2;
+	grid-row: span 5;
+	 */
+}
+
+/* GRID-AREA */
+/*
+.wrapper {
+	display: grid;
+
+	grid-template-columns: 0.3fr 1fr 0.3fr;
+	grid-template-rows: auto 1fr auto;
+
+	grid-template-areas:
+		"header header header"
+		"sidebar main main"
+		"footer footer footer";
+}
+.header {
+	background-color: #77608d;
+	grid-area: header;
+}
+.sidebar {
+	background-color: #7a956b;
+	grid-area: sidebar;
+}
+.page {
+	background-color: #794f45;
+	grid-area: main;
+}
+.footer {
+	background-color: #77608d;
+	grid-area: footer;
+}
+*/
