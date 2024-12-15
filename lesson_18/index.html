@@ -32,6 +32,208 @@
 					<div class="grid__item-box"><img src="img/portfolio-card/dddone-@1x.webp" alt="picture"></div>
 				</div>
 
+				<section class="grig02">
+
+					<h2 class="grig02__title--big">  grid-template-columns: repeat(4, 1fr);</h2>
+					<div class="grig02__container">
+						<h3 class="grig02__title">  @media (max-width: 768px) => grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));</h3>
+						<div class="grig02__desccription-box">
+
+							<p>Елемент адаптується раніше на 656px бо достигне мінімальної ширини 150px</p>
+							<p> .grid02__box { <br>
+								 display: grid; <br>
+  max-width: 1342px; <br>
+
+  grid-template-columns: repeat(4, 1fr); <br>
+  column-gap: 32px; <br>
+  row-gap: 24px; <br>
+
+  margin: 0 auto; <br>
+  padding-inline: 15px; <br>
+  padding-block: 10px; <br>
+  background-color: rgb(245, 245, 238); <br>
+}</p>
+								<p  class="grig02__action-video"> 		<video muted controls autoplay loop class="grid02__video" src="./img/vid02.webm"></video>
+									.grid02__item { <br>
+  position: relative; <br>
+  aspect-ratio: 304 / 152; <br>
+  width: 100%; <br>
+  height: 100%; <br>
+}
+								</p>
+								<p>
+									.grid02__item:nth-child(17n + 1), <br>
+.grid02__item:nth-child(17n + 4), <br>
+.grid02__item:nth-child(17n + 8), <br>
+.grid02__item:nth-child(17n + 10), <br>
+.grid02__item:nth-child(17n + 16) { <br>
+  grid-row: span 2;
+	<br>
+  aspect-ratio: 304 / 184; <br>
+}
+								</p>
+								<p>
+									@media (max-width: 768px) {
+  .grid02__box {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    column-gap: 10px;
+    row-gap: 8px;
+  }
+}
+								</p>
+					
+									<span class="grid02__content-description">Параметри для текстового контенту:   <mark>grid-template-columns: repeat(auto-fill, minmax(236px, 1fr));</mark></span>
+								
+					
+						</div>
+						<div class="grid02__box">
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p>1</p>
+									<p><mark>.grid__conteiner</mark> { <br>
+									 Центруємо контейнер  <br>
+  margin: 0 auto;<br>
+
+  max-width: 1342px;
+									</p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box">
+									<img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img">
+								</div>
+								<div class="grid02__content-box">
+									<p>2</p>
+									<p> <mark> display: grid;</mark> <br>
+  Для адаптивності цей алгоритм не підходить для версії на ПК (desktop), тому ми застосовуватимемо його починаючи з ширини екрану 992px. <br>
+  grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+ значення алгоритма до minmax(236px, 1fr)) для мобільної версії <br>
+  <mark>grid-template-columns: repeat(auto-fill, minmax(236px, 1fr));</mark></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p>3</p>
+									<p><mark>.grid__item </mark>{ <br>
+  <mark>aspect-ratio</mark>: 304 / 152; <br>
+треба, щоб елементи вписалися в комірку
+  width: 100%;
+  height: 100%;
+}
+</p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p>4</p>
+									<p>  .grid__item<mark>:nth-child</mark>(17n + 1) {<br>
+ <mark>   grid-row: span 2;</mark> <br>
+   <mark> aspect-ratio</mark>: 304 / 184;
+  }</p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p>5</p>
+									<p><mark>@media(min-width: </mark> 992px) {
+  .grid__conteiner {
+<mark>    grid-template-columns: repeat(4, 1fr);</mark>
+    column-gap: 32px;
+    row-gap: 24px;
+  }</p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p>6</p>
+									<p></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p></p>
+									<p></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p></p>
+									<p></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p></p>
+									<p></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p></p>
+									<p></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p></p>
+									<p></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p></p>
+									<p></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p></p>
+									<p></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p></p>
+									<p></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p></p>
+									<p></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p></p>
+									<p></p>
+								</div>
+							</div>
+							<div class="grid02__item">
+								<div class="grid02__item-img-box"><img src="./img/portfolio-card/sofa-@1x.webp" alt="picture" class="grid02__img"></div>
+								<div class="grid02__content-box">
+									<p></p>
+									<p></p>
+								 </div>
+							</div>
+						</div>
+					</div>
+				</section>
 <!-- 
 						
 							<div class="grid__conteiner">
@@ -55,14 +257,16 @@
 							</div> -->
 			</section>
 
-			<section class="grid02">
+			<!-- <section class="grid02">
 				<div class="grid02__grid-conteiner">
 					<div class="grid02__grid-wrap grid02-wrap">
+
 						<div class="grid02-wrap__item">
 							<div class="grid02-wrap__content-wrap">
 								<img src="img/portfolio-card/hand-p@1x.webp" alt="page">
 							</div>
 						</div>
+
 							<div class="grid02-wrap__item">
 								<div class="grid02-wrap__content-wrap">
 									<img src="img/portfolio-card/hand-p@1x.webp" alt="page">
@@ -170,11 +374,12 @@
 								</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<section class="grid03">
-				<div class="grid03__container">
+					<div class="grid03__container">
 					<div class="grid03__box">
+
 
 					<div class="grid03__item">
 							<div class="grid03__img-conteiner">
@@ -182,8 +387,9 @@
 							</div>
 							<div class="grid03__content">
 								<p>1</p>
-								<p> align-item</p>
-								<p>j-content</p>
+								<p> form</p>
+								<p> не вказуйте *checked* для згоди, користувач сам має вказувати це поле, зробіть його обов'язковим для
+									заповнення та приберіть *checked</p>
 							</div>
 						</div>	
 
@@ -193,9 +399,11 @@
 								</div>
 								<div class="grid03__content">
 									<p>2</p>
-									<p> align-item</p>
-									<p>j-content</p>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore suscipit repellendus, dolorum ab eligendi in cum dolorem minima temporibus facilis.</p>
+									<p> form</p>
+
+									<p>вкажіть мінімальну висоту *min-height* для textarea щоб користувач не міг занадто зменшити розмір
+										поля
+										</p>
 								</div>
 							</div>
 
@@ -205,8 +413,13 @@
 								</div>
 								<div class="grid03__content">
 									<p>3</p>
-									<p> align-item</p>
-									<p>j-content</p>
+									<p> form</p>
+									<p>`.form01__wrap-inputs` треба додати width 100%. Тому що це флекс елемент і ви його
+										прибили до лівого краю властивістю `align-items start` яка працює для горизонтального вирівнювання при flex-direction:
+										column;
+
+
+									</p>
 								</div>
 							</div>
 
@@ -216,8 +429,9 @@
 											</div>
 											<div class="grid03__content">
 												<p>4</p>
-												<p> align-item</p>
-												<p>j-content</p>
+												<p> form</p>
+												<p> resize: vertical; додаємо щоб користувачі вам сайт не ламали горизонтальними змінами ширин полів.
+											</p>
 											</div>
 										</div>
 										
@@ -227,8 +441,9 @@
 											</div>
 											<div class="grid03__content">
 												<p>5</p>
-												<p> align-item</p>
-												<p>j-content</p>
+												<p> form</p>
+												<p>не прибирайте *outline* це погано для доступності та навігацій за допомогою tab краще стилізувати під
+													макет щоб це виглядало гарно ніж прибирати`</p>
 											</div>
 										</div>
 										
@@ -238,8 +453,8 @@
 											</div>
 											<div class="grid03__content">
 												<p>6</p>
-												<p> align-item</p>
-												<p>j-content</p>
+												<p> варто вказати для полів введення та чекбоксу стилі при навігації за допомогою клавіші *tab*</p>
+												<p>form</p>
 											</div>
 										</div>
 
@@ -249,8 +464,9 @@
 														</div>
 														<div class="grid03__content">
 															<p>7</p>
-															<p> align-item</p>
-															<p>j-content</p>
+															<p> form</p>
+															<p> На кнопках немає стану focus, якщо подорожувати по сторінці через TAB в ці моменти незрозуміло де знаходишся.
+															</p>
 														</div>
 													</div>
 													
@@ -260,8 +476,10 @@
 														</div>
 														<div class="grid03__content">
 															<p>8</p>
-															<p> align-item</p>
-															<p>j-content</p>
+															<p> form</p>
+															<p> transiton пишемо елементам в статичному стані а не при hover, анімація має працювати незалежно від того чи
+																наведений курсор на елемент.
+																)</p>
 														</div>
 													</div>
 													
@@ -271,8 +489,10 @@
 														</div>
 														<div class="grid03__content">
 															<p>9</p>
-															<p> align-item</p>
-															<p>j-content</p>
+															<p> form</p>
+															<p>практично завжди **textarea** не обов'язкове поле, обов'язкові поля це ті без яких не може бути
+																здійснена послуга (особисті данні та контактні данні)
+														</p>
 														</div>
 													</div>
 
@@ -282,8 +502,12 @@
 																	</div>
 																	<div class="grid03__content">
 																		<p>10</p>
-																		<p> align-item</p>
-																		<p>j-content</p>
+																		<p> adaptativ</p>
+																		<p> при перебудові структури елементи збільшуються і картинки також, в цьому випадку вони збільшились
+																			більше за свій розмір через що втратилась якість і вони стали мильними, щоб цього уникнути потрібно додавати картинки
+																			більшого розміру до прикладу x2.
+																		
+																		</p>
 																	</div>
 																</div>
 																
@@ -293,8 +517,10 @@
 																	</div>
 																	<div class="grid03__content">
 																		<p>11</p>
-																		<p> align-item</p>
-																		<p>j-content</p>
+																		<p> adaptattin</p>
+																		<p>Завжди додаємо gap для безпеки при justify-content: space-between;,
+																			justify-content: space-around;, justify-content: space-evenly;"  щоб при збільшені контенту (чи адаптиві) був
+																			проміжок між елементами.</p>
 																	</div>
 																</div>
 																
@@ -304,8 +530,13 @@
 																	</div>
 																	<div class="grid03__content">
 																		<p>12</p>
-																		<p> align-item</p>
-																		<p>j-content</p>
+																		<p> adaptativ</p>
+																		<p> якщо хочете щоб картка була на всю
+																			ширину але нормальних розмірів 
+																			.gallery__card:nth-child(odd):last-child{
+																			aspect-ratio: 2.5/1;
+																			}
+																			</p>
 																	</div>
 																</div>
 
@@ -317,8 +548,19 @@
 																								</div>
 																								<div class="grid03__content">
 																									<p>13</p>
-																									<p> align-item</p>
-																									<p>j-content</p>
+																									<p>adaptativ</p>
+																									<p> Щоб на мобілках одразу відкривалася клавіатура з цифрами а не літерами, тут краще type number поставити. Так,
+																							 з'явиться небажане поле при наведенні, ось код щоб його прибрати.
+																										```css
+																										input[type='number']::-webkit-outer-spin-button,
+																										input[type='number']::-webkit-inner-spin-button {
+																										-webkit-appearance: none;
+																										margin: 0;
+																										}
+																									
+																										input[type='number'] {
+																										-moz-appearance: textfield;
+																										}.</p>
 																								</div>
 																							</div>
 																							
@@ -469,8 +711,8 @@
 													
 					</div>
 				</div>
-			</section>
-		</main>
+			</section> 
+		</main> 
 
 		<footer class="footer"></footer>
 	</div>
