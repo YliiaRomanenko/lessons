@@ -1,0 +1,152 @@
+@import url("reset.css");
+
+body {
+  height: 100%;
+}
+
+/* ==class== */
+.example {
+  background-color: rgb(39, 41, 39);
+  color: #fbfdf8;
+}
+.example {
+  padding: 80px 0;
+}
+.example__container {
+  position: relative;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 65.625rem;
+}
+@media (min-width: 48em) {
+  .example__container::before {
+    content: "";
+    background: url(../img/icon/header-search.svg) 0 0 / 100% no-repeat;
+    position: absolute;
+    right: 0;
+    width: 14.57%;
+    padding-top: 22.95%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    opacity: 0.3;
+  }
+}
+
+/* (ширину объекта / ширину контейнера ) * 100 = х %; 
+ширину объекта / 16 = Х rem */
+.example__header {
+  margin: 0px 0px 25px 0px;
+  max-width: 51.25rem;
+}
+.example__sub-title {
+  color: #a4a393;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  /* line-hight: размер по макету / размер шрифта = часть; */
+  line-height: 1.7;
+  /* EM: Отступ в низ: размер по макету(15рх) / размер шрифта (14рх) = X ем */
+  margin-bottom: 0px 0px 1.07em 0px;
+}
+.example__title--big {
+  color: #faf8f6;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.65rem;
+  line-height: 1.3;
+  margin: 0px 0px 1em 0px;
+  /* EM	letter-spacing: размер по макету (3рх) / размер шрифта 30рх =  0.1ем; */
+  letter-spacing: 0.01em;
+  /* text-shadow: 1px 1px 2px #652929, -1px -1px 2px #656464; */
+}
+.example__text {
+  font-size: 1em;
+  line-height: 1.2;
+}
+
+.example__items {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+
+  margin: 0px -12px;
+  /* раздвинуть флекс контейнер с карточками  margin: 0px -12px; */
+}
+.example__item {
+  /* для элементов сделать падинг   padding: 0px 12px; */
+  padding: 0px 12px;
+  flex: 1 1 33.333%;
+  /* делим нужный  размер (290рх) на 16(размер шрифта по умолчанию) */
+  min-width: 18.125rem;
+}
+/* card */
+.item__example {
+  display: flex;
+  flex-direction: column;
+  column-gap: 23px;
+}
+.item-example__icon {
+  flex: 0 0 63px;
+}
+.item-example__icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.example__body {
+}
+.example__body {
+}
+.example__title {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+
+  color: rgb(231, 228, 228);
+  margin: 0px 0px 0.833em 0px;
+}
+.example__text {
+  color: rgb(185, 180, 180);
+  line-height: 1.5;
+}
+
+/* grid 02 */
+.example__title--big02 {
+  font-size: 4rem;
+  color: rgb(227, 224, 208);
+  margin: 1em 0px;
+}
+.example__description {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #dfa4a4;
+  margin: 0px 0px 1em 0px;
+}
+.example__items02 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.125rem, 1fr));
+  gap: 24px;
+}
+.example__item02 {
+}
+.item02__example {
+}
+.example__items02 .item-example__icon {
+  width: 200px;
+  height: 40px;
+  margin: 0 0 1.07em 0;
+}
+.example__body {
+}
+.example__title {
+}
+.example__text {
+}
+@media (max-width: 48em) {
+  [class*="title"] {
+    font-size: 1.1em;
+  }
+}
+/* ==/class== */

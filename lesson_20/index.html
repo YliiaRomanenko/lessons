@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+        <section class="example">
+          <div class="example__container">
+            <div class="example__header">
+              <div class="example__sub-title">
+                EM: Отступ в низ: размер по макету(15рх) / размер шрифта (14рх)
+                = X ем
+              </div>
+              <h1 class="example__title--big">
+                (ширину объекта / ширину контейнера ) * 100 = х<mark> %</mark
+                >;<br />
+                <mark>font-size</mark>: ширину объекта / 16 = Х<mark> rem</mark>
+              </h1>
+              <div class="example__text">
+                title: EM: Отступ в низ: размер по макету(20рх) / размер шрифта
+                (30рх) = X ем; margin-bottom: 0px 0px 0.66em 0px; <br />
+                .example__container::before { content: ""; background:
+                url(../img/cloud@1x.webp) 0 0 / 100% no-repeat; position:
+                absolute; right: 0; width: 14.57%; padding-top: 22.95%; top:
+                50%; transform: translate(50%, -50%); }
+              </div>
+            </div>
+            <div class="example__items">
+              <article class="example__item item__example">
+                <div class="item-example__icon">
+                  <img src="./img/logo.svg" alt="" />
+                </div>
+                <div class="example__body">
+                  <h3 class="example__title">padding-top(%) / margin(em)</h3>
+                  <div class="example__text">
+                    Высота элемента: padding-top: (ширину объекта / ширину
+                    контейнера ) * 100 = х %; <br />
+                    EM: Отступ в низ: размер по макету(15рх) / размер шрифта
+                    (14рх) = X ем
+                  </div>
+                </div>
+              </article>
+              <article class="example__item item__example">
+                <div class="item-example__icon">
+                  <img src="./img/logo.svg" alt="picture" />
+                </div>
+                <div class="example__body">
+                  <h3 class="example__title">
+                    line-hight() / letter-spacing(em)
+                  </h3>
+                  <div class="example__text">
+                    line-hight: размер по макету / размер шрифта = часть; <br />
+                    Если хотим в % то умножить на 100 <br />
+                    EM letter-spacing: размер по макету (3рх) / размер шрифта
+                    30рх = 0.1ем;
+                  </div>
+                </div>
+              </article>
+              <article class="example__item item__example">
+                <div class="item-example__icon">
+                  <img src="./img/logo.svg" alt="picture" />
+                </div>
+                <div class="example__body">
+                  <h3 class="example__title">width(rem)</h3>
+                  <div class="example__text">
+                    Шиина контейнера :ширину объекта px / 16 = Х rem
+                  </div>
+                </div>
+              </article>
+              <!-- <article class="example__item item__example">
+                <div class="item-example__icon">
+                  <img src="./img/logo.svg" alt="picture" />
+                </div>
+                <div class="example__body">
+                  <h3 class="example__title">width(rem)</h3>
+                  <div class="example__text">
+                    Шиина контейнера :ширину объекта px / 16 = Х rem
+                  </div>
+                </div>
+              </article> -->
+            </div>
+            <article class="example__item item__example">
+              <div class="item-example__icon">
+                <img src="./img/logo.svg" alt="picture" />
+              </div>
+              <div class="example__body">
+                <h3 class="example__title">
+                  <mark> flex</mark>: 1 1 33.333%; <br />
+                  размер карточки в % : делим общую ширину 100% на три(кол-ко
+                  карточек) (100 / 3 = 33.333%) <br />
+                  min-width: 18.125rem; - делим нужный размер (290рх) на 16
+                </h3>
+                <div class="example__text">
+                  раздвинуть флекс контейнер с карточками margin: 0px -12px;
+                  <br />
+                  для элементов сделать падинг padding: 0px 12px; <br />
+                  делим нужный размер (290рх) на 16(размер шрифта по умолчанию)
+                  */ min-width: 18.125rem; мин ширина для элементов
+                </div>
+              </div>
+            </article>
+
+            <h2 class="example__title--big02"><mark>Grid</mark></h2>
+            <p class="example__description">
+              display: grid; grid-template-columns: repeat(auto-fit,
+              minmax(18.125rem, 1fr));
+            </p>
+            <div class="example__items02">
+              <article class="example__item02 item02__example">
+                <div class="item-example__icon">
+                  <img src="./img/logo.svg" alt="" />
+                </div>
+                <div class="example__body">
+                  <h3 class="example__title">Parants</h3>
+                  <div class="example__text">
+                    .example__items02 { display: grid; grid-template-columns:
+                    repeat(auto-fit, minmax(18.125rem, 1fr)); gap: 24px; }
+                  </div>
+                </div>
+              </article>
+              <article class="example__item02 item02__example">
+                <div class="item-example__icon">
+                  <img src="./img/logo.svg" alt="picture" />
+                </div>
+                <div class="example__body">
+                  <h3 class="example__title">
+                    line-hight() / letter-spacing(em)
+                  </h3>
+                  <div class="example__text">
+                    line-hight: размер по макету / размер шрифта = часть; <br />
+                    Если хотим в % то умножить на 100 <br />
+                    EM letter-spacing: размер по макету (3рх) / размер шрифта
+                    30рх = 0.1ем;
+                  </div>
+                </div>
+              </article>
+              <article class="example__item02 item02__example">
+                <div class="item-example__icon">
+                  <img src="./img/logo.svg" alt="picture" />
+                </div>
+                <div class="example__body">
+                  <h3 class="example__title">width(rem)</h3>
+                  <div class="example__text">
+                    Шиина контейнера :ширину объекта px / 16 = Х rem
+                  </div>
+                </div>
+              </article>
+              <!-- <article class="example__item item__example">
+                <div class="item-example__icon">
+                  <img src="./img/logo.svg" alt="picture" />
+                </div>
+                <div class="example__body">
+                  <h3 class="example__title">width(rem)</h3>
+                  <div class="example__text">
+                    Шиина контейнера :ширину объекта px / 16 = Х rem
+                  </div>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
